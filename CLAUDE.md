@@ -34,3 +34,72 @@
 - 寻找外部文档的引用
 - 检查一致的错误处理模式
 - 监控测试模式和覆盖率
+---
+
+## Story Flicks 项目配置
+
+### API 密钥配置（backend/.env）
+```bash
+# 文本生成提供商：DeepSeek
+text_provider="deepseek"
+deepseek_api_key=sk-dd1f6abb74774be8b0fd69baa203e1be
+text_llm_model=deepseek-chat
+
+# 图像/视频生成提供商：Kling AI
+image_provider="kling"
+kling_api_key=AdmArFgneGE9PhHfbyt9dJPdMtGaJF9y
+kling_secret_key=934pCRbRJdmDY8Y9AEFAGrJQ3BgLyJHK
+
+# Kling 配置
+kling_version="1.6"
+kling_duration=5
+kling_aspect_ratio="16:9"
+kling_mode="std"
+```
+
+### 启动命令
+```bash
+# 后端
+cd D:/work/aiworkflow/story-flicks/backend
+python main.py
+
+# 前端
+cd D:/work/aiworkflow/story-flicks/frontend
+npm run dev
+```
+
+### 访问地址
+- 前端应用: http://localhost:5173
+- 后端 API: http://127.0.0.1:8000
+- API 文档: http://127.0.0.1:8000/docs
+
+### 测试参数示例
+```json
+{
+  "story_prompt": "熊猫和狐狸的故事",
+  "segments": 10,
+  "language": "zh-CN",
+  "text_llm_provider": "deepseek",
+  "text_llm_model": "deepseek-chat",
+  "image_llm_provider": "kling",
+  "resolution": "16:9"
+}
+```
+
+###
+使用git worktree开始新的任务时，在features.md文件中追加新工作内容的描述，git worktree被移除时，在features.md文件中删除对应描述
+可能存在git worktree被移除但features.md文件未被更新的情况，需要自动更新
+使用git worktree开始新的任务时，需要切换分支进入worktree对应的工作目录
+进入新的worktree工作目录时需要在遵循原有文档更新规则的前提下额外自动更新features.md文件
+
+### 注意事项
+- DeepSeek API 用于文本生成
+- Kling API 用于视频生成（异步，需要轮询）
+- 视频生成可能需要几分钟时间
+
+java: D:\Users\lvan\.jdks
+本机可能安装了wsl 和git bash如果遇到windows下某些命令不兼容或环境变量设置困难可尝试wsl过bash简化操作
+本机可能安装了podman desktop，某些情况可以使用docker容器简化操作或环境搭建
+本机安装了ipfs
+本机安装了wireguard并使用10.0.0.0网络
+本机可以使用ssh root@itsnot.fun免密登录，ipfs与本机同在10.0.0.0网络
