@@ -1,14 +1,13 @@
 
 
 ### 问题描述
-本机同时存在 **Git Bash**、**PowerShell**、**WSL** 三种 shell 环境，混用会导致严重的路径和语法错误。
+本机同时存在 **Git Bash**、**PowerShell** 两种 shell 环境，混用会导致严重的路径和语法错误。
 
 ### 环境对照表
 
 | 环境 | 路径格式 | 使用场景 | 限制 |
 |------|----------|----------|------|
 | **PowerShell** | `D:\work\...` | SSH 远程命令、文件传输 | 不支持 `<` 重定向 |
-| **WSL** | `/mnt/d/work/...` | Linux 环境、Docker 操作 | 需要 `wsl -d` 前缀 |
 | **Git Bash** | `D:/work/...` | Git 操作 | 路径转换不可靠 |
 
 ### ⚠️ 禁止的操作模式
@@ -37,9 +36,6 @@ ssh root@itsnot.fun 'podman ps'
 scp local.sql root@itsnot.fun:/tmp/
 ssh root@itsnot.fun 'mysql ... < /tmp/local.sql'
 
-# ✅ WSL 操作：明确指定环境
-wsl -d CentOS9-stream -- bash -c 'cd /mnt/d/work && php script.php'
-
 # ✅ 多步骤命令：分开执行或使用 ;
 ssh root@itsnot.fun 'cmd1; cmd2'
 ```
@@ -61,10 +57,6 @@ ssh server 'cat file' | grep pattern
 # ✅ 正确
 ssh server 'cat /tmp/file.txt' > output.txt
 # 然后本地处理
-
-# 场景2：在 WSL 中使用 Windows 文件
-# ❌ 错误
-wsl -- php D:/work/file.php
 
 # ✅ 正确
 wsl -d CentOS -- php /mnt/d/work/file.php
@@ -112,10 +104,6 @@ ssh root@server 'mysql db < /tmp/schema.sql'
 4. **是 SSH 远程命令吗？**
    - → 使用 Bash，注意避免复杂引号嵌套
    - 管道和重定向优先用文件传递
-
-4. **是 WSL 命令吗？**
-   - 注意某些程序在windows环境中配置了windows路径导致wsl中无法使用，例如claude code的/ide命令
-   - 注意当前回话是在windows中启动还是在wsl中启动，如果是wsl中启动则不需要wsl -d
 
 ### 路径转换表（必须应用）
 | Windows 格式 | Unix 格式 |
