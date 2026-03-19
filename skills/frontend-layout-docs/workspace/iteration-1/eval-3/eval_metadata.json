@@ -1,0 +1,15 @@
+{
+  "eval_id": 3,
+  "eval_name": "screenshot-annotations",
+  "prompt": "我需要为前端布局文档添加截图标注说明，帮我生成截图标注的模板和最佳实践",
+  "assertions": [
+    {
+      "name": "provides-template",
+      "description": "应提供截图标注文档模板"
+    },
+    {
+      "name": "explains-structure",
+      "description": "应说明标注文档的目录结构"
+    }
+  ]
+}

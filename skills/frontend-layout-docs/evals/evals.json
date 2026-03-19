@@ -1,0 +1,23 @@
+{
+  "skill_name": "frontend-layout-docs",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "为我的 Vue 项目创建前端布局文档，项目位于 D:/work/my-vue-app，使用 Naive UI",
+      "expected_output": "生成完整的布局文档，包含 ASCII 布局图、组件映射表、数据流说明",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我为 src/pages/Dashboard.vue 这个页面生成布局说明文档",
+      "expected_output": "为单个页面生成详细的布局文档",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我需要给前端项目添加截图和标注，帮助团队成员理解页面结构",
+      "expected_output": "生成截图标注文档模板和说明",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "eval_id": 1,
+  "eval_name": "create-layout-docs-for-vue-project",
+  "prompt": "为我的 Vue 项目创建前端布局文档，项目位于 D:/work/xcard-qa-tools/rain-qa-func，使用 Naive UI，只需要为 FunctionTestEditor 页面创建布局文档",
+  "assertions": [
+    {
+      "name": "creates-layout-file",
+      "description": "应该在 docs/layout/ 目录下创建布局文档"
+    },
+    {
+      "name": "contains-ascii-diagram",
+      "description": "文档应包含 ASCII 布局图"
+    },
+    {
+      "name": "contains-component-table",
+      "description": "文档应包含组件映射表"
+    }
+  ]
+}

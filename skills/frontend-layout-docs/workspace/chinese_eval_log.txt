@@ -1,0 +1,1235 @@
+Split: 14 train, 8 test (holdout=0.4)
+
+============================================================
+Iteration 1/3
+Description: Document and visualize frontend page structure and component layouts. Generates ASCII diagrams and component mapping tables. Use when user wants to: document components, map layout structure, analyze component hierarchies, visualize frontend architecture, or create docs for AI understanding. Trigger on any request involving frontend structure, layout, or component organization documentation.
+============================================================
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Train: 18/42 correct, precision=100% recall=0% accuracy=43% (2.7s)
+  [FAIL] rate=0/3 expected=True: 为这个组件层级生成文档
+  [FAIL] rate=0/3 expected=True: 为后台管理系统创建页面结构文档
+  [FAIL] rate=0/3 expected=True: 为这个页面生成ASCII布局图
+  [FAIL] rate=0/3 expected=True: 帮我梳理前端组件的映射关系
+  [FAIL] rate=0/3 expected=True: 帮我为这个Vue项目生成布局文档
+  [FAIL] rate=0/3 expected=True: 创建供AI理解的前端文档
+  [FAIL] rate=0/3 expected=True: 我需要创建前端页面结构文档
+  [FAIL] rate=0/3 expected=True: 我想了解这个页面的布局
+  [PASS] rate=0/3 expected=False: 帮我优化代码性能
+  [PASS] rate=0/3 expected=False: 提交代码到git
+  [PASS] rate=0/3 expected=False: 这个页面有bug，帮我修复
+  [PASS] rate=0/3 expected=False: 修复这个页面的样式问题
+  [PASS] rate=0/3 expected=False: 配置ESLint规则
+  [PASS] rate=0/3 expected=False: 写一个组件文档
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: 帮我为前端项目创建布局文档
+  [FAIL] rate=0/3 expected=True: 这个React项目结构太复杂了，帮我整理一下
+  [FAIL] rate=0/3 expected=True: 帮我分析页面布局并生成组件映射表
+  [FAIL] rate=0/3 expected=True: 分析这个页面的结构
+  [PASS] rate=0/3 expected=False: 运行测试用例
+  [PASS] rate=0/3 expected=False: 这个API返回什么数据
+  [PASS] rate=0/3 expected=False: 添加一个新的按钮组件
+  [PASS] rate=0/3 expected=False: 帮我设计一个登录页面
+
+Improving description...
+Proposed (7.1s): Use this skill when users want to understand, document, or visualize frontend page structure, component hierarchies, or layout organization. Trigger for requests to create layout documentation, generate ASCII diagrams of page layouts, map component relationships, or create docs for AI understanding. Also covers requests to analyze frontend architecture, document component hierarchies, or generate visual representations of page structure and component organization.
+
+============================================================
+Iteration 2/3
+Description: Use this skill when users want to understand, document, or visualize frontend page structure, component hierarchies, or layout organization. Trigger for requests to create layout documentation, generate ASCII diagrams of page layouts, map component relationships, or create docs for AI understanding. Also covers requests to analyze frontend architecture, document component hierarchies, or generate visual representations of page structure and component organization.
+============================================================
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Train: 18/42 correct, precision=100% recall=0% accuracy=43% (2.2s)
+  [FAIL] rate=0/3 expected=True: 为这个组件层级生成文档
+  [FAIL] rate=0/3 expected=True: 为后台管理系统创建页面结构文档
+  [FAIL] rate=0/3 expected=True: 帮我梳理前端组件的映射关系
+  [FAIL] rate=0/3 expected=True: 为这个页面生成ASCII布局图
+  [FAIL] rate=0/3 expected=True: 创建供AI理解的前端文档
+  [FAIL] rate=0/3 expected=True: 帮我为这个Vue项目生成布局文档
+  [FAIL] rate=0/3 expected=True: 我需要创建前端页面结构文档
+  [FAIL] rate=0/3 expected=True: 我想了解这个页面的布局
+  [PASS] rate=0/3 expected=False: 提交代码到git
+  [PASS] rate=0/3 expected=False: 帮我优化代码性能
+  [PASS] rate=0/3 expected=False: 这个页面有bug，帮我修复
+  [PASS] rate=0/3 expected=False: 配置ESLint规则
+  [PASS] rate=0/3 expected=False: 修复这个页面的样式问题
+  [PASS] rate=0/3 expected=False: 写一个组件文档
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: 这个React项目结构太复杂了，帮我整理一下
+  [FAIL] rate=0/3 expected=True: 帮我为前端项目创建布局文档
+  [FAIL] rate=0/3 expected=True: 帮我分析页面布局并生成组件映射表
+  [FAIL] rate=0/3 expected=True: 分析这个页面的结构
+  [PASS] rate=0/3 expected=False: 这个API返回什么数据
+  [PASS] rate=0/3 expected=False: 运行测试用例
+  [PASS] rate=0/3 expected=False: 添加一个新的按钮组件
+  [PASS] rate=0/3 expected=False: 帮我设计一个登录页面
+
+Improving description...
+Proposed (5.0s): Generate documentation for frontend layout and component structure. Creates ASCII diagrams, component maps, and architecture visualizations. Use when user wants to: document page layouts, map component hierarchies, visualize frontend structure, create architecture diagrams, or generate layout docs for AI understanding. Trigger on requests involving frontend structure, page layouts, or component organization documentation.
+
+============================================================
+Iteration 3/3
+Description: Generate documentation for frontend layout and component structure. Creates ASCII diagrams, component maps, and architecture visualizations. Use when user wants to: document page layouts, map component hierarchies, visualize frontend structure, create architecture diagrams, or generate layout docs for AI understanding. Trigger on requests involving frontend structure, page layouts, or component organization documentation.
+============================================================
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Warning: query failed: [WinError 10038] 在一个非套接字上尝试了一个操作。
+Train: 18/42 correct, precision=100% recall=0% accuracy=43% (4.2s)
+  [FAIL] rate=0/3 expected=True: 帮我梳理前端组件的映射关系
+  [FAIL] rate=0/3 expected=True: 为后台管理系统创建页面结构文档
+  [FAIL] rate=0/3 expected=True: 为这个组件层级生成文档
+  [FAIL] rate=0/3 expected=True: 为这个页面生成ASCII布局图
+  [FAIL] rate=0/3 expected=True: 创建供AI理解的前端文档
+  [FAIL] rate=0/3 expected=True: 帮我为这个Vue项目生成布局文档
+  [FAIL] rate=0/3 expected=True: 我需要创建前端页面结构文档
+  [FAIL] rate=0/3 expected=True: 我想了解这个页面的布局
+  [PASS] rate=0/3 expected=False: 帮我优化代码性能
+  [PASS] rate=0/3 expected=False: 提交代码到git
+  [PASS] rate=0/3 expected=False: 这个页面有bug，帮我修复
+  [PASS] rate=0/3 expected=False: 修复这个页面的样式问题
+  [PASS] rate=0/3 expected=False: 配置ESLint规则
+  [PASS] rate=0/3 expected=False: 写一个组件文档
+Test : 12/24 correct, precision=100% recall=0% accuracy=50% (0.0s)
+  [FAIL] rate=0/3 expected=True: 帮我为前端项目创建布局文档
+  [FAIL] rate=0/3 expected=True: 这个React项目结构太复杂了，帮我整理一下
+  [FAIL] rate=0/3 expected=True: 帮我分析页面布局并生成组件映射表
+  [PASS] rate=0/3 expected=False: 运行测试用例
+  [FAIL] rate=0/3 expected=True: 分析这个页面的结构
+  [PASS] rate=0/3 expected=False: 这个API返回什么数据
+  [PASS] rate=0/3 expected=False: 添加一个新的按钮组件
+  [PASS] rate=0/3 expected=False: 帮我设计一个登录页面
+
+Max iterations reached (3).
+
+Exit reason: max_iterations (3)
+Best score: 4/8 (iteration 1)
+
+Report: C:\Users\v-wangtengda\AppData\Local\Temp\skill_description_report_frontend-layout-docs_20260319_083724.html
+{
+  "exit_reason": "max_iterations (3)",
+  "original_description": "Document and visualize frontend page structure and component layouts. Generates ASCII diagrams and component mapping tables. Use when user wants to: document components, map layout structure, analyze component hierarchies, visualize frontend architecture, or create docs for AI understanding. Trigger on any request involving frontend structure, layout, or component organization documentation.",
+  "best_description": "Document and visualize frontend page structure and component layouts. Generates ASCII diagrams and component mapping tables. Use when user wants to: document components, map layout structure, analyze component hierarchies, visualize frontend architecture, or create docs for AI understanding. Trigger on any request involving frontend structure, layout, or component organization documentation.",
+  "best_score": "4/8",
+  "best_train_score": "6/14",
+  "best_test_score": "4/8",
+  "final_description": "Generate documentation for frontend layout and component structure. Creates ASCII diagrams, component maps, and architecture visualizations. Use when user wants to: document page layouts, map component hierarchies, visualize frontend structure, create architecture diagrams, or generate layout docs for AI understanding. Trigger on requests involving frontend structure, page layouts, or component organization documentation.",
+  "iterations_run": 3,
+  "holdout": 0.4,
+  "train_size": 14,
+  "test_size": 8,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Document and visualize frontend page structure and component layouts. Generates ASCII diagrams and component mapping tables. Use when user wants to: document components, map layout structure, analyze component hierarchies, visualize frontend architecture, or create docs for AI understanding. Trigger on any request involving frontend structure, layout, or component organization documentation.",
+      "train_passed": 6,
+      "train_failed": 8,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "\u5e2e\u6211\u4e3a\u524d\u7aef\u9879\u76ee\u521b\u5efa\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd9\u4e2aReact\u9879\u76ee\u7ed3\u6784\u592a\u590d\u6742\u4e86\uff0c\u5e2e\u6211\u6574\u7406\u4e00\u4e0b",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u5206\u6790\u9875\u9762\u5e03\u5c40\u5e76\u751f\u6210\u7ec4\u4ef6\u6620\u5c04\u8868",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5206\u6790\u8fd9\u4e2a\u9875\u9762\u7684\u7ed3\u6784",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd0\u884c\u6d4b\u8bd5\u7528\u4f8b",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2aAPI\u8fd4\u56de\u4ec0\u4e48\u6570\u636e",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u7684\u6309\u94ae\u7ec4\u4ef6",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u8bbe\u8ba1\u4e00\u4e2a\u767b\u5f55\u9875\u9762",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 8,
+      "total": 14,
+      "results": [
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use this skill when users want to understand, document, or visualize frontend page structure, component hierarchies, or layout organization. Trigger for requests to create layout documentation, generate ASCII diagrams of page layouts, map component relationships, or create docs for AI understanding. Also covers requests to analyze frontend architecture, document component hierarchies, or generate visual representations of page structure and component organization.",
+      "train_passed": 6,
+      "train_failed": 8,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "\u8fd9\u4e2aReact\u9879\u76ee\u7ed3\u6784\u592a\u590d\u6742\u4e86\uff0c\u5e2e\u6211\u6574\u7406\u4e00\u4e0b",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u524d\u7aef\u9879\u76ee\u521b\u5efa\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u5206\u6790\u9875\u9762\u5e03\u5c40\u5e76\u751f\u6210\u7ec4\u4ef6\u6620\u5c04\u8868",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5206\u6790\u8fd9\u4e2a\u9875\u9762\u7684\u7ed3\u6784",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd9\u4e2aAPI\u8fd4\u56de\u4ec0\u4e48\u6570\u636e",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd0\u884c\u6d4b\u8bd5\u7528\u4f8b",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u7684\u6309\u94ae\u7ec4\u4ef6",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u8bbe\u8ba1\u4e00\u4e2a\u767b\u5f55\u9875\u9762",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 8,
+      "total": 14,
+      "results": [
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "description": "Generate documentation for frontend layout and component structure. Creates ASCII diagrams, component maps, and architecture visualizations. Use when user wants to: document page layouts, map component hierarchies, visualize frontend structure, create architecture diagrams, or generate layout docs for AI understanding. Trigger on requests involving frontend structure, page layouts, or component organization documentation.",
+      "train_passed": 6,
+      "train_failed": 8,
+      "train_total": 14,
+      "train_results": [
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "test_passed": 4,
+      "test_failed": 4,
+      "test_total": 8,
+      "test_results": [
+        {
+          "query": "\u5e2e\u6211\u4e3a\u524d\u7aef\u9879\u76ee\u521b\u5efa\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd9\u4e2aReact\u9879\u76ee\u7ed3\u6784\u592a\u590d\u6742\u4e86\uff0c\u5e2e\u6211\u6574\u7406\u4e00\u4e0b",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u5206\u6790\u9875\u9762\u5e03\u5c40\u5e76\u751f\u6210\u7ec4\u4ef6\u6620\u5c04\u8868",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd0\u884c\u6d4b\u8bd5\u7528\u4f8b",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5206\u6790\u8fd9\u4e2a\u9875\u9762\u7684\u7ed3\u6784",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u8fd9\u4e2aAPI\u8fd4\u56de\u4ec0\u4e48\u6570\u636e",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u6dfb\u52a0\u4e00\u4e2a\u65b0\u7684\u6309\u94ae\u7ec4\u4ef6",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u8bbe\u8ba1\u4e00\u4e2a\u767b\u5f55\u9875\u9762",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ],
+      "passed": 6,
+      "failed": 8,
+      "total": 14,
+      "results": [
+        {
+          "query": "\u5e2e\u6211\u68b3\u7406\u524d\u7aef\u7ec4\u4ef6\u7684\u6620\u5c04\u5173\u7cfb",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u540e\u53f0\u7ba1\u7406\u7cfb\u7edf\u521b\u5efa\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u7ec4\u4ef6\u5c42\u7ea7\u751f\u6210\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u4e3a\u8fd9\u4e2a\u9875\u9762\u751f\u6210ASCII\u5e03\u5c40\u56fe",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u521b\u5efa\u4f9bAI\u7406\u89e3\u7684\u524d\u7aef\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4e3a\u8fd9\u4e2aVue\u9879\u76ee\u751f\u6210\u5e03\u5c40\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u9700\u8981\u521b\u5efa\u524d\u7aef\u9875\u9762\u7ed3\u6784\u6587\u6863",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u60f3\u4e86\u89e3\u8fd9\u4e2a\u9875\u9762\u7684\u5e03\u5c40",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u4f18\u5316\u4ee3\u7801\u6027\u80fd",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u63d0\u4ea4\u4ee3\u7801\u5230git",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a\u9875\u9762\u6709bug\uff0c\u5e2e\u6211\u4fee\u590d",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u4fee\u590d\u8fd9\u4e2a\u9875\u9762\u7684\u6837\u5f0f\u95ee\u9898",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u914d\u7f6eESLint\u89c4\u5219",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        },
+        {
+          "query": "\u5199\u4e00\u4e2a\u7ec4\u4ef6\u6587\u6863",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 3,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

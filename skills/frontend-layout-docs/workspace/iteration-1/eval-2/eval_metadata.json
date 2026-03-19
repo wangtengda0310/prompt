@@ -1,0 +1,15 @@
+{
+  "eval_id": 2,
+  "eval_name": "single-page-layout-doc",
+  "prompt": "帮我为一个页面生成布局说明文档。假设这个页面是一个典型的后台管理系统页面，左侧有菜单树，右侧有 Tab 面板，顶部有工具栏，底部有状态栏",
+  "assertions": [
+    {
+      "name": "contains-ascii-diagram",
+      "description": "应生成 ASCII 布局图"
+    },
+    {
+      "name": "correct-layout-structure",
+      "description": "布局图应正确显示四段结构 (Header/Sider/Content/Footer)"
+    }
+  ]
+}
