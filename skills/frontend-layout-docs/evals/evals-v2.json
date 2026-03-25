@@ -1,0 +1,26 @@
+{
+  "skill_name": "frontend-layout-docs",
+  "evals": [
+    {
+      "id": 1,
+      "name": "three-layer-consistency",
+      "prompt": "为 D:/work/xcard-qa-tools/rain-qa-func/frontend 项目生成前端布局文档。项目使用 Vue 3 + Naive UI + Wails，重点是要确保文档结构与 src 目录结构完全一致。",
+      "expected_output": "生成的 docs/layout/ 目录应该镜像 src/ 目录结构，包含 pages/function-test/ 的完整文档（index.md, components.md, composables.md, components/modals.md），体现三层结构一致性原则。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "component-tree-structure",
+      "prompt": "分析 rain-qa-func/frontend/src/pages/function-test/index.vue 页面，生成组件树状结构文档。需要显示组件的嵌套关系，包括嵌套在 components/modals/ 目录下的弹窗组件。",
+      "expected_output": "生成包含组件树状结构的文档，使用 ├── └── 等字符显示嵌套层次，每个组件标注文件路径和行号，嵌套目录（如 modals）应该有专门的文档或清晰的标注。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "nested-directory-mapping",
+      "prompt": "src/pages/excel-test/composables/params-components 是一个嵌套的 composables 子目录。生成文档时应该如何处理这种嵌套结构？请为 excel-test 页面生成完整的布局文档。",
+      "expected_output": "正确处理嵌套目录结构。如果 src 中有嵌套目录（如 composables/params-components），文档应该反映这种结构，可以通过单独的文档或清晰的目录分组来表示。",
+      "files": []
+    }
+  ]
+}
