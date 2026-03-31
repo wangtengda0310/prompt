@@ -1,11 +1,11 @@
 ---
 name: frontend-layout-docs
-description: Generate frontend layout documentation with ASCII diagrams and component tree structures. ALWAYS use this skill when: creating frontend architecture docs, documenting component hierarchies, visualizing page layouts, mapping component dependencies, analyzing nested directory structures (src/pages/*/components/modals), or generating docs to help AI understand frontend codebase structure. Use for Vue, React, and any frontend project needing visual structure documentation.
+description: Generate comprehensive frontend layout documentation with ASCII diagrams, TypeScript interfaces, and component hierarchy analysis. Use this skill when: (1) documenting page layouts or component structures, (2) analyzing component hierarchies and relationships, (3) creating visual layout diagrams for AI understanding, (4) updating existing layout documentation, (5) reviewing code structure for potential issues. Triggers on requests involving "布局文档", "layout", "component hierarchy", "页面结构", "组件层次", or any frontend architecture documentation task.
 ---
 
 # Frontend Layout Docs Skill
 
-A tool to help AI quickly understand and modify frontend code through layout documentation.
+Generate comprehensive layout documentation to help AI quickly understand and modify frontend code.
 
 ## Use Cases
 
@@ -13,86 +13,34 @@ A tool to help AI quickly understand and modify frontend code through layout doc
 - Existing projects needing supplementary layout explanations
 - Team collaboration requiring unified frontend structure documentation
 - AI needing to quickly locate components and modify code
-
-## Core Principle: Three-Layer Structure Consistency
-
-**CRITICAL**: Ensure consistency across three layers of structure:
-
-```
-Page Nesting Structure (DOM/Component Hierarchy)
-         ↓ should mirror
-src Directory Structure (File Organization)
-         ↓ should mirror
-Documentation Structure (docs/layout/)
-```
-
-**Example for function-test page**:
-
-```
-src/pages/function-test/
-├── index.vue                 # Main page component
-├── components/               # Page-specific components
-│   ├── modals/              # Nested component directory
-│   │   ├── add-case-modal.vue
-│   │   └── add-cate-modal.vue
-│   ├── init-yanwu-panel.vue
-│   └── steps-panel.vue
-└── composables/             # Logic layer
-    ├── Menu.ts
-    └── Tree.ts
-
-docs/layout/pages/function-test/
-├── index.md                 # Main page layout doc
-├── components.md            # Component tree structure
-├── composables.md           # Logic documentation
-└── components/
-    └── modals.md           # Nested component doc
-```
+- Code review: identifying potential issues in component structure
 
 ## Document Structure
 
-Generated layout docs **must mirror** the `src/` directory structure:
+Generated layout docs are stored in `docs/layout/` directory:
 
 ```
 docs/
 ├── layout/
 │   ├── CLAUDE.md              # Index file
-│   ├── layouts/               # Layout components (mirrors src/layouts/)
-│   │   └── normal-layout.md
-│   ├── pages/                 # Page docs (mirrors src/pages/)
-│   │   ├── function-test/
-│   │   │   ├── index.md       # Main page doc
-│   │   │   ├── components.md  # Component hierarchy
-│   │   │   ├── composables.md # Logic docs
-│   │   │   └── components/
-│   │   │       └── modals.md  # Nested components
-│   │   ├── hero-wiki-check/
-│   │   │   ├── index.md
-│   │   │   └── components.md
-│   │   └── ...
-│   └── shared/                # Shared components (mirrors src/shared/)
-│       └── components.md
+│   ├── Normal-layout.md       # Layout component
+│   └── PageName-layout.md     # Page layout docs
 └── screenshots/               # Optional: screenshots and annotations
-    ├── CLAUDE.md
-    └── pages/
-        └── function-test/
-            ├── overview.png
-            └── annotations.md
 ```
 
 ## Document Template
 
-### Main Page Document (index.md)
+### Single Page Layout Template
 
 ```markdown
 # [Page Name] Layout
 
-> File path: `frontend/src/pages/[PageName]/index.vue`
+> File path: `frontend/src/pages/[FileName].vue`
 > Route: `/[route]`
 
 ## Overview
 
-[Brief description of page functionality]
+[Brief description of page functionality - what the page does and its purpose]
 
 ## ASCII Layout Diagram
 
@@ -102,487 +50,284 @@ docs/
 ├────────────────┬────────────────────────────────────────────┤
 │                │ ┌────────────────────────────────────────┐ │
 │   Left Sidebar │ │ Tab: [Tab1] [Tab2] [Tab3]             │ │
-│   (Sider)      │ └────────────────────────────────────────┘ │
+│   (240px)      │ └────────────────────────────────────────┘ │
 │                │ ┌────────────────────────────────────────┐ │
 │   - Menu 1     │ │                                        │ │
 │   - Menu 2     │ │         Tab Content Area               │ │
-│   - ...        │ │                                        │ │
+│                │ │         (scrollable)                   │ │
 │                │ └────────────────────────────────────────┘ │
 ├────────────────┴────────────────────────────────────────────┤
 │ [Statistics]                                                │ ← Footer
 └─────────────────────────────────────────────────────────────┘
 \`\`\`
 
-## Component Tree Structure
+## Layout Dimensions
 
-> Shows the nesting hierarchy of components and their file locations
+| Area | Size | Notes |
+|------|------|-------|
+| Header | Height XXpx | Fixed |
+| Footer | Height XXpx | Fixed |
+| Left Sider | Width XXpx | Collapsible to XXpx |
+| Content | Adaptive | Scrollable |
 
-\`\`\`
-pages/function-test/index.vue                    # Main page (n-layout)
-├── n-layout-header                              # Top toolbar
-│   └── n-menu (horizontal)                      # Menu options
-├── n-layout-sider                               # Left sidebar
-│   ├── n-input                                 # Search box
-│   ├── n-switch (2x)                           # Display toggles
-│   └── n-tree                                  # Test case tree
-│       └── n-dropdown                          # Right-click menu
-├── n-layout-content                            # Main content area
-│   └── n-tabs                                  # Tab navigation
-│       ├── Tab: 用例配置
-│       │   └── components/init-yanwu-panel.vue
-│       ├── Tab: 用例步骤
-│       │   └── components/steps-panel.vue
-│       │       ├── ActionItem (repeated)
-│       │       │   └── components/asset-card.vue (断言)
-│       │       └── n-anchor (side navigation)
-│       └── Tab: 执行日志
-│           └── components/robot-test-log.vue
-├── n-layout-footer                              # Bottom status bar
-│   ├── n-statistic (2x)                        # Case/Step counts
-│   └── components/footer-case-log-statistic.vue
-└── Modal Components (components/modals/)
-    ├── add-cate-modal.vue                      # Add category dialog
-    ├── add-case-modal.vue                      # Add case dialog
-    ├── rename-case-modal.vue                   # Rename case dialog
-    ├── rename-cate-modal.vue                   # Rename category dialog
-    └── option-modal.vue                        # Settings dialog
-\`\`\`
-
-## Component File Mapping
-
-| Component | File Path | Line | Description |
-|-----------|-----------|------|-------------|
-| Main Page | pages/function-test/index.vue | 58-280 | n-layout container |
-| Search Input | pages/function-test/index.vue | 77 | v-model:pattern |
-| Test Case Tree | pages/function-test/index.vue | 97 | :data=dataRef |
-| Init Yanwu Panel | components/init-yanwu-panel.vue | - | 初始演武配置 |
-| Steps Panel | components/steps-panel.vue | - | 测试步骤编辑 |
-| Robot Test Log | components/robot-test-log.vue | - | 执行日志显示 |
-| Add Case Modal | components/modals/add-case-modal.vue | - | 添加用例弹窗 |
-
-## Data Flow
+## Component Hierarchy Tree
 
 \`\`\`
-User Action
+PageComponent (index.vue)
+├── n-layout (root container)
+│   ├── n-layout-header
+│   │   └── n-menu (horizontal navigation)
+│   │
+│   ├── n-layout (has-sider)
+│   │   ├── n-layout-sider (left sidebar)
+│   │   │   ├── SearchInput
+│   │   │   ├── FilterSwitches
+│   │   │   └── TreeComponent
+│   │   │
+│   │   └── n-layout-content
+│   │       └── TabContainer
+│   │           ├── Tab1: ConfigPanel
+│   │           │   └── FormComponents...
+│   │           ├── Tab2: StepsPanel
+│   │           │   └── DraggableCards...
+│   │           └── Tab3: LogPanel
+│   │
+│   └── n-layout-footer
+│       └── StatusBar
+\`\`\`
+
+## Component Mapping
+
+### Main Structure
+
+| Layout Area | Component/Element | File Location | Function |
+|-------------|-------------------|---------------|----------|
+| Root Container | n-layout | Page.vue:10 | Root layout wrapper |
+| Header | n-layout-header | Page.vue:15 | Top navigation bar |
+| Left Sidebar | n-layout-sider | Page.vue:20 | Side navigation |
+| Content | n-layout-content | Page.vue:35 | Main content area |
+| Footer | n-layout-footer | Page.vue:50 | Status bar |
+
+### Sub-components
+
+| Component | File Location | Props | Function |
+|-----------|---------------|-------|----------|
+| ComponentA | components/ComponentA.vue | prop1, prop2 | Description |
+| ComponentB | components/ComponentB.vue | - | Description |
+
+## TypeScript Interface Definitions
+
+### Props Interface
+
+\`\`\`typescript
+interface PageProps {
+  headerTitle?: string      // Header title text
+  sideOption?: SideConfig   // Sidebar configuration
+}
+
+interface SideConfig {
+  title: string
+  collapsed?: boolean
+}
+\`\`\`
+
+### State Interface
+
+\`\`\`typescript
+interface PageState {
+  loading: Ref<boolean>
+  data: Ref<DataType[]>
+  selectedItem: Ref<string | null>
+}
+
+interface DataType {
+  id: string
+  name: string
+  // ... other fields
+}
+\`\`\`
+
+### API Response Interface (if applicable)
+
+\`\`\`typescript
+interface ApiResponse<T> {
+  code: number
+  message: string
+  data: T
+}
+
+// Example usage
+interface UserInfoResponse extends ApiResponse<UserInfo> {}
+\`\`\`
+
+## Data Flow Diagram
+
+### Phase 1: User Interaction Flow
+
+\`\`\`
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          User Interaction Flow                            │
+└──────────────────────────────────────────────────────────────────────────┘
+
+User Input                      Component State                Actions
+─────────────────────────────────────────────────────────────────────────────
+
+[Input Field] ────────────────> inputValue (ref)
+    │                                │
+    │ onInput                        │
+    ▼                                ▼
+handleInput() ────────────────> Validate & Update
+    │
+    │ [Submit Button]
+    ▼
+handleSubmit() ───────────────> loading.value = true
+    │
+    │ API Call
+    ▼
+Backend Service
+\`\`\`
+
+### Phase 2: State Update Flow
+
+\`\`\`
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          State Update Flow                                │
+└──────────────────────────────────────────────────────────────────────────┘
+
+Backend Response
     │
     ▼
-Handler Function
+Update State (data.value = response.data)
     │
-    ▼
-State Update
+    ├──► ComponentA (auto-reactive update)
+    │         │
+    │         └──► Re-render with new data
     │
-    └──► Component Reactive Update
+    ├──► ComponentB (computed recalculation)
+    │         │
+    │         └──► Derived values updated
+    │
+    └──► ComponentC (watch effect)
+              │
+              └──► Side effects executed
+\`\`\`
+
+### Phase 3: Data Display Flow
+
+\`\`\`
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          Data Display Flow                                │
+└──────────────────────────────────────────────────────────────────────────┘
+
+State (data)
+    │
+    ├──► List Rendering (v-for)
+    │         │
+    │         └──► ItemComponent x N
+    │                   │
+    │                   └──► Display item details
+    │
+    ├──► Conditional Rendering (v-if)
+    │         │
+    │         └──► Show/hide based on conditions
+    │
+    └──► Computed Properties
+              │
+              └──► Filtered/sorted/transformed data
 \`\`\`
 
 ## Key State
 
-| State | File | Type | Description |
-|-------|------|------|-------------|
-| stateName | scripts/State.ts | Ref<Type> | Description |
+| State | File | Type | Default | Description |
+|-------|------|------|---------|-------------|
+| stateName | composables/State.ts | `Ref<Type>` | - | Description |
+| computedValue | composables/Computed.ts | `Computed<Type>` | - | Computed from... |
+
+## Backend Services (if applicable)
+
+| Service | Method | Parameters | Return Type | Description |
+|---------|--------|------------|-------------|-------------|
+| ServiceName | methodName | (param: Type) | Promise<Result> | Description |
+
+## Interactions
+
+| Action | Trigger | Handler | Description |
+|--------|---------|---------|-------------|
+| Click button | @click="handleClick" | handleClick() | Description |
+| Form submit | @submit="onSubmit" | onSubmit() | Description |
+| Route change | watch($route) | onRouteChange() | Description |
+
+## External Dependencies
+
+### Shared Components
+
+| Component | Location | Props | Usage |
+|-----------|----------|-------|-------|
+| SharedComponent | shared/components/ | prop1, prop2 | Description |
+
+### Composables/Hooks
+
+| Composable | Location | Exports | Purpose |
+|------------|----------|---------|---------|
+| useFeature | composables/useFeature.ts | state, actions | Description |
+
+### Configuration Files
+
+| Config | Location | Purpose |
+|--------|----------|---------|
+| configName | config/Config.ts | Description |
+
+## Styling Notes
+
+| Selector | Style | Description |
+|----------|-------|-------------|
+| .className | display: flex; | Layout method |
+| #idName | position: fixed; | Positioning |
+
+## Code Review Notes
+
+### Potential Issues
+
+> ⚠️ Document any code issues discovered during analysis
+
+1. **Unused Variables/Functions**: List any defined but unused code
+   - Example: `unusedVar` defined at line 20 but never referenced
+
+2. **Inconsistent Patterns**: Note any inconsistent coding patterns
+   - Example: Different styling applied to similar components
+
+3. **Performance Concerns**: Identify potential performance issues
+   - Example: Large list without virtualization
+   - Example: Missing debounce on frequent updates
+
+4. **Accessibility Issues**: Note any accessibility concerns
+   - Example: Missing aria labels
+   - Example: Insufficient color contrast
+
+5. **Technical Debt**: Note areas that could be improved
+   - Example: Commented-out code that should be removed
+   - Example: Hard-coded values that should be configurable
+
+### Best Practices Followed
+
+- ✅ Proper TypeScript typing
+- ✅ Composables for reusable logic
+- ✅ Proper cleanup in onUnmounted
 
 ## Related Files
 
-### Components (components/)
-- `components/init-yanwu-panel.vue` - Initial configuration panel
-- `components/steps-panel.vue` - Test step editor
-- `components/robot-test-log.vue` - Execution log viewer
-- `components/modals/` - Modal dialogs (see modals.md)
+### Component Files
+- `components/Xxx.vue` - Description
 
-### Composables (composables/)
-- `composables/Menu.ts` - Top menu configuration
-- `composables/Tree.ts` - Tree logic (expand/check/drag)
-- `composables/TreeSearch.ts` - Search filtering
-```
+### Logic Files
+- `composables/Xxx.ts` - Description
 
-### Component Hierarchy Document (components.md)
+### Type Definitions
+- `@bindings/xxx` - Auto-generated types from backend
 
-```markdown
-# [Page Name] - Component Hierarchy
-
-> Parent: [index.md](./index.md)
-
-## Component Dependency Tree
-
-\`\`\`
-index.vue (Main Page)
-│
-├─── Layout Components (Naive UI)
-│    ├── n-layout-header
-│    ├── n-layout-sider
-│    ├── n-layout-content
-│    └── n-layout-footer
-│
-├─── Page-Specific Components (components/)
-│    ├── SearchControls
-│    │    ├── n-input
-│    │    └── n-switch × 2
-│    │
-│    ├── InitYanWuPanel
-│    │    ├── n-form × 8 (seats)
-│    │    └── [Dynamic Form Items]
-│    │
-│    ├── StepsPanel
-│    │    ├── n-anchor
-│    │    └── ActionItem × N
-│    │         └── AssetCard × M
-│    │
-│    └── RobotTestLog
-│         └── n-tabs
-│
-└─── Modal Components (components/modals/)
-     ├── AddCateModal
-     ├── AddCaseModal
-     ├── RenameCaseModal
-     ├── RenameCateModal
-     └── OptionModal
-\`\`\`
-
-## Component Details
-
-### SearchControls
-
-**Purpose**: Filter and display test case tree
-
-**Location**: `pages/function-test/index.vue:76-95`
-
-**Sub-components**:
-- `n-input` - Search box (v-model:pattern)
-- `n-switch` - Show filtered/all (v-model:showIrrelevantNodes)
-- `n-switch` - Show/hide description (v-model:showCasesDesc)
-
-**State dependencies**:
-- `pattern` (TreeSearch.ts)
-- `showIrrelevantNodes` (TreeSearch.ts)
-- `showCasesDesc` (TreeSearch.ts)
-
-### InitYanWuPanel
-
-**Purpose**: Configure initial test case settings (武将、手牌、装备等)
-
-**Location**: `pages/function-test/components/init-yanwu-panel.vue`
-
-**Sub-components**: None (uses Naive UI form components)
-
-**Props**: N/A
-
-**Emits**: None
-
-### StepsPanel
-
-**Purpose**: Edit test case steps and assertions
-
-**Location**: `pages/function-test/components/steps-panel.vue`
-
-**Sub-components**:
-- `n-anchor` - Step navigation (right side)
-- `ActionItem` (repeated) - Individual step
-  - `AssetCard` (repeated) - Assertion cards
-
-**State dependencies**:
-- `nowCaseData` (use-case-data.ts)
-- `actionsSelectOption` (StepActionsAndAssetsSelect.ts)
-
-### RobotTestLog
-
-**Purpose**: Display robot execution logs in real-time
-
-**Location**: `pages/function-test/components/robot-test-log.vue`
-
-**Sub-components**: `n-tabs` - Log tabs per test case
-
-**State dependencies**:
-- `logCache` (RobotTestLog.ts)
-- Event: `robotLog` (subscribed in index.vue:45)
-
-### Modal Components
-
-See [modals.md](./components/modals.md) for detailed modal component documentation.
-
-## Props Flow
-
-```
-index.vue (Parent)
-    │
-    ├──► InitYanWuPanel
-    │       └── nowCaseData (ref)
-    │
-    ├──► StepsPanel
-    │       └── nowCaseData (ref)
-    │
-    └──► RobotTestLog
-            └── (Event-driven: robotLog)
-```
-
-## Event Flow
-
-```
-Component          Event                  Handler
-────────────────────────────────────────────────────────
-n-tree            @node-click            → nowCaseData update
-n-tree            @drop                  → Reorder tree
-n-dropdown        @select                → Modal open/close
-StepsPanel        @step-add              → Update nowCaseData.actions
-AssetCard         @assertion-add         → Update nowCaseData.assertions
-```
-```
-
-### Nested Components Document (components/modals.md)
-
-```markdown
-# Modal Components
-
-> Parent: [components.md](../components.md)
-
-## Overview
-
-All modal components are located in `pages/function-test/components/modals/`.
-
-## Modal Components Tree
-
-```
-components/modals/
-├── add-cate-modal.vue      # Add category dialog
-├── add-case-modal.vue      # Add case dialog
-├── rename-case-modal.vue   # Rename case dialog
-├── rename-cate-modal.vue   # Rename category dialog
-└── option-modal.vue        # Settings/options dialog
-```
-
-## Component Details
-
-### AddCateModal
-
-**Purpose**: Add a new category to the test case tree
-
-**Location**: `pages/function-test/components/modals/add-cate-modal.vue`
-
-**Props**:
-```typescript
-interface Props {
-  show: boolean           // Control visibility
-  parentKey?: string      // Parent node key (for nested categories)
-}
-```
-
-**Emits**:
-- `update:show` - Close dialog
-- `confirm` - Add category (payload: { name: string, parentKey?: string })
-
-**State dependencies**:
-- `dataRef` (TreeAndHistory.ts) - Updates tree data
-
-### AddCaseModal
-
-**Purpose**: Add a new test case
-
-**Location**: `pages/function-test/components/modals/add-case-modal.vue`
-
-**Props**:
-```typescript
-interface Props {
-  show: boolean
-  categoryKey: string     // Parent category key
-}
-```
-
-**Emits**:
-- `update:show`
-- `confirm` - Add case (payload: { name: string, categoryKey: string })
-
-### RenameCaseModal / RenameCateModal
-
-**Purpose**: Rename a case or category
-
-**Location**: `pages/function-test/components/modals/rename-*-modal.vue`
-
-**Props**:
-```typescript
-interface Props {
-  show: boolean
-  nodeKey: string         // Node to rename
-  currentName: string     // Current name
-}
-```
-
-**Emits**:
-- `update:show`
-- `confirm` - Rename (payload: { nodeKey: string, newName: string })
-
-### OptionModal
-
-**Purpose**: Configure test execution options
-
-**Location**: `pages/function-test/components/modals/option-modal.vue`
-
-**Props**:
-```typescript
-interface Props {
-  show: boolean
-}
-```
-
-**Emits**:
-- `update:show`
-- `update` - Update options (payload: TestOptions)
-
-## Usage Flow
-
-```
-User right-clicks tree node
-    │
-    ▼
-n-dropdown menu shows (TreeDropDown.ts)
-    │
-    ├──► "添加分类" → showAddCateModal = true → AddCateModal opens
-    ├──► "添加用例" → showAddCaseModal = true → AddCaseModal opens
-    ├──► "重命名" → showRenameXxxModal = true → RenameModal opens
-    └──► "删除" → Direct action (no modal)
-```
-```
-
-### Composables Document (composables.md)
-
-```markdown
-# Composables - Logic Layer
-
-> Parent: [index.md](./index.md)
-
-## Overview
-
-Composables contain the reactive logic and state management for the page.
-
-## Composables Structure
-
-```
-composables/
-├── Menu.ts                    # Top menu options
-├── Tree.ts                    # Tree expand/check/drag/render
-├── TreeSearch.ts              # Search filtering
-├── TreeDropDown.ts            # Right-click menu
-├── TreeAndHistory.ts          # Tree data and history
-├── CaseData.ts / use-case-data.ts  # Current case data
-├── Modals.ts                  # Modal visibility states
-├── Func.ts                    # Load/save/execute functions
-├── FooterStatistic.ts         # Footer statistics
-├── RobotTestLog.ts            # Log cache management
-└── StepActionsAndAssetsSelect.ts  # Step action options
-```
-
-## State Management
-
-### Global State (Shared across components)
-
-| State | File | Type | Used By |
-|-------|------|------|---------|
-| `nowCaseData` | use-case-data.ts | Ref\<CaseData\> | InitYanWuPanel, StepsPanel |
-| `dataRef` | TreeAndHistory.ts | Ref\<TreeOption[]\> | n-tree |
-| `pattern` | TreeSearch.ts | Ref\<string\> | Search input |
-| `showCasesDesc` | TreeSearch.ts | Ref\<boolean\> | Display toggle |
-| `showIrrelevantNodes` | TreeSearch.ts | Ref\<boolean\> | Filter toggle |
-| `expandedKeysRef` | Tree.ts | Ref\<string[]\> | n-tree |
-| `checkedKeysRef` | Tree.ts | Ref\<string[]\> | n-tree |
-
-### Composable Details
-
-#### Menu.ts
-
-**Exports**: `menuOptions`, `activeKey`
-
-**Purpose**: Top toolbar menu configuration
-
-**Actions**:
-- 加载用例 → `handleLoad()`
-- 保存用例 → Save all cases
-- 执行用例 → Execute current case
-- 停止用例 → Stop execution
-- 设置 → Open `option-modal`
-
-#### Tree.ts
-
-**Exports**: `expandedKeysRef`, `checkedKeysRef`, `nodeProps`, `handleDrop`, etc.
-
-**Purpose**: Tree component interaction logic
-
-**Features**:
-- Expand/collapse nodes
-- Checkbox selection
-- Drag and drop reordering
-- Custom node rendering (with icons)
-
-#### TreeSearch.ts
-
-**Exports**: `pattern`, `showCasesDesc`, `showIrrelevantNodes`
-
-**Purpose**: Search and display filtering
-
-**Logic**: Filters `dataRef` based on `pattern` match
-
-#### CaseData.ts / use-case-data.ts
-
-**Exports**: `nowCaseData`
-
-**Purpose**: Current editing case data
-
-**Structure**:
-```typescript
-interface CaseData {
-  name: string
-  description?: string
-  owner?: string
-  initYanWu: InitYanWuConfig
-  actions: Action[]
-  assertions?: Assertion[]
-}
-```
-
-## Data Flow Diagrams
-
-### Case Selection Flow
-
-```
-User clicks tree node
-    │
-    ▼
-nodeProps.onClick() (Tree.ts)
-    │
-    ▼
-nowCaseData.value = option (use-case-data.ts)
-    │
-    ├──► InitYanWuPanel reactive update
-    ├──► StepsPanel reactive update
-    └──► n-anchor reactive update
-```
-
-### Step Addition Flow
-
-```
-User clicks "新增步骤"
-    │
-    ▼
-StepsPanel handler
-    │
-    ▼
-nowCaseData.value.actions.push(newAction)
-    │
-    └──► StepsPanel re-renders (v-for)
-```
-
-### Log Event Flow
-
-```
-Robot execution (Wails backend)
-    │
-    ▼
-Events.Emit('robotLog', ...)
-    │
-    ▼
-Events.On('robotLog') (index.vue:45)
-    │
-    ▼
-insertLogCache() (RobotTestLog.ts)
-    │
-    └──► RobotTestLog component update
-```
+---
+**Verification Date**: YYYY-MM-DD
+**Status**: Document matches / needs update for current code implementation
 ```
 
 ### Index File Template (CLAUDE.md)
@@ -601,124 +346,74 @@ insertLogCache() (RobotTestLog.ts)
 - Framework: Vue 3 / React
 - UI Library: Naive UI / Ant Design / Element Plus
 - Router: Vue Router / React Router
-- State: Pinia / Redux / Context
+- State: Pinia / Redux / Composables
 
 ## Common Components
 
-[List common components and their usage]
+| Component | Location | Usage |
+|-----------|----------|-------|
+| SharedComponent | shared/components/ | Description |
 
 ## Maintenance
 
-Update corresponding layout docs when page layout changes significantly.
+- Update layout docs when page structure changes significantly
+- Run verification when dependencies are updated
+- Keep TypeScript interfaces in sync with actual code
 ```
 
 ## Execution Steps
 
-### 0. Analyze Source Directory Structure
-
-**CRITICAL**: First, understand the actual `src/` directory structure to ensure docs mirror it:
+### 1. Analyze Project Structure
 
 ```bash
-# Analyze the source directory tree
-find frontend/src -type d | head -30
-find frontend/src -name "*.vue" -o -name "*.tsx" | head -50
+# View frontend directory structure
+ls frontend/src/
 
-# Build a mental map of the structure:
-# - pages/
-#   - function-test/
-#     - components/
-#       - modals/          # ← Nested directory!
-#     - composables/
-#     - index.vue
-#   - hero-wiki-check/
-#     - components/
-#     - index.vue
-# - layouts/
-#   - normal-layout/
-# - shared/
-#   - components/
-```
+# View page files
+ls frontend/src/pages/
 
-**Key questions to answer**:
-- What pages exist in `src/pages/`?
-- Does each page have nested directories (e.g., `components/modals/`)?
-- Are there shared components in `src/shared/` or `src/components/`?
-- What's the layout structure (`src/layouts/`)?
+# View layout components
+ls frontend/src/layout/ 2>/dev/null || ls frontend/src/layouts/ 2>/dev/null
 
-### 1. Create Mirror Directory Structure
-
-Create documentation directories that **exactly mirror** the source structure:
-
-```bash
-# Create base directories
-mkdir -p docs/layout/pages
-mkdir -p docs/layout/layouts
-mkdir -p docs/layout/shared
-
-# For each page, create matching subdirectories
-# Example for function-test:
-mkdir -p docs/layout/pages/function-test/components
-
-# If there are nested component directories (e.g., modals):
-mkdir -p docs/layout/pages/function-test/components/modals
+# View router config
+cat frontend/src/router/index.ts
 ```
 
 ### 2. Read Key Files
 
-For each page, read in this order:
-1. **Main page file** (`pages/[name]/index.vue`)
-2. **Component files** (recursive in `components/`)
-3. **Composables** (`composables/*.ts`)
-4. **Related shared components**
+For each page, read:
+- Page component file (`.vue` / `.tsx`)
+- Related composables (`composables/`, `hooks/`, `stores/`)
+- Sub-component files (`components/`)
+- Type definitions (`types/`, `@bindings/`)
 
-### 3. Generate Documents in Order
+### 3. Extract TypeScript Interfaces
 
-**Document generation order** (mirrors importance and dependency):
+**IMPORTANT**: Always extract and document TypeScript interfaces:
+- Props interfaces from component definition
+- State interfaces from composables
+- API response interfaces from service calls
+- Type imports from `@bindings/` or local type files
 
-1. **Layout Components** (`docs/layout/layouts/`)
-   - e.g., `normal-layout.md` for `src/layouts/normal-layout/`
+### 4. Generate Layout Docs
 
-2. **Main Pages** (`docs/layout/pages/`)
-   - For each page: `index.md` (main layout + ASCII diagram)
+Create documents in this order:
+1. **Layout Component** - Unified layout (e.g., Normal.vue)
+2. **Main Pages** - Sorted by importance
+3. **Index File** - Create CLAUDE.md last
 
-3. **Component Hierarchies** (`docs/layout/pages/[name]/components.md`)
-   - Component tree structure
-   - Props and event flow
+### 5. Code Review Analysis
 
-4. **Nested Components** (e.g., `docs/layout/pages/[name]/components/modals.md`)
-   - Only if there are nested subdirectories
+During documentation, identify and note:
+- Unused variables, functions, or computed properties
+- Inconsistent patterns (styling, naming, structure)
+- Performance concerns (missing virtualization, excessive re-renders)
+- Accessibility issues
+- Technical debt (commented code, hard-coded values)
 
-5. **Composables Documentation** (`docs/layout/pages/[name]/composables.md`)
-   - Logic layer documentation
+### 6. Update Project CLAUDE.md
 
-6. **Index File** (`docs/layout/CLAUDE.md`)
-   - Create last, links to all other docs
-
-### 4. Document Structure Checklist
-
-For each page, ensure you generate:
-
-- [ ] `index.md` - Main page layout with ASCII diagram
-- [ ] `components.md` - Component hierarchy tree
-- [ ] `components/[nested].md` - For nested component directories (if any)
-- [ ] `composables.md` - State management and logic
-
-### 5. Update Root CLAUDE.md
-
-Add layout documentation reference in project root CLAUDE.md:
-
-```markdown
-## Frontend Layout Documentation
-
-Layout visualization docs mirror the src/ directory structure:
-
-| Path | Document | Description |
-|------|----------|-------------|
-| layouts/normal-layout | [normal-layout.md](docs/layout/layouts/normal-layout.md) | Main layout |
-| pages/function-test | [function-test/index.md](docs/layout/pages/function-test/index.md) | Function test page |
-| pages/function-test/components | [components.md](docs/layout/pages/function-test/components.md) | Component hierarchy |
-| pages/function-test/components/modals | [modals.md](docs/layout/pages/function-test/components/modals.md) | Modal dialogs |
-```
+Add layout documentation reference in project root CLAUDE.md
 
 ## ASCII Layout Diagram Standards
 
@@ -731,21 +426,11 @@ Layout visualization docs mirror the src/ directory structure:
 ├────────────────┬────────────────────────────────────────────┤
 │                │                                            │
 │   Sider        │            Content                         │
-│   (fixed width)│            (adaptive)                      │
+│   (240px)      │            (adaptive, scrollable)          │
+│   collapsible  │                                            │
 │                │                                            │
 ├────────────────┴────────────────────────────────────────────┤
 │ Footer (fixed height)                                       │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Single Page Layout**
-```
-┌─────────────────────────────────────────────────────────────┐
-│ Header                                                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│                    Content (scrollable)                     │
-│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -755,69 +440,100 @@ Layout visualization docs mirror the src/ directory structure:
 │                                              │             │
 │              Main Content                    │   Anchor    │
 │              (scrollable)                    │   Nav       │
-│                                              │   (fixed)   │
-│                                              │             │
+│                                              │   (120px)   │
+│                                              │   fixed     │
 └──────────────────────────────────────────────┴─────────────┘
+```
+
+**Tab-Based Layout**
+```
+┌─────────────────────────────────────────────────────────────┐
+│ [Tab 1] [Tab 2] [Tab 3]                                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│                    Tab Content                              │
+│                    (changes based on selection)             │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### Annotation Standards
 
 - Use `←` to mark area names
-- Use `(size)` for fixed dimensions
+- Use `(size)` for fixed dimensions (e.g., `(240px)`)
 - Use `(adaptive)` for flexible areas
 - Use `(scrollable)` for scrollable areas
+- Use `(collapsible)` for collapsible sections
+- Include component names in brackets `[ComponentName]`
 
-## Component Mapping Table Standards
+## Component Hierarchy Tree Standards
 
-| Column | Description |
-|--------|-------------|
-| Layout Area | Corresponding area in ASCII diagram |
-| Component/Element | Specific component name or HTML element |
-| File Location | Source file path and line number |
-| Function | Brief function description |
+```
+PageComponent (filename.vue)
+├── LayoutComponent
+│   ├── HeaderSection
+│   │   └── NavigationMenu
+│   │       └── MenuItem x N
+│   │
+│   └── ContentArea
+│       ├── SidebarComponent
+│       │   ├── SearchInput
+│       │   └── TreeView
+│       │
+│       └── MainContent
+│           └── TabContainer
+│               ├── Tab1: PanelA
+│               └── Tab2: PanelB
+```
+
+## TypeScript Interface Standards
+
+### Naming Conventions
+
+- Props: `ComponentNameProps`
+- State: `ComponentNameState` or describe purpose (e.g., `UserFormData`)
+- API Response: `ApiResponseType` or `EndpointNameResponse`
+- Generic types: Use meaningful names like `TData`, `TItem`
+
+### Required Sections
+
+1. **Props Interface** - All component props with types and descriptions
+2. **State Interface** - Reactive state variables
+3. **API Response Interface** - Backend data structures (if applicable)
 
 ## Data Flow Diagram Standards
 
-Use simple ASCII arrow diagrams:
+### Three-Phase Approach
 
+1. **User Interaction Flow**: How user actions trigger state changes
+2. **State Update Flow**: How state changes propagate to components
+3. **Data Display Flow**: How data is rendered in the UI
+
+### Diagram Elements
+
+- Use `───►` for direct flow
+- Use `├──►` and `└──►` for branching
+- Use boxes (`┌─┐`) for grouping related steps
+- Label each phase clearly
+
+## Code Review Notes Standards
+
+### Issue Categories
+
+1. **Unused Code**: Variables, functions, computed properties
+2. **Inconsistent Patterns**: Styling, naming, structure differences
+3. **Performance**: Rendering, memory, network concerns
+4. **Accessibility**: ARIA, keyboard nav, contrast
+5. **Technical Debt**: TODOs, commented code, hard-coded values
+
+### Format
+
+```markdown
+### Potential Issues
+
+1. **Category**: Description
+   - Example: `variableName` at line XX - reason
 ```
-User Action → Event Handler → State Update → Component Response
-```
-
-Or detailed version:
-
-```
-User clicks button
-    │
-    ▼
-handleClick() function
-    │
-    ▼
-Update ref/reactive state
-    │
-    ├──► ComponentA auto-updates
-    │
-    └──► ComponentB auto-updates
-```
-
-## Screenshot Annotation Standards
-
-### Directory Structure
-```
-docs/screenshots/
-├── CLAUDE.md
-└── PageName/
-    ├── overview.png      # Overall screenshot
-    ├── detail-xxx.png    # Optional: detail screenshots
-    └── annotations.md    # Annotation description
-```
-
-### Annotation Document Content
-
-1. **Coordinate Reference Diagram** - Show area divisions
-2. **Area Annotation Table** - Location, component, interaction description
-3. **Component Details** - Detailed layout of key areas
-4. **Interaction Description** - User operation description
 
 ## Notes
 
@@ -825,133 +541,7 @@ docs/screenshots/
 2. **Reference code** - Use file paths and line numbers rather than copying code
 3. **Focus on data flow** - How state flows between components is most important
 4. **Mark dimensions** - Clearly distinguish fixed and flexible areas
-5. **Index file** - Use CLAUDE.md instead of README.md for AI recognition
-6. **Mirror source structure** - Documentation directories must mirror src/ structure
-
-## Component Tree Structure Standards
-
-### Tree Visualization Format
-
-Use indented tree structure with pipe characters to show component hierarchy:
-
-```
-ParentComponent
-├── ChildComponent1
-│   ├── GrandChild1
-│   └── GrandChild2
-└── ChildComponent2
-    ├── GrandChild3
-    └── GrandChild4
-```
-
-### Tree Node Format
-
-Each node should include:
-- **Component name** (PascalCase for custom components, lowercase for library components)
-- **File path** (relative to src/)
-- **Line number** (if applicable)
-- **Brief description** (in parentheses, if needed)
-
-Example:
-```
-index.vue (Main Page)
-├── n-layout-header → index.vue:61
-├── n-layout-sider → index.vue:66
-│   ├── n-input (Search) → index.vue:77
-│   └── n-tree → index.vue:97
-└── InitYanWuPanel → components/init-yanwu-panel.vue
-```
-
-### Nested Directory Representation
-
-When components are in nested subdirectories (e.g., `components/modals/`), show this clearly:
-
-```
-components/modals/              # Directory grouping
-├── add-cate-modal.vue
-├── add-case-modal.vue
-└── rename-case-modal.vue
-```
-
-Or as a subtree:
-```
-Modal Components (components/modals/)
-├── AddCateModal
-├── AddCaseModal
-└── RenameCaseModal
-```
-
-### Props and Event Flow in Trees
-
-For complex component relationships, add annotations:
-
-```
-ParentComponent
-├── ChildComponent (props: data, onAction)
-│   └── GrandChild (emits: update)
-└── SiblingComponent (shares: dataRef)
-```
-
-### Full Example: Component Tree
-
-```
-pages/function-test/index.vue                    # Main page container
-├── n-layout-header → index.vue:61              # Top toolbar
-│   └── n-menu (horizontal) → index.vue:62      # Menu options
-├── n-layout-sider → index.vue:66               # Left sidebar (240px)
-│   ├── n-input → index.vue:77                  # Search box
-│   ├── n-switch (2x) → index.vue:79,87         # Display toggles
-│   └── n-tree → index.vue:97                   # Test case tree
-│       └── n-dropdown → index.vue:116          # Right-click menu
-├── n-layout-content → index.vue:134            # Main content
-│   └── n-tabs → index.vue:134                  # Tab panel
-│       ├── Tab: 用例配置
-│       │   └── InitYanWuPanel → components/init-yanwu-panel.vue
-│       ├── Tab: 用例步骤
-│       │   └── StepsPanel → components/steps-panel.vue
-│       │       ├── ActionItem (v-for)          # Repeated per step
-│       │       │   └── AssetCard (v-for)       # Assertion cards
-│       │       └── n-anchor → StepsPanel.vue   # Side navigation
-│       └── Tab: 执行日志
-│           └── RobotTestLog → components/robot-test-log.vue
-├── n-layout-footer → index.vue:172             # Bottom status (64px)
-│   ├── n-statistic (2x) → index.vue:174,180    # Case/Step counts
-│   └── FooterCaseLogStatistic → components/footer-case-log-statistic.vue
-└── Modal Components → components/modals/       # Dialog components
-    ├── AddCateModal → modals/add-cate-modal.vue
-    ├── AddCaseModal → modals/add-case-modal.vue
-    ├── RenameCaseModal → modals/rename-case-modal.vue
-    ├── RenameCateModal → modals/rename-cate-modal.vue
-    └── OptionModal → modals/option-modal.vue
-```
-
-### ASCII Art Integration
-
-Combine the tree structure with ASCII layout diagrams for clarity:
-
-**Component Tree**:
-```
-index.vue
-├── Header (n-layout-header)
-├── Sider (n-layout-sider)
-│   └── Tree (n-tree)
-├── Content (n-layout-content)
-│   └── Tabs (n-tabs)
-└── Footer (n-layout-footer)
-```
-
-**ASCII Layout** (shows visual arrangement):
-```
-┌─────────────────────────────────────────┐
-│ Header                                  │
-├───────────┬─────────────────────────────┤
-│ Sider     │ Content                     │
-│           │  ┌─────┬─────┬─────┐       │
-│           │  │Tab1 │Tab2 │Tab3 │       │
-│           │  └─────┴─────┴─────┘       │
-├───────────┴─────────────────────────────┤
-│ Footer                                  │
-└─────────────────────────────────────────┘
-```
-
-Both formats should complement each other and reference the same components.
+5. **Include TypeScript types** - Always document interfaces for type safety
+6. **Note issues** - Document potential problems discovered during analysis
+7. **Use CLAUDE.md** - Use CLAUDE.md instead of README.md for AI recognition
+8. **Verify dates** - Include verification date and status in each document
