@@ -20,7 +20,7 @@ description: |
   - 生成配表分析文档
 
   **适用领域**：游戏开发、配置管理、数据验证、Excel 分析
-version: 2.1.0
+version: 2.2.0
 author: Claude Code Team
 tags: [excel, game-config, analysis, visualization, validation, documentation]
 ---
@@ -48,6 +48,34 @@ pip install openpyxl python-dateutil
 1. **项目特定工具** - 检测 `.gameconfig.yaml` 或项目脚本
 2. **本地 MCP 服务** - 检测 `excel-parser`、`gameconfig` 等服务
 3. **技能自带脚本** - `analyzer.py` 作为兜底
+
+### Subagent 并行调度
+
+对于大型项目（100+ 配置表），本技能支持 **Subagent 并行调度**，将分析任务拆分为多个并行子任务：
+
+```
+┌─────────────────────────────────────────────────┐
+│              分析请求                           │
+└─────────────────────────────────────────────────┘
+                    │
+    ┌───────────────┼───────────────┐
+    ▼               ▼               ▼
+┌─────────┐   ┌─────────┐   ┌─────────┐
+│ Agent 1 │   │ Agent 2 │   │ Agent 3 │
+│ 核心表   │   │ 枚举表   │   │ 活动表   │
+└─────────┘   └─────────┘   └─────────┘
+    │               │               │
+    └───────────────┼───────────────┘
+                    ▼
+          结果汇总 → 生成报告
+```
+
+**使用场景**：
+- 大型项目快速分析
+- 需要并行处理多个类别
+- 时间敏感的分析任务
+
+**详细文档**: [10-subagent-scheduling.md](references/10-subagent-scheduling.md)
 
 ## 功能导航
 
@@ -262,6 +290,7 @@ What-if 分析：
 - **[06-ai-features.md](references/06-ai-features.md)** - AI 功能
 - **[07-memory-storage.md](references/07-memory-storage.md)** - 记忆存储
 - **[08-tool-selection.md](references/08-tool-selection.md)** - 工具选择策略
+- **[10-subagent-scheduling.md](references/10-subagent-scheduling.md)** - ⭐ Subagent 并行调度
 
 ## 最佳实践
 
