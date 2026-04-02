@@ -1,146 +1,46 @@
 {
   "skill_name": "game-config-analyzer",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "evals": [
     {
       "id": 1,
-      "name": "完整配表分析报告生成",
-      "prompt": "分析 D:/work/server/配表验证测试/fixtures 目录下的配表文件，生成表关系分析报告和约束规则汇总",
-      "expected_output": "生成包含配表清单、表关系依赖图(Mermaid格式)、约束规则汇总的Markdown文档",
+      "name": "系统配表结构分析",
+      "prompt": "分析一下成就系统涉及哪些配表，各表的作用和关键引用关系",
+      "expected_output": "扫描 Achieve.xlsx 和 AchieveHero.xlsx，读取字段结构，分析 HeroItemId 引用关系，生成包含表关系图的 Markdown 文档",
       "files": [],
-      "tags": ["core", "analysis", "report"],
+      "tags": ["core", "structure", "relations"],
       "assertions": [
-        {"name": "生成Markdown报告", "check": "output_files_exist", "pattern": "*.md"},
-        {"name": "报告包含配表清单", "check": "file_contains", "pattern": "## 配表清单|### 配表文件"},
-        {"name": "报告包含Mermaid图", "check": "file_contains", "pattern": "```mermaid|graph TD"},
-        {"name": "报告包含约束规则", "check": "file_contains", "pattern": "## 约束规则|### 约束"}
+        {"name": "识别到 Achieve 和 AchieveHero 两个核心表", "check": "output_mentions_both_tables"},
+        {"name": "读取了表的字段结构", "check": "output_contains_field_names"},
+        {"name": "分析了跨表引用关系", "check": "output_contains_reference_analysis"},
+        {"name": "生成了文档", "check": "output_file_created", "pattern": "*.md"}
       ]
     },
     {
       "id": 2,
-      "name": "Hero表引用关系分析",
-      "prompt": "帮我分析这个项目的配表结构，找出 Hero 表和其他表的引用关系",
-      "expected_output": "识别 Hero.xlsx 中的 Skills 字段引用 Skill.xlsx，以及其他 ID 引用关系，生成关系图",
+      "name": "关键词搜索定位",
+      "prompt": "搜索一下兵力这个道具在哪些配表中出现，分析它的用途",
+      "expected_output": "在 Item.xlsx 中找到兵力道具(Id=1000011)，在 HeroWar.xlsx 中找到兵力消耗配置，分析出兵力=群雄逐鹿入场券+难度调节器的完整链路",
       "files": [],
-      "tags": ["core", "relations", "hero"],
+      "tags": ["search", "cross-reference", "analysis"],
       "assertions": [
-        {"name": "识别Hero表", "check": "file_contains", "pattern": "Hero|hero"},
-        {"name": "识别Skills引用", "check": "file_contains", "pattern": "Skill|技能"},
-        {"name": "生成关系图", "check": "file_contains", "pattern": "graph|→|引用"}
+        {"name": "找到 Item 表中的兵力道具", "check": "output_contains_item_data"},
+        {"name": "追踪到 HeroWar 中的兵力消耗", "check": "output_contains_herowar_usage"},
+        {"name": "总结出兵力的完整用途", "check": "output_contains_purpose_summary"}
       ]
     },
     {
       "id": 3,
-      "name": "时间约束规则提取",
-      "prompt": "提取配表中的时间约束规则，特别是 Hero 表的 OpenDate 相关约束",
-      "expected_output": "列出战令武将、大将军武将的 OpenDate 约束规则，以及时间字段的顺序约束",
+      "name": "多系统扫描与文档生成",
+      "prompt": "分析活动配置表涉及到的文件以及各文件主要作用",
+      "expected_output": "扫描 excel 目录下所有活动相关文件，按系统分类（核心/赛季/限时等），生成活动总览文档",
       "files": [],
-      "tags": ["core", "constraints", "time"],
+      "tags": ["scan", "categorize", "document"],
       "assertions": [
-        {"name": "识别OpenDate约束", "check": "file_contains", "pattern": "OpenDate|开放日期"},
-        {"name": "识别时间顺序约束", "check": "file_contains", "pattern": "StartTime.*EndTime|<.*时间|时间.*约束"}
+        {"name": "扫描了完整的活动文件列表", "check": "output_contains_file_list"},
+        {"name": "按系统进行了分类", "check": "output_contains_categories"},
+        {"name": "生成了文档", "check": "output_file_created", "pattern": "*.md"}
       ]
-    },
-    {
-      "id": 4,
-      "name": "配表版本差异对比",
-      "prompt": "对比 D:/work/server/v1.0/excel 和 D:/work/server/v1.1/excel 两个版本的配表差异",
-      "expected_output": "生成差异报告，包括新增/删除的表、新增/删除的字段、数据变更统计",
-      "files": [],
-      "tags": ["diff", "comparison", "version"]
-    },
-    {
-      "id": 5,
-      "name": "修改影响分析",
-      "prompt": "分析 Hero 表的 OpenDate 字段修改会影响哪些其他表",
-      "expected_output": "列出直接影响和间接影响的表，评估风险等级，给出测试建议",
-      "files": [],
-      "tags": ["impact", "analysis", "risk"]
-    },
-    {
-      "id": 6,
-      "name": "配表数据完整性验证",
-      "prompt": "验证 D:/work/server/excel 目录下所有配表的数据完整性",
-      "expected_output": "检查外键引用完整性、必填字段、主键唯一性，生成验证报告",
-      "files": [],
-      "tags": ["validation", "integrity", "completeness"],
-      "assertions": [
-        {"name": "生成验证报告", "check": "output_files_exist", "pattern": "*validation*"},
-        {"name": "检查外键引用", "check": "file_contains", "pattern": "外键|引用|reference"},
-        {"name": "检查主键唯一性", "check": "file_contains", "pattern": "主键|唯一|unique"}
-      ]
-    },
-    {
-      "id": 7,
-      "name": "跨表一致性验证",
-      "prompt": "验证 Hero 表和 Card 表之间的数据一致性",
-      "expected_output": "检查 Card.HeroId 是否都能在 Hero.Id 中找到，报告不一致的数据",
-      "files": [],
-      "tags": ["validation", "consistency", "cross-table"]
-    },
-    {
-      "id": 8,
-      "name": "全文搜索测试",
-      "prompt": "在所有配表中搜索值为 '关羽' 的记录",
-      "expected_output": "列出所有包含 '关羽' 的表、字段和行号",
-      "files": [],
-      "tags": ["interactive", "search", "query"]
-    },
-    {
-      "id": 9,
-      "name": "自然语言查询",
-      "prompt": "哪些表引用了 Hero 表？",
-      "expected_output": "列出所有引用 Hero 表的表名和引用字段",
-      "files": [],
-      "tags": ["ai", "nlp", "query"]
-    },
-    {
-      "id": 10,
-      "name": "反模式检测",
-      "prompt": "检测配表中是否存在循环引用、孤立表等反模式",
-      "expected_output": "报告发现的反模式类型、位置和风险",
-      "files": [],
-      "tags": ["ai", "anti-pattern", "detection"]
-    },
-    {
-      "id": 11,
-      "name": "记忆存储功能",
-      "prompt": "将配表分析结果保存到记忆中，然后从记忆中读取",
-      "expected_output": "成功保存分析结果，能够从记忆中读取之前的分析",
-      "files": [],
-      "tags": ["memory", "storage", "persistence"]
-    },
-    {
-      "id": 12,
-      "name": "可视化图表生成",
-      "prompt": "生成配表关系的交互式可视化图表",
-      "expected_output": "生成 HTML 格式的交互式关系图，支持缩放和筛选",
-      "files": [],
-      "tags": ["visualization", "graph", "interactive"]
-    },
-    {
-      "id": 13,
-      "name": "测试数据生成",
-      "prompt": "为 Hero 表生成验证测试数据，包括边界值和异常值",
-      "expected_output": "生成包含测试数据的 Excel 文件，标注每个测试用例的预期结果",
-      "files": [],
-      "tags": ["testing", "data-generation", "validation"]
-    },
-    {
-      "id": 14,
-      "name": "约束规则验证",
-      "prompt": "验证 Hero 表的 OpenDate 约束规则是否正确",
-      "expected_output": "检查战令武将和大将军武将的 OpenDate 是否符合约束规则",
-      "files": [],
-      "tags": ["validation", "constraints", "business-rules"]
-    },
-    {
-      "id": 15,
-      "name": "What-if 模拟分析",
-      "prompt": "模拟将 Hero 表的 OpenDate 字段统一加 1 天，评估影响",
-      "expected_output": "分析受影响的表、潜在风险、回滚方案",
-      "files": [],
-      "tags": ["interactive", "simulation", "what-if"]
     }
   ]
 }

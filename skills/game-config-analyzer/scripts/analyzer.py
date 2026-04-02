@@ -96,36 +96,73 @@ class ConfigAnalyzer:
         }
 
     def _find_header_row(self, sheet) -> int:
-        """查找表头行（包含字段名的那一行）"""
-        for row_idx in range(1, 10):
-            # 第4行通常是字段名行
-            if row_idx == 4:
-                return row_idx
-            # 检查是否有 server/client 标记
-            for cell in sheet[row_idx]:
-                if cell.value and 'server/client' in str(cell.value):
-                    return row_idx - 1  # 字段名在上一行
-        return 4  # 默认第4行
+        """查找表头行（包含字段名的那一行）
+
+        标准4行表头格式：
+        第1行 = 中文名称
+        第2行 = 字段类型（int, string, bool, E#枚举名）
+        第3行 = 字段名（英文字段名，如 Id, Name, SkillId）
+        第4行 = 导出标识（server/client）
+        第5行起 = 数据
+        """
+        # 检测标准4行表头：第3行应包含英文字段名，第4行应包含 server/client
+        if sheet.max_row < 4:
+            return None
+
+        # 检查第4行是否有 server/client 标识（标准格式的特征）
+        has_export_tag = False
+        for col in range(1, min(sheet.max_column + 1, 20)):
+            val = sheet.cell(4, col).value
+            if val and ('server' in str(val).lower() or 'client' in str(val).lower()):
+                has_export_tag = True
+                break
+
+        if has_export_tag:
+            return 3  # 字段名在第3行
+
+        # 尝试检测第3行是否为英文字段名（字母开头，不含中文）
+        has_field_names = False
+        for col in range(1, min(sheet.max_column + 1, 20)):
+            val = sheet.cell(3, col).value
+            if val and re.match(r'^[A-Za-z_]', str(val)):
+                has_field_names = True
+                break
+
+        if has_field_names:
+            return 3
+
+        return None  # 无法识别表头格式
 
     def _extract_headers(self, sheet, header_row: int) -> List[Dict[str, Any]]:
-        """提取表头信息"""
+        """提取表头信息
+
+        标准4行表头格式（header_row=3，即字段名在第3行）：
+        第1行 = 中文名称
+        第2行 = 字段类型（int, string, bool, E#枚举名, #注释）
+        第3行 = 字段名（英文字段名，如 Id, Name, SkillId）
+        第4行 = 导出标识（server/client/server/client）
+        """
         headers = []
 
         for col_idx in range(1, sheet.max_column + 1):
-            chs_name = sheet.cell(1, col_idx).value  # 中文名
-            field_type = sheet.cell(2, col_idx).value  # 类型
-            field_name = sheet.cell(header_row, col_idx).value  # 字段名
-            export_tag = sheet.cell(header_row + 1, col_idx).value  # 导出标识
+            chs_name = sheet.cell(1, col_idx).value       # 第1行：中文名
+            field_type = sheet.cell(2, col_idx).value      # 第2行：类型
+            field_name = sheet.cell(header_row, col_idx).value   # 第3行：字段名
+            export_tag = sheet.cell(header_row + 1, col_idx).value  # 第4行：导出标识
 
             if not field_name:
+                continue
+
+            # 跳过注释列（类型为 #）
+            if field_type and str(field_type).strip() == '#':
                 continue
 
             headers.append({
                 "column": col_idx,
                 "chs_name": str(chs_name) if chs_name else "",
-                "type": str(field_type) if field_type else "",
-                "name": str(field_name),
-                "export": str(export_tag) if export_tag else ""
+                "type": str(field_type).strip() if field_type else "",
+                "name": str(field_name).strip(),
+                "export": str(export_tag).strip() if export_tag else ""
             })
 
         return headers
@@ -135,15 +172,27 @@ class ConfigAnalyzer:
         relations = []
 
         # 构建表名到文件的映射
+        # 支持两种 Sheet 名格式：纯英文名（Hero）和中英混合（成就表|Achieve）
         table_map = {}
         for file_info in scan_result["files"]:
             for sheet_info in file_info["sheets"]:
-                table_name = sheet_info["name"].replace(".xlsx", "")
-                table_map[table_name] = {
-                    "file": file_info["filename"],
-                    "sheet": sheet_info["name"],
-                    "headers": sheet_info["headers"]
-                }
+                sheet_name = sheet_info["name"]
+
+                # 提取英文名部分（| 后面的部分）
+                if '|' in sheet_name:
+                    eng_name = sheet_name.split('|')[-1].strip()
+                else:
+                    eng_name = sheet_name.replace('.xlsx', '')
+
+                # 同时用文件名（不含扩展名）和Sheet英文名建立索引
+                file_base = file_info["filename"].replace('.xlsx', '')
+                for name in [eng_name, file_base]:
+                    if name and name not in table_map:
+                        table_map[name] = {
+                            "file": file_info["filename"],
+                            "sheet": sheet_info["name"],
+                            "headers": sheet_info["headers"]
+                        }
 
         # 分析 ID 引用关系
         for file_info in scan_result["files"]:
