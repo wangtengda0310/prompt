@@ -372,10 +372,66 @@ func TestExplore_EmptyInput(t *testing.T) {
 
 ### 断言规范
 
-- 使用项目已有的断言库
-- 禁止欺骗性测试
-- 禁止忽略错误
-- 禁止测试间依赖
+> 详细指南见 [断言最佳实践参考](references/assertion-best-practices.md)
+
+#### 核心规则
+
+1. **使用项目已有的断言库** — 不引入新的断言依赖
+2. **禁止欺骗性测试** — 断言必须真正验证行为，不能写成永远通过的假测试
+3. **禁止忽略错误** — 错误返回值必须检查和断言
+4. **禁止测试间依赖** — 每个测试的断言应独立，不依赖其他测试的执行结果
+
+#### 断言粒度
+
+- **一个测试验证一个行为** — 不相关的断言应拆分到独立测试
+- **多个相关断言可以共存** — 当多个断言共同验证同一个行为时，可以放在一起
+
+```go
+// ✅ 可以接受：多个断言验证同一个"解析结果"行为
+func TestParseUser(t *testing.T) {
+    user, err := ParseUser(`{"name": "Alice", "age": 30}`)
+    require.NoError(t, err)
+
+    assert.Equal(t, "Alice", user.Name)
+    assert.Equal(t, 30, user.Age)
+}
+```
+
+#### 断言类型选择
+
+| 场景 | 推荐 | 不推荐 |
+|------|------|--------|
+| 值相等 | `assert.Equal` | `assert.True(a == b)` |
+| nil 检查 | `assert.Nil/NotNil` | `assert.Equal(nil, x)` |
+| 错误检查 | `assert.ErrorIs/ErrorAs` | `assert.Equal(err.Error(), "msg")` |
+| 集合长度 | `assert.Len` | `assert.Equal(3, len(list))` |
+
+#### 断言消息规范
+
+```go
+// ❌ 消息重复断言内容
+assert.Equal(t, 42, result, "result should be 42")
+
+// ✅ 消息解释业务含义
+assert.Equal(t, 42, result, "用户积分应为初始值 42")
+```
+
+#### require vs assert
+
+- **前置条件**用 `require`（失败后立即终止）
+- **结果验证**用 `assert`（失败后继续执行）
+
+```go
+func TestProcess(t *testing.T) {
+    data, err := LoadData("test.json")
+    require.NoError(t, err, "加载测试数据失败则无法继续")  // 前置条件
+
+    result := Process(data)
+
+    assert.Equal(t, "A", result.Field1)  // 结果验证
+    assert.Equal(t, "B", result.Field2)  // 即使上一个失败，这个也执行
+}
+```
 
 ---
 
@@ -400,6 +456,7 @@ Go 测试 + `p.RegCase` 注册。
 
 | 文件 | 说明 |
 |------|------|
+| [断言最佳实践](references/assertion-best-practices.md) | 断言粒度、消息规范、类型选择、反模式、检查清单 |
 | [Go 测试模板](references/go-templates.md) | Go 单元/集成/回归/规则/机器人测试模板 |
 | [JSON 测试模板](references/json-templates.md) | 战斗测试用例 JSON 模板 |
 | [手工测试模板](references/manual-test-template.md) | 手工/黑盒/冒烟/回归测试模板 |
