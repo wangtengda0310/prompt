@@ -1,0 +1,45 @@
+{
+  "analysis_summary": {
+    "total_heroes": 0,
+    "hero_type_distribution": {
+      "1": {
+        "type_name": "HeroTypeNormal",
+        "description": "普通武将",
+        "count": 0,
+        "examples": []
+      },
+      "2": {
+        "type_name": "特殊武将",
+        "description": "特殊武将（如BOSS、特殊NPC等）",
+        "count": 0,
+        "examples": []
+      },
+      "3": {
+        "type_name": "HeroTypeMelt",
+        "description": "熔炼武将（系统用）",
+        "count": 0,
+        "examples": []
+      },
+      "4": {
+        "type_name": "关卡武将",
+        "description": "关卡/副本武将",
+        "count": 0,
+        "examples": []
+      }
+    },
+    "quality_field_analysis": {
+      "status": "未找到明确的品质字段",
+      "possible_fields": [
+        "HeroType - 武将类型（1-4）",
+        "Point - 初始体力值（1-850000）",
+        "BelongExpansionPack - 所属扩展包"
+      ],
+      "note": "表中不存在 HeroType = 5 的武将"
+    }
+  },
+  "query_result": {
+    "query": "品质为5的英雄",
+    "result": "未找到匹配数据",
+    "reason": "HeroType 字段的最大值为 4，不存在值为 5 的记录"
+  }
+}

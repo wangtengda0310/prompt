@@ -1,0 +1,114 @@
+[
+  {
+    "query": "我需要查看 D:/work/config/excel 目录下的所有配表文件，看看都有哪些 Excel 文件",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我看看 Hero.xlsx 这个文件里有哪些个 Sheet",
+    "should_trigger": true
+  },
+  {
+    "query": "Hero 表有哪些列？字段类型都是什么？",
+    "should_trigger": true
+  },
+  {
+    "query": "预览一下 Hero 表的前 50 行数据，我看看内容对不对",
+    "should_trigger": true
+  },
+  {
+    "query": "查找所有品质为 5 的英雄数据",
+    "should_trigger": true
+  },
+  {
+    "query": "我想看 Hero 表第 100 到 150 行的数据",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我创建一个测试用的 Excel 文件，包含一些英雄测试数据",
+    "should_trigger": true
+  },
+  {
+    "query": "获取所有英雄的配置信息",
+    "should_trigger": true
+  },
+  {
+    "query": "筛选出 Name 字段包含'关'字的所有数据行",
+    "should_trigger": true
+  },
+  {
+    "query": "老板发给我一个 Q4销售数据.xlsx，要我看下里面都有什么内容",
+    "should_trigger": true
+  },
+  {
+    "query": "怎么查询第 10 到第 50 行之间的数据",
+    "should_trigger": true
+  },
+  {
+    "query": "read file D:/data/test.txt",
+    "should_trigger": false
+  },
+  {
+    "query": "用 Python 写个函数来处理数据",
+    "should_trigger": false
+  },
+  {
+    "query": "把这个 JSON 转换成 CSV 格式",
+    "should_trigger": false
+  },
+  {
+    "query": "列出 D:/work 目录下的所有文件",
+    "should_trigger": false
+  },
+  {
+    "query": "创建一个新的数据库表",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我安装 Excel 软件",
+    "should_trigger": false
+  },
+  {
+    "query": "这个 PDF 文件里有什么内容",
+    "should_trigger": false
+  },
+  {
+    "query": "写一个 SQL 查询语句来获取数据",
+    "should_trigger": false
+  },
+  {
+    "query": "配置文件在哪",
+    "should_trigger": false
+  },
+  {
+    "query": "怎么用 pandas 读取 csv",
+    "should_trigger": false
+  },
+  {
+    "query": "下载最新的报表文件",
+    "should_trigger": false
+  },
+  {
+    "query": "生成一个随机数列表",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我看看这个 csv 文件的内容",
+    "should_trigger": false
+  },
+  {
+    "query": "创建一个 API 接口",
+    "should_trigger": false
+  },
+  {
+    "query": "把数据导出为 JSON 格式",
+    "should_trigger": true
+  },
+  {
+    "query": "把数据导出为 CSV 格式",
+    "should_trigger": true
+  },
+  {
+    "query": "统计一下有多少行数据",
+    "should_trigger": true
+  }
+]

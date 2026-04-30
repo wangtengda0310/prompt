@@ -1,6 +1,6 @@
 ---
 name: 渐进式披露文档维护
-description: 指导 AI 使用渐进式披露原则维护项目 CLAUDE.md 层级文档体系。触发条件：(1) 创建或更新 CLAUDE.md 文件，(2) 新建目录或模块需要补充文档，(3) 代码变更后需要同步文档，(4) 用户提到"文档维护"、"更新文档"、"写文档"、"CLAUDE.md"。关键词：CLAUDE.md、文档维护、progressive disclosure、渐进式披露、文档层级、文档索引。
+description: 指导 AI 使用渐进式披露原则维护项目 CLAUDE.md 层级文档体系。触发条件：(1) 创建或更新已有项目的 CLAUDE.md 文件，(2) 新建目录或模块需要补充文档，(3) 代码变更后需要同步文档，(4) 用户提到"文档维护"、"更新文档"、"写文档"、"CLAUDE.md"。**不要触发**：全新项目首次初始化 CLAUDE.md（→ init skill）。关键词：CLAUDE.md、文档维护、progressive disclosure、渐进式披露、文档层级、文档索引。
 ---
 
 # 渐进式披露文档维护技能

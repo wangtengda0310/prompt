@@ -1,6 +1,22 @@
 ---
-name: gameconfig 配置管理工具
-description: 游戏配置管理工具 - 支持 Excel/CSV 双模式加载、Mock 数据、条件字段、Schema 迁移
+name: gameconfig
+description: |
+  gameconfig Go 配置加载库 — 在 Go 代码中使用 gameconfig 包加载游戏配置，支持 Excel/CSV/Mock 三模式、条件字段、Schema 迁移。
+
+  **触发条件**（满足任一）：
+  - 用户在编写 Go 代码，需要使用 config.NewLoader / config.LoadOptions
+  - 用户询问 gameconfig 的加载模式（ModeAuto/ModeExcel/ModeCSV/ModeMemory）
+  - 用户需要配置 struct tag（excel:"field,required" / excel:"field,when:type=1"）
+  - 用户需要使用 Mock 数据进行单元测试（ModeMemory + MockData）
+  - 用户需要实现条件字段（when 标签）
+  - 用户需要配置 Schema 版本迁移（SchemaManager / Migration）
+  - 用户提到 Go module "github.com/wangtengda0310/gobee/gameconfig"
+
+  **不要触发**：
+  - 用户要查看/查询配表数据本身（→ excel-parser）
+  - 用户要分析表间关系（→ game-config-analyzer）
+  - 用户要操作电子表格文件格式（→ xlsx）
+  - 用户要导出游戏运行用的 CSV（→ game-meta）
 ---
 
 # gameconfig 配置管理工具

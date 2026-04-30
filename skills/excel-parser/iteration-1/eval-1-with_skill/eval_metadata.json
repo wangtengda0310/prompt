@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "browse-and-filter-hero-data",
+  "prompt": "我需要查看 Hero 表中品质为 5 的所有英雄数据，包括他们的 ID、名称和品质字段。表在 D:/work/config/excel/Hero.xlsx，请帮我先查看表结构，然后筛选出符合条件的数据。",
+  "assertions": []
+}

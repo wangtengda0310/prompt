@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "generate-test-hero-data",
+  "prompt": "帮我创建一个测试用的 Hero 表 Excel 文件，保存在 D:/work/test_output.xlsx。需要包含 5 个测试英雄，字段包括：英雄ID(int)、英雄名称(string)、品质(int)、战斗力(int)。表头要符合项目的 4 行规范。",
+  "assertions": []
+}
