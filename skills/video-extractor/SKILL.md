@@ -10,6 +10,14 @@ tags: [video, frame, extraction, ffmpeg, processing]
 
 你可以使用视频首尾帧提取工具从视频文件中提取开头和结尾的帧图片。
 
+## 触发条件（满足任一即触发）
+- 用户要求从视频中提取帧图片（如"提取首尾帧"、"视频截图"）
+- 用户提到 video-extractor 工具
+- 用户提到 ffmpeg 提取视频帧并要求使用本工具
+
+**不要触发**：
+- 用户直接使用 ffmpeg 命令（不涉及本工具）
+
 ## 功能说明
 
 **可执行文件:** `./bin/video-extractor.exe` (Windows) 或 `./bin/video-extractor` (Linux/Mac)

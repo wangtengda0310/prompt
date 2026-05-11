@@ -10,6 +10,16 @@ tags: [image, processing, grid, pixel, analysis]
 
 你有两个强大的图像处理工具可用：图片九宫格切分工具 和 像素检查工具。
 
+## 触发条件（满足任一即触发）
+- 用户要求切分图片（如"九宫格"、"切图"、"网格切分"）
+- 用户要求检查图片像素颜色（如"这个位置是什么颜色"、"像素检查"）
+- 用户提到 gridsplit 或 pixelinspect 工具
+- 用户要求分析图片颜色分布或统计
+
+**不要触发**：
+- 用户只是查看截图（直接 Read 工具）
+- 用户要求编辑图片（非切分/检查）
+
 ## Grid Split - 图片九宫格切分
 
 **可执行文件:** `./bin/gridsplit.exe` (Windows) 或 `./bin/gridsplit` (Linux/Mac)

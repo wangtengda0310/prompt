@@ -1,6 +1,11 @@
 
 
-## Story Flicks 项目配置
+## 触发条件（仅参考知识，不主动触发）
+- 用户明确提到"各种apikey"、"Story Flicks"、"DeepSeek API"、"Kling API"
+- 开发过程中需要查阅 API 密钥配置
+- 用户提到需要视频生成或文本生成的 API 配置
+
+**注意**：本文件包含敏感信息（API 密钥），仅在用户明确要求时查阅。
 
 ### API 密钥配置（backend/.env）
 ```bash

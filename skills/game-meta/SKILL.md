@@ -3,6 +3,16 @@ name: game-meta工具
 description: 使用game-meta进行策划表相关的操作，包括导出csv文件、更新game-meta工具
 ---
 
+## 触发条件（满足任一即触发）
+- 用户要求导出策划表的 csv 文件（如"导表"、"转表"、"serialize"）
+- 用户提到 game-meta 工具或命令
+- 用户需要更新或下载 game-meta 工具
+- 用户提到策划表版本号或手机号绑定
+
+**不要触发**：
+- 用户只是查看配表数据（→ excel-parser）
+- 用户在写 Go 代码加载配置（→ gameconfig）
+
 # game-meta工具
 
 ## 介绍
