@@ -1,0 +1,1837 @@
+{
+  "date": "2026-04-09",
+  "total_sessions": 18,
+  "sessions_with_files": 17,
+  "total_input_tokens": 11470420,
+  "total_output_tokens": 645549,
+  "zero_usage_count": 545,
+  "total_user_turns": 1962,
+  "total_assistant_turns": 2604,
+  "avg_turns_per_session": 109.0,
+  "tool_usage_summary": {
+    "Bash": 634,
+    "Read": 315,
+    "Edit": 151,
+    "Grep": 150,
+    "TaskUpdate": 138,
+    "TaskCreate": 82,
+    "Write": 79,
+    "Agent": 56,
+    "Glob": 26,
+    "Skill": 19,
+    "AskUserQuestion": 19,
+    "mcp__thinking__sequentialthinking": 13,
+    "ExitPlanMode": 3,
+    "EnterPlanMode": 2,
+    "WebSearch": 2,
+    "CronList": 1,
+    "TaskList": 1,
+    "TaskOutput": 1,
+    "mcp__ide__getDiagnostics": 1,
+    "mcp__plugin_github_github__get_commit": 1
+  },
+  "skill_usage_summary": {
+    "superpowers:brainstorming": {
+      "count": 1,
+      "sessions": [
+        "3b142461-8a9e-4bcb-83a8-a05cfe142747"
+      ]
+    },
+    "writing-plans": {
+      "count": 1,
+      "sessions": [
+        "3b142461-8a9e-4bcb-83a8-a05cfe142747"
+      ]
+    },
+    "subagent-driven-development": {
+      "count": 1,
+      "sessions": [
+        "3b142461-8a9e-4bcb-83a8-a05cfe142747"
+      ]
+    },
+    "game-config-analyzer": {
+      "count": 4,
+      "sessions": [
+        "be8cb842-a892-4c55-8033-3b72eb80ee3d",
+        "1b44fa19-956f-405a-bf17-238705a0d5b6",
+        "03caca5b-d0ec-4ee9-b8c6-770e85c0e97f"
+      ]
+    },
+    "test-case-generator": {
+      "count": 2,
+      "sessions": [
+        "1b44fa19-956f-405a-bf17-238705a0d5b6"
+      ]
+    },
+    "skill-creator": {
+      "count": 4,
+      "sessions": [
+        "1b44fa19-956f-405a-bf17-238705a0d5b6",
+        "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+        "3b52f1b3-730e-4e87-be2b-bc81d30a59dc"
+      ]
+    },
+    "excel-parser": {
+      "count": 2,
+      "sessions": [
+        "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+        "3b52f1b3-730e-4e87-be2b-bc81d30a59dc"
+      ]
+    },
+    "brainstorming": {
+      "count": 1,
+      "sessions": [
+        "0bfe8241-d485-4fa9-aaa6-9721310f62c0"
+      ]
+    },
+    "superpowers:using-superpowers": {
+      "count": 1,
+      "sessions": [
+        "b2390b53-85b8-4903-9f3f-7fa026c8070a"
+      ]
+    },
+    "渐进式披露": {
+      "count": 1,
+      "sessions": [
+        "b2390b53-85b8-4903-9f3f-7fa026c8070a"
+      ]
+    },
+    "xlsx": {
+      "count": 1,
+      "sessions": [
+        "8b1e711b-2b25-4056-8c01-7f8af1dcc764"
+      ]
+    }
+  },
+  "project_distribution": {
+    "xcard-qa-tools": {
+      "sessions": 9,
+      "input_tokens": 5093469,
+      "output_tokens": 307324
+    },
+    "server": {
+      "sessions": 3,
+      "input_tokens": 4189974,
+      "output_tokens": 228023
+    },
+    "rain-excel-checker": {
+      "sessions": 1,
+      "input_tokens": 569766,
+      "output_tokens": 30229
+    },
+    "rain-qa-func": {
+      "sessions": 5,
+      "input_tokens": 1617211,
+      "output_tokens": 79973
+    }
+  },
+  "sessions_by_hour": {
+    "10": 2,
+    "11": 1,
+    "13": 1,
+    "14": 2,
+    "15": 1,
+    "16": 2,
+    "17": 3,
+    "22": 4,
+    "23": 2
+  },
+  "tool_patterns": [
+    {
+      "pattern": [
+        "Bash",
+        "Bash"
+      ],
+      "count": 452
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Bash"
+      ],
+      "count": 338
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read"
+      ],
+      "count": 115
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read"
+      ],
+      "count": 73
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit"
+      ],
+      "count": 69
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Grep"
+      ],
+      "count": 69
+    },
+    {
+      "pattern": [
+        "TaskCreate",
+        "TaskCreate"
+      ],
+      "count": 54
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "count": 54
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Edit"
+      ],
+      "count": 51
+    },
+    {
+      "pattern": [
+        "TaskUpdate",
+        "TaskUpdate"
+      ],
+      "count": 50
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash"
+      ],
+      "count": 48
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Read"
+      ],
+      "count": 48
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Read"
+      ],
+      "count": 43
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash"
+      ],
+      "count": 42
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Grep",
+        "Grep"
+      ],
+      "count": 36
+    },
+    {
+      "pattern": [
+        "TaskCreate",
+        "TaskCreate",
+        "TaskCreate"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash",
+        "Bash"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Read",
+        "Grep"
+      ],
+      "count": 34
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Edit",
+        "Edit"
+      ],
+      "count": 24
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash",
+        "Bash"
+      ],
+      "count": 24
+    }
+  ],
+  "errors": [
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 49\nPython was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases."
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncat: /d/work/xcard-qa-tools/rain-excel-checker/xlsx/check_rules/table/table_check_drawskin_byproduct.go: No such file or directory"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n你如何再关..."
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:189:6: syntax error: unexpected name CheckWithGitHistory, expected (\nxlsx\\che..."
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 如果没有通用规则，直接返回\n\t\tif len(generalMetas) == 0 {\n\t\t\treturn results\n\t\t}\n\n\t// CheckWithGitHistory 基于 git 历史版本执行增量检查</tool_use_error>"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n..\\feishu-lib\\notification\\event.go:8:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/json_rule; to add it:\n\tcd D:\\work\\xcard-qa-tools\\f..."
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n..\\feishu-lib\\notification\\event.go:8:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/json_rule; to add it:\n\tcd D:\\work\\xcard-qa-tools\\f..."
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n..\\xcard-qa-tools\\rain-excel-checker\\main.go:9:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification: go.mod file not found in current directo..."
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nmalformed import path \"/proc/self/fd/0\": empty path element"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\debug_diff.go:4:2: \"bytes\" imported and not used"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\debug2.go:10:2: \"git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/excel_internal\" imported and not used"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_internal\nxlsx\\check_internal\\excel_diff.go:102:2: declared and not used: useFirstColAsId"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 为每行创建快照数据\n\t\t\trowSnapshot := &RowSnapshot{</tool_use_error>"
+    },
+    {
+      "session": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "error": "MCP error -32602: Input validation error: Invalid arguments for tool sequentialthinking: [\n  {\n    \"expected\": \"boolean\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"nextThoughtNeeded\"\n    ],\n   ..."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\config."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nOn branch master\nnothing to commit, working tree clean"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nOn branch master\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\texcel/ActivityTask_活动任务表.xlsx.bak\n\nnothing added to commit but untracked files present (..."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nmv: cannot stat '活动任务表_ActivityTask.json': No such file or directory"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nGetFileAttributesEx test_rule_registration.go: The system cannot find the file specified."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nGetFileAttributesEx verify_rule.go: The system cannot find the file specified."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 49"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: no go files listed"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_rules/cross_table [git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_rules/cross_table.test]\nxlsx\\chec..."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+    },
+    {
+      "session": "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: | `excel_check.go` | `CheckerManager` 列级工厂，`init()` 注册 26 个检查器，全局实例 `Manager`；`ReadAndCheckXlsx`（列级）、`CheckTableRules`（表级）、`CheckSheetCols`..."
+    },
+    {
+      "session": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: not under version control, source=xlsx/check_rules/table/table_check_danqingge_time_active.go, destination=xlsx/check_rules/table/table_check_activity_danqingge_time.go"
+    },
+    {
+      "session": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\test_danqingge.go:27:20: undefined: excelize"
+    },
+    {
+      "session": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "error": "[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "b2390b53-85b8-4903-9f3f-7fa026c8070a",
+      "project": "server",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "b2390b53-85b8-4903-9f3f-7fa026c8070a",
+      "project": "server",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "b2390b53-85b8-4903-9f3f-7fa026c8070a",
+      "project": "server",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 6, in <module>\r\n    wb = load_workbook(file_path)\r\n  File \"C:\\Users\\v-wangtengda\\AppData\\Roaming\\Python\\Python314\\site-packages\\..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 7, in <module>\r\n    wb = load_workbook(file_path)\r\n  File \"C:\\Users\\v-wangtengda\\AppData\\Roaming\\Python\\Python314\\site-packages\\..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `;&'\n/usr/bin/bash: eval: line 1: `cd /d/work/config/excel &amp;&amp; powershell.exe -Command \"Get-ChildItem -Filter '*Activ..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `;&'\n/usr/bin/bash: eval: line 1: `cd /d/work/xcard-qa-tools/rain-excel-checker &amp;&amp; go test ./xlsx/check_rules/cross_..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker.</tool_use_error>"
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 步骤7: 检查抽奖池 ID 是否存在于 Draw 表中\n\t\t\tif !validDrawIds[drawId] {\n\t\t\t\treason := fmt.Sprintf(\"活动【%s】(ID=%s) 的 CustomParma 值【%d】在 Draw 表（抽奖池表）中..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 步骤7: 检查抽奖池 ID 是否存在于 Draw 表中\n\t\t\tif !validDrawIds[drawId] {\n\t\t\t\treason := fmt.Sprintf(\"活动【%s】(ID=%s) 的 CustomParma 值【%d】在 Draw 表（抽奖池表）中不..."
+    },
+    {
+      "session": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nsed: can't read /d/work/xcard-qa-tools/rain-excel-checker/docs/丹青阁活动自定义参数检查规则.md: No such file or directory"
+    },
+    {
+      "session": "3b52f1b3-730e-4e87-be2b-bc81d30a59dc",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 7"
+    },
+    {
+      "session": "03caca5b-d0ec-4ee9-b8c6-770e85c0e97f",
+      "project": "server",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03caca5b-d0ec-4ee9-b8c6-770e85c0e97f",
+      "project": "server",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03caca5b-d0ec-4ee9-b8c6-770e85c0e97f",
+      "project": "server",
+      "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 4, in <module>\r\n    ws = wb['\\u01a4\\u01a4\\u063d�k|DrawSkin']\r\n         ~~^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\v-wangtengda\\AppDa..."
+    },
+    {
+      "session": "4fee4c6b-1828-4c1b-8660-1eebc9860a4b",
+      "project": "rain-excel-checker",
+      "error": "Exit code 1\nmain.go:9:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification; to add it:\n\tgo get git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notificati..."
+    },
+    {
+      "session": "4fee4c6b-1828-4c1b-8660-1eebc9860a4b",
+      "project": "rain-excel-checker",
+      "error": "Exit code 1\n# command-line-arguments [command-line-arguments.test]\nxlsx\\check_rules\\table\\table_check_arena_general_hero_test.go:21:14: undefined: ArenaGeneralHeroOpenCheckRule\nxlsx\\check_rules\\table\\..."
+    },
+    {
+      "session": "b3509a11-feb2-40ba-aa69-ec304815ca25",
+      "project": "rain-qa-func",
+      "error": "Exit code 128\nSubmodule 'rain-robot' (git@git.devcloud.ztgame.com:v-tangfangda/rain-robot.git) registered for path 'rain-robot'\nCloning into 'D:/work/xcard-qa-tools/rain-robot'...\n** WARNING: connecti..."
+    },
+    {
+      "session": "f8054b93-a7f3-4b4f-8d9d-d80e11d7139d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+    },
+    {
+      "session": "f8054b93-a7f3-4b4f-8d9d-d80e11d7139d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: finding module for package git.devcloud.ztgame.com/v-tangfangda/rain-robot/project/xcard/xcard_client\ngo: finding module for package git.devcloud.ztgame.com/v-tangfangda/rain-robot/pro..."
+    },
+    {
+      "session": "f8054b93-a7f3-4b4f-8d9d-d80e11d7139d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: updates to go.sum needed, disabled by -mod=readonly"
+    },
+    {
+      "session": "f8054b93-a7f3-4b4f-8d9d-d80e11d7139d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+    },
+    {
+      "session": "68acca1c-1f5b-4390-aa8c-b45b74cb3899",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\nC:\\Users\\v-wangtengda\\go\\pkg\\mod\\github.com\\samber\\lo@v1.53.0\\string.go:10:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by github.com/xuri/exceliz..."
+    },
+    {
+      "session": "68acca1c-1f5b-4390-aa8c-b45b74cb3899",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+    },
+    {
+      "session": "68acca1c-1f5b-4390-aa8c-b45b74cb3899",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\n# rain-qa-func/internal/common/game\ninternal\\common\\game\\excel.go:49:9: undefined: protoMsg\ninternal\\common\\game\\excel.go:62:20: undefined: protoMsg\ninternal\\common\\game\\excel.go:75:9: und..."
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: downloading git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker v0.0.0-20260331193815-01d800af0e92\ngo: downloading git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker v0.0...."
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-20260331193815-01d800af0e92: invalid version: unknown revision 01d800af0e92"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\tgit.devcloud.ztgame.com/v-tangfangda/rain-excel-checker v0.0.0-20260409221634-c2d45e34dc97</tool_use_error>"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: -insecure flag is no longer supported; use GOINSECURE instead"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-20260331193815-01d800af0e92: invalid version: unknown revision 01d800af0e92"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-00010101000000-000000000000: invalid version: unknown revision 000000000000"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\tgit.devcloud.ztgame.com/v-tangfangda/rain-resources-checker v0.0.0-00010101000000-000000000000\n</tool_use_error>"
+    },
+    {
+      "session": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\n# rain-qa-func/internal/common/game\ninternal\\common\\game\\excel.go:49:9: undefined: protoMsg\ninternal\\common\\game\\excel.go:62:20: undefined: protoMsg\ninternal\\common\\game\\excel.go:75:9: und..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "failed to get commit: fb145661f1afb2890f4da69deae3b4df0d14f85c: GET https://api.github.com/repos/v-tangfangda/feishu-lib/commits/fb145661f1afb2890f4da69deae3b4df0d14f85c?page=1&per_page=30: 404 Not Fo..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "Exit code 128\nfatal: ambiguous argument 'master': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:212:36: undefined: notification.CommitSection\n.\\main.go:235:28: undefined: notification.CommitSection\n.\\main.go:279:3: u..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\treturn okRes, tableRes, stats, nil\n\t}\n\n\t// checkGeneralTableRulesWithBaseCommit 执行通用表级规则检查，指定对比基准 commit</tool_use_error>"
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4.1 从 parent commit 加载全量 xlsx 文件补充 sheetMap\n\t\t// commit 中只有变更的文件，跨表规则（如 HERO_DROP_CHECK）需要读取关联表\n\t\t// 优先使用 parentHash 版本的全量数据（比本地磁盘更准确）..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\tcolRes, tableRes, stats, err := check_manager.CheckWithGitHistory(\n\t\t\t\trepoRoot, \"\", config.casePath, commitHash, parentHash,\n\t\t\t)</tool..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:504:68: undefined: excelize"
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4.1 补充 sheetMap 中缺失的关联表（跨表规则需要）\n\t\t// 优先使用调用方提供的缓存全量 sheetMap，避免每个 commit 重复读取\n\t\tif opt.fallbackSheetMap != nil {\n\t\t\tsupplementSheetMap..."
+    },
+    {
+      "session": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    }
+  ],
+  "comparisons": {
+    "vs_yesterday": null,
+    "vs_7day_avg": {
+      "total_sessions": 80.0,
+      "total_input_tokens": 88.9,
+      "total_output_tokens": 61.2,
+      "total_user_turns": -7.7,
+      "tool_count": -100.0,
+      "error_count": -100.0
+    }
+  },
+  "sessions": [
+    {
+      "session_id": "3b142461-8a9e-4bcb-83a8-a05cfe142747",
+      "project": "xcard-qa-tools",
+      "first_display": "解释 并行 5 subagent 不可行（Claude Code 无并行 Agent API）和 ASCII 宽度自动探测与 subagent 冲突",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-08T22:31:15.628000+08:00",
+      "end_time": "2026-04-09T14:14:19.762000+08:00",
+      "duration_minutes": 943.1,
+      "user_turns": 236,
+      "assistant_turns": 270,
+      "total_input_tokens": 1311661,
+      "total_output_tokens": 73496,
+      "zero_usage_count": 120,
+      "tool_usage": {
+        "Skill": 3,
+        "TaskCreate": 20,
+        "TaskUpdate": 29,
+        "Agent": 24,
+        "Read": 18,
+        "Bash": 35,
+        "AskUserQuestion": 12,
+        "Write": 11,
+        "Edit": 6,
+        "mcp__thinking__sequentialthinking": 2,
+        "Glob": 6,
+        "CronList": 1,
+        "TaskList": 1,
+        "Grep": 3
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:brainstorming",
+          "args": "制作一个golang项目建模工具技能，可以用图形化方式展示项目结构，方便人类理解，也可在subagent之间使用降低沟通成本"
+        },
+        {
+          "skill": "writing-plans",
+          "args": "基于已定稿的设计规格 docs/superpowers/specs/2026-04-08-go-project-modeler-design.md 创建 go-project-modeler 技能的实"
+        },
+        {
+          "skill": "subagent-driven-development",
+          "args": "docs/superpowers/plans/2026-04-09-go-project-modeler.md"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_26f9d879bb934121b20dca35",
+          "error": "Exit code 49\nPython was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases."
+        },
+        {
+          "tool_use_id": "call_870575dae41f473b9ba82e00",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_cbf327c05f0f42a3a4670f7b",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_a6aea6063d094532b4adb875",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_6f715c65a0f94ec49a374d6e",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_b06ded87b95d4b47be8428f1",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_fe08e4f99ba24211b3db3da5",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_d33b427629dc44b4a73f5b62",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_d755c34d269e4019b027426e",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_a23d96c755c041f999cbe057",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_c7f739b5fbc148e496a17bc5",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_946928d4615d47fa8c0dc2eb",
+          "error": "Exit code 1\ncat: /d/work/xcard-qa-tools/rain-excel-checker/xlsx/check_rules/table/table_check_drawskin_byproduct.go: No such file or directory"
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "<synthetic>",
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "2a11f88c-79a6-4777-b597-759b8d52c319",
+      "project": "xcard-qa-tools",
+      "first_display": "我发现非merge的提交仍然会读取本地仓库的所有文件",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-08T23:45:04.182000+08:00",
+      "end_time": "2026-04-09T10:37:23.552000+08:00",
+      "duration_minutes": 652.3,
+      "user_turns": 180,
+      "assistant_turns": 256,
+      "total_input_tokens": 901968,
+      "total_output_tokens": 30875,
+      "zero_usage_count": 104,
+      "tool_usage": {
+        "Grep": 5,
+        "Read": 35,
+        "Agent": 2,
+        "EnterPlanMode": 1,
+        "Write": 3,
+        "AskUserQuestion": 1,
+        "ExitPlanMode": 2,
+        "Edit": 15,
+        "TaskCreate": 5,
+        "TaskUpdate": 10,
+        "Bash": 75,
+        "TaskOutput": 1,
+        "mcp__thinking__sequentialthinking": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_e23e2a841f454241b89184f6",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n你如何再关..."
+        },
+        {
+          "tool_use_id": "call_75c5271f0df74c4bbfdd8ff4",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:189:6: syntax error: unexpected name CheckWithGitHistory, expected (\nxlsx\\che..."
+        },
+        {
+          "tool_use_id": "call_3c7fe2c21128478b9e4ba0e8",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 如果没有通用规则，直接返回\n\t\tif len(generalMetas) == 0 {\n\t\t\treturn results\n\t\t}\n\n\t// CheckWithGitHistory 基于 git 历史版本执行增量检查</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b0ca709d16644d73971e502e",
+          "error": "Exit code 1\n..\\feishu-lib\\notification\\event.go:8:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/json_rule; to add it:\n\tcd D:\\work\\xcard-qa-tools\\f..."
+        },
+        {
+          "tool_use_id": "call_5f18f97caa9c426b8cb467b6",
+          "error": "Exit code 1\n..\\feishu-lib\\notification\\event.go:8:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/json_rule; to add it:\n\tcd D:\\work\\xcard-qa-tools\\f..."
+        },
+        {
+          "tool_use_id": "call_171f38bc0ad1487d87aa8db7",
+          "error": "Exit code 1\n..\\xcard-qa-tools\\rain-excel-checker\\main.go:9:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification: go.mod file not found in current directo..."
+        },
+        {
+          "tool_use_id": "call_a7160293682c456088ab00e8",
+          "error": "Exit code 1\nmalformed import path \"/proc/self/fd/0\": empty path element"
+        },
+        {
+          "tool_use_id": "call_491fc8d2306c4e87967fdc7e",
+          "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\debug_diff.go:4:2: \"bytes\" imported and not used"
+        },
+        {
+          "tool_use_id": "call_4750dda1e7584719978f2efa",
+          "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\debug2.go:10:2: \"git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/excel_internal\" imported and not used"
+        },
+        {
+          "tool_use_id": "call_eccbeee501bc402d915697db",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_internal\nxlsx\\check_internal\\excel_diff.go:102:2: declared and not used: useFirstColAsId"
+        },
+        {
+          "tool_use_id": "call_49d4662be18143f79bf33f98",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 为每行创建快照数据\n\t\t\trowSnapshot := &RowSnapshot{</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c4420885f4614644ac33cbf7",
+          "error": "MCP error -32602: Input validation error: Invalid arguments for tool sequentialthinking: [\n  {\n    \"expected\": \"boolean\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"nextThoughtNeeded\"\n    ],\n   ..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "fc2ac919-7ecf-41d8-8fbe-0429bd1f233e",
+      "project": "xcard-qa-tools",
+      "first_display": "[Pasted text #1 +16 lines]",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T10:31:58.467000+08:00",
+      "end_time": "2026-04-09T10:36:41.029000+08:00",
+      "duration_minutes": 4.7,
+      "user_turns": 23,
+      "assistant_turns": 32,
+      "total_input_tokens": 100260,
+      "total_output_tokens": 4267,
+      "zero_usage_count": 13,
+      "tool_usage": {
+        "mcp__thinking__sequentialthinking": 6,
+        "Grep": 3,
+        "Read": 6,
+        "AskUserQuestion": 1,
+        "Bash": 2,
+        "Edit": 2,
+        "Write": 1,
+        "mcp__ide__getDiagnostics": 1
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "1b44fa19-956f-405a-bf17-238705a0d5b6",
+      "project": "xcard-qa-tools",
+      "first_display": "/add-dir",
+      "git_branch": "HEAD",
+      "start_time": "2026-04-09T10:58:18.205000+08:00",
+      "end_time": "2026-04-09T13:15:13.693000+08:00",
+      "duration_minutes": 136.9,
+      "user_turns": 384,
+      "assistant_turns": 591,
+      "total_input_tokens": 761559,
+      "total_output_tokens": 87950,
+      "zero_usage_count": 289,
+      "tool_usage": {
+        "Bash": 187,
+        "Glob": 1,
+        "Skill": 5,
+        "Read": 45,
+        "TaskCreate": 18,
+        "TaskUpdate": 33,
+        "Write": 25,
+        "Edit": 24,
+        "Grep": 4,
+        "Agent": 3
+      },
+      "skill_calls": [
+        {
+          "skill": "game-config-analyzer",
+          "args": ""
+        },
+        {
+          "skill": "test-case-generator",
+          "args": ""
+        },
+        {
+          "skill": "test-case-generator",
+          "args": ""
+        },
+        {
+          "skill": "skill-creator",
+          "args": ""
+        },
+        {
+          "skill": "game-config-analyzer",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_4ce968e41db246208e903c8d",
+          "error": "Exit code 1"
+        },
+        {
+          "tool_use_id": "call_c34eb0a92c4e493d892ccbc0",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\config."
+        },
+        {
+          "tool_use_id": "call_e266ec4829fb424481d7b10a",
+          "error": "Exit code 1\nOn branch master\nnothing to commit, working tree clean"
+        },
+        {
+          "tool_use_id": "call_f93c071652044b769a421f4b",
+          "error": "Exit code 1\nOn branch master\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\texcel/ActivityTask_活动任务表.xlsx.bak\n\nnothing added to commit but untracked files present (..."
+        },
+        {
+          "tool_use_id": "call_fbeb1d6764414a29966ac8d9",
+          "error": "Exit code 1\nmv: cannot stat '活动任务表_ActivityTask.json': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c5d9a44a05c24ebaba0a9eb8",
+          "error": "Exit code 1\nGetFileAttributesEx test_rule_registration.go: The system cannot find the file specified."
+        },
+        {
+          "tool_use_id": "call_4d8c9c3aa72748aa946b786a",
+          "error": "Exit code 1\nGetFileAttributesEx verify_rule.go: The system cannot find the file specified."
+        },
+        {
+          "tool_use_id": "call_b67a9158aa654d6baa7921f3",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6881cbec08964815949d4523",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_0967b959e76347e3b9f934e5",
+          "error": "Exit code 49"
+        },
+        {
+          "tool_use_id": "call_ef70387b2e284390aa28e254",
+          "error": "Exit code 1\ngo: no go files listed"
+        },
+        {
+          "tool_use_id": "call_d2322ace511d4b1c94e0cde9",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_34cf3c3260884e3cada8d3d1",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_rules/cross_table [git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_rules/cross_table.test]\nxlsx\\chec..."
+        },
+        {
+          "tool_use_id": "call_6aca5bfe37a248c582a76235",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+        },
+        {
+          "tool_use_id": "call_b6ba4cba9b5e44f78f074e2e",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_d816d536f8f34960afbe3798",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        },
+        {
+          "tool_use_id": "call_e36f11a686114d3e91052a56",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+        },
+        {
+          "tool_use_id": "call_f3ab8302fae24f53887a56b2",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        },
+        {
+          "tool_use_id": "call_c8c6d7f7ccca494c93bf2ce8",
+          "error": "spawn C:\\Users\\v-wangtengda\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT"
+        }
+      ],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "0bfe8241-d485-4fa9-aaa6-9721310f62c0",
+      "project": "xcard-qa-tools",
+      "first_display": "优化excel-parser技能增加通过git diff获取指定提交中的excel配置文件内容的能力",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T11:24:26.188000+08:00",
+      "end_time": "2026-04-09T12:34:25.500000+08:00",
+      "duration_minutes": 70.0,
+      "user_turns": 96,
+      "assistant_turns": 117,
+      "total_input_tokens": 440920,
+      "total_output_tokens": 40278,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Skill": 4,
+        "Glob": 4,
+        "Bash": 35,
+        "Read": 8,
+        "Grep": 5,
+        "Edit": 1,
+        "TaskCreate": 5,
+        "TaskUpdate": 10,
+        "Write": 5
+      },
+      "skill_calls": [
+        {
+          "skill": "excel-parser",
+          "args": ""
+        },
+        {
+          "skill": "brainstorming",
+          "args": ""
+        },
+        {
+          "skill": "skill-creator",
+          "args": "excel-parser skill-creator skill \"为 excel-parser 技能增加通过 git diff 获取指定提交中的 excel 配置文件内容的能力\n\n需求描述：\n- 当"
+        },
+        {
+          "skill": "skill-creator",
+          "args": "按照 skill-creator 的测试流程，为增强后的 excel-parser 技能（v4.0.0）运行测试用例\n\n技能位置：C:\\Users\\v-wangtengda\\.claude\\skill"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_35f7520ae42a4953a231ca53",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_b6901ffec4a3492cb8b7582e",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_d1b473b9dc17409cadce09ee",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_6c5f996167cc4a528d7a8fc7",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        }
+      ],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "7effb754-3852-4d70-bb5a-6fb0e3833d09",
+      "project": "xcard-qa-tools",
+      "first_display": "你会做梦吗",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T13:28:33.142000+08:00",
+      "end_time": "2026-04-09T13:29:41.180000+08:00",
+      "duration_minutes": 1.1,
+      "user_turns": 2,
+      "assistant_turns": 2,
+      "total_input_tokens": 92303,
+      "total_output_tokens": 221,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "c4de65a3-d165-4da9-a269-07a9205b06d0",
+      "project": "xcard-qa-tools",
+      "first_display": "rain-excel-checker/xlsx/check_rules/table目录中创建table_check_danqingge_time_active.",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T14:30:39.034000+08:00",
+      "end_time": "2026-04-09T16:22:10.930000+08:00",
+      "duration_minutes": 111.5,
+      "user_turns": 143,
+      "assistant_turns": 127,
+      "total_input_tokens": 539349,
+      "total_output_tokens": 34327,
+      "zero_usage_count": 3,
+      "tool_usage": {
+        "Agent": 8,
+        "Read": 22,
+        "Grep": 12,
+        "TaskCreate": 5,
+        "TaskUpdate": 10,
+        "Edit": 21,
+        "Write": 4,
+        "Bash": 36,
+        "Glob": 1,
+        "AskUserQuestion": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_55ddcdd4963e4d118c6f2171",
+          "error": "<tool_use_error>String to replace not found in file.\nString: | `excel_check.go` | `CheckerManager` 列级工厂，`init()` 注册 26 个检查器，全局实例 `Manager`；`ReadAndCheckXlsx`（列级）、`CheckTableRules`（表级）、`CheckSheetCols`..."
+        },
+        {
+          "tool_use_id": "call_ac894113e53e42e1af74535c",
+          "error": "Exit code 128\nfatal: not under version control, source=xlsx/check_rules/table/table_check_danqingge_time_active.go, destination=xlsx/check_rules/table/table_check_activity_danqingge_time.go"
+        },
+        {
+          "tool_use_id": "call_c2b554391c154b9c81c79677",
+          "error": "Exit code 1\n# command-line-arguments\nC:\\Users\\v-wangtengda\\AppData\\Local\\Temp\\test_danqingge.go:27:20: undefined: excelize"
+        },
+        {
+          "tool_use_id": "call_6e2585bef0e84a4781f4d94d",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_6b2574d741374871a612171c",
+          "error": "[Request interrupted by user for tool use]"
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "<synthetic>"
+      ]
+    },
+    {
+      "session_id": "be8cb842-a892-4c55-8033-3b72eb80ee3d",
+      "project": "server",
+      "first_display": "分析当前服务端代码中关于各种活动的配置校验逻辑代码位置并简要描述校验逻辑，将发现的知识整理到文档",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-04-09T14:38:42.256000+08:00",
+      "end_time": "2026-04-09T15:38:33.243000+08:00",
+      "duration_minutes": 59.8,
+      "user_turns": 69,
+      "assistant_turns": 105,
+      "total_input_tokens": 2037106,
+      "total_output_tokens": 118105,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Skill": 1,
+        "Bash": 11,
+        "Grep": 10,
+        "Glob": 4,
+        "Read": 19,
+        "TaskCreate": 3,
+        "Write": 7,
+        "TaskUpdate": 4,
+        "Agent": 6
+      },
+      "skill_calls": [
+        {
+          "skill": "game-config-analyzer",
+          "args": ""
+        }
+      ],
+      "errors": [],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "b2390b53-85b8-4903-9f3f-7fa026c8070a",
+      "project": "server",
+      "first_display": "检查当前项目所有文档是否可以通过claude渐进式披露所发现，是否有孤立文档",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-04-09T15:50:09.374000+08:00",
+      "end_time": "2026-04-09T16:54:51.351000+08:00",
+      "duration_minutes": 64.7,
+      "user_turns": 73,
+      "assistant_turns": 83,
+      "total_input_tokens": 391637,
+      "total_output_tokens": 20989,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Skill": 2,
+        "Glob": 1,
+        "Bash": 17,
+        "Read": 9,
+        "TaskCreate": 7,
+        "TaskUpdate": 9,
+        "Edit": 13,
+        "Write": 9
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:using-superpowers",
+          "args": ""
+        },
+        {
+          "skill": "渐进式披露",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_648e208451b44ad8a3cf039d",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_987ce9003f4d4c1b84879d01",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c302471018684eb09ca7ada9",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "8b1e711b-2b25-4056-8c01-7f8af1dcc764",
+      "project": "xcard-qa-tools",
+      "first_display": "你是否能看到 Activity_活动表.xlsx 的自定义参数列丹青阁这一行值为2002并且有备注“对应皮肤表的id”",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T16:28:37.808000+08:00",
+      "end_time": "2026-04-09T17:39:07.199000+08:00",
+      "duration_minutes": 70.5,
+      "user_turns": 109,
+      "assistant_turns": 128,
+      "total_input_tokens": 874732,
+      "total_output_tokens": 30609,
+      "zero_usage_count": 8,
+      "tool_usage": {
+        "Bash": 46,
+        "Skill": 1,
+        "Glob": 2,
+        "Read": 21,
+        "Grep": 2,
+        "Write": 5,
+        "Edit": 8
+      },
+      "skill_calls": [
+        {
+          "skill": "xlsx",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_7727a45052d040c699b93f80",
+          "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 6, in <module>\r\n    wb = load_workbook(file_path)\r\n  File \"C:\\Users\\v-wangtengda\\AppData\\Roaming\\Python\\Python314\\site-packages\\..."
+        },
+        {
+          "tool_use_id": "call_0e9524ba23954e6398ebfe07",
+          "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 7, in <module>\r\n    wb = load_workbook(file_path)\r\n  File \"C:\\Users\\v-wangtengda\\AppData\\Roaming\\Python\\Python314\\site-packages\\..."
+        },
+        {
+          "tool_use_id": "call_d54bf7c31808495a8430e1e1",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `;&'\n/usr/bin/bash: eval: line 1: `cd /d/work/config/excel &amp;&amp; powershell.exe -Command \"Get-ChildItem -Filter '*Activ..."
+        },
+        {
+          "tool_use_id": "call_2b59da96cf374129a2da60fc",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `;&'\n/usr/bin/bash: eval: line 1: `cd /d/work/xcard-qa-tools/rain-excel-checker &amp;&amp; go test ./xlsx/check_rules/cross_..."
+        },
+        {
+          "tool_use_id": "call_ed87e8d9404a451db19fff49",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+        },
+        {
+          "tool_use_id": "call_adfe36dc8a4b4208a590c6e3",
+          "error": "<tool_use_error>File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b17252c914344662989e55f8",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-excel-checker."
+        },
+        {
+          "tool_use_id": "call_70693a93b8ee4072b05d4329",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 步骤7: 检查抽奖池 ID 是否存在于 Draw 表中\n\t\t\tif !validDrawIds[drawId] {\n\t\t\t\treason := fmt.Sprintf(\"活动【%s】(ID=%s) 的 CustomParma 值【%d】在 Draw 表（抽奖池表）中..."
+        },
+        {
+          "tool_use_id": "call_0ffecc34746f45c6b382d459",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 步骤7: 检查抽奖池 ID 是否存在于 Draw 表中\n\t\t\tif !validDrawIds[drawId] {\n\t\t\t\treason := fmt.Sprintf(\"活动【%s】(ID=%s) 的 CustomParma 值【%d】在 Draw 表（抽奖池表）中不..."
+        },
+        {
+          "tool_use_id": "call_7447968aa64d444fa16ec9e3",
+          "error": "Exit code 2\nsed: can't read /d/work/xcard-qa-tools/rain-excel-checker/docs/丹青阁活动自定义参数检查规则.md: No such file or directory"
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "glm-4.7",
+        "<synthetic>"
+      ]
+    },
+    {
+      "session_id": "3b52f1b3-730e-4e87-be2b-bc81d30a59dc",
+      "project": "xcard-qa-tools",
+      "first_display": "你是否能看到 Activity_活动表.xlsx 的自定义参数列丹青阁这一行值为2002并且有备注“对应皮肤表的id” 上面这句话是否应该触发excel-par",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-09T16:30:09.994000+08:00",
+      "end_time": "2026-04-09T16:48:21.863000+08:00",
+      "duration_minutes": 18.2,
+      "user_turns": 27,
+      "assistant_turns": 26,
+      "total_input_tokens": 70717,
+      "total_output_tokens": 5301,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Skill": 2,
+        "Bash": 9,
+        "Read": 1,
+        "mcp__thinking__sequentialthinking": 3,
+        "TaskCreate": 3,
+        "TaskUpdate": 3,
+        "Write": 1,
+        "AskUserQuestion": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "excel-parser",
+          "args": ""
+        },
+        {
+          "skill": "skill-creator",
+          "args": "测试和优化 excel-parser 技能的触发条件。用户反馈在别的对话中，提示词\"你是否能看到 Activity_活动表.xlsx 的自定义参数列丹青阁这一行值为2002并且有备注'对应皮肤表的id"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_7bc47426269c48d8be5b34ba",
+          "error": "Exit code 7"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "03caca5b-d0ec-4ee9-b8c6-770e85c0e97f",
+      "project": "server",
+      "first_display": "为我梳理一下丹青阁活动皮肤掉落逻辑",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-04-09T17:03:13.948000+08:00",
+      "end_time": "2026-04-10T08:06:31.434000+08:00",
+      "duration_minutes": 903.3,
+      "user_turns": 156,
+      "assistant_turns": 207,
+      "total_input_tokens": 1761231,
+      "total_output_tokens": 88929,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Grep": 50,
+        "Read": 51,
+        "Bash": 12,
+        "Glob": 5,
+        "Write": 1,
+        "Edit": 11,
+        "TaskCreate": 4,
+        "TaskUpdate": 3,
+        "Skill": 1,
+        "AskUserQuestion": 1,
+        "WebSearch": 2
+      },
+      "skill_calls": [
+        {
+          "skill": "game-config-analyzer",
+          "args": "丹青阁活动相关的DropRulesTemplate掉落规则配置，查找DrawSkinsTemplate中的OnceDropRule字段关联的掉落规则ID，以及这些规则ID对应的DropGroupsTe"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_58a2125ae04f471ca48076b8",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_18b0173eacf34383afa95f45",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_87a4da8f86b64ae2bf293358",
+          "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 4, in <module>\r\n    ws = wb['\\u01a4\\u01a4\\u063d�k|DrawSkin']\r\n         ~~^^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Users\\v-wangtengda\\AppDa..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "4fee4c6b-1828-4c1b-8660-1eebc9860a4b",
+      "project": "rain-excel-checker",
+      "first_display": "我希望重构 xlsx/check_manager/table_checker_def.go:24 测参数 提取一个CheckParam结构提，但考虑到工作量大，",
+      "git_branch": "HEAD",
+      "start_time": "2026-04-09T17:25:39.109000+08:00",
+      "end_time": "2026-04-09T18:57:22.905000+08:00",
+      "duration_minutes": 91.7,
+      "user_turns": 112,
+      "assistant_turns": 177,
+      "total_input_tokens": 569766,
+      "total_output_tokens": 30229,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Read": 20,
+        "Grep": 9,
+        "AskUserQuestion": 1,
+        "Edit": 3,
+        "Bash": 45,
+        "Write": 4,
+        "TaskCreate": 4,
+        "TaskUpdate": 7,
+        "Agent": 8
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_b26f695cc7b74a6b8fc4f7a8",
+          "error": "Exit code 1\nmain.go:9:2: no required module provides package git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification; to add it:\n\tgo get git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notificati..."
+        },
+        {
+          "tool_use_id": "call_c8da7c8985a7483d9b9ef336",
+          "error": "Exit code 1\n# command-line-arguments [command-line-arguments.test]\nxlsx\\check_rules\\table\\table_check_arena_general_hero_test.go:21:14: undefined: ArenaGeneralHeroOpenCheckRule\nxlsx\\check_rules\\table\\..."
+        }
+      ],
+      "models_used": [
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "b3509a11-feb2-40ba-aa69-ec304815ca25",
+      "project": "rain-qa-func",
+      "first_display": "如何在当前仓库移除rain-robot这个submodule",
+      "git_branch": "main",
+      "start_time": "2026-04-09T17:47:30.705000+08:00",
+      "end_time": "2026-04-09T17:56:24.212000+08:00",
+      "duration_minutes": 8.9,
+      "user_turns": 16,
+      "assistant_turns": 13,
+      "total_input_tokens": 162192,
+      "total_output_tokens": 1122,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Bash": 10
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_5f14b365404d43b79e51cef2",
+          "error": "Exit code 128\nSubmodule 'rain-robot' (git@git.devcloud.ztgame.com:v-tangfangda/rain-robot.git) registered for path 'rain-robot'\nCloning into 'D:/work/xcard-qa-tools/rain-robot'...\n** WARNING: connecti..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "f8054b93-a7f3-4b4f-8d9d-d80e11d7139d",
+      "project": "rain-qa-func",
+      "first_display": "go mod tidy",
+      "git_branch": "m",
+      "start_time": "2026-04-09T22:00:16.160000+08:00",
+      "end_time": "2026-04-09T22:15:15.616000+08:00",
+      "duration_minutes": 15.0,
+      "user_turns": 37,
+      "assistant_turns": 46,
+      "total_input_tokens": 151904,
+      "total_output_tokens": 5741,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Bash": 31,
+        "Read": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_5ba298c4db584237979b8130",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+        },
+        {
+          "tool_use_id": "call_f8e36d1439da432788418486",
+          "error": "Exit code 1\ngo: finding module for package git.devcloud.ztgame.com/v-tangfangda/rain-robot/project/xcard/xcard_client\ngo: finding module for package git.devcloud.ztgame.com/v-tangfangda/rain-robot/pro..."
+        },
+        {
+          "tool_use_id": "call_9100d00bd68a476f93e35cd7",
+          "error": "Exit code 1\ngo: updates to go.sum needed, disabled by -mod=readonly"
+        },
+        {
+          "tool_use_id": "call_8f961dfa42164d9299ad1be7",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "68acca1c-1f5b-4390-aa8c-b45b74cb3899",
+      "project": "rain-qa-func",
+      "first_display": "go build ./...",
+      "git_branch": "m",
+      "start_time": "2026-04-09T22:20:48.066000+08:00",
+      "end_time": "2026-04-09T22:23:41.949000+08:00",
+      "duration_minutes": 2.9,
+      "user_turns": 18,
+      "assistant_turns": 26,
+      "total_input_tokens": 139630,
+      "total_output_tokens": 3635,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Bash": 10,
+        "Read": 2,
+        "Edit": 2,
+        "Grep": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_f8a1ec8f55a14d959428a9cd",
+          "error": "Exit code 1\nC:\\Users\\v-wangtengda\\go\\pkg\\mod\\github.com\\samber\\lo@v1.53.0\\string.go:10:2: missing go.sum entry for module providing package golang.org/x/text/cases (imported by github.com/xuri/exceliz..."
+        },
+        {
+          "tool_use_id": "call_efb69143a9434a4596f2f591",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/feishu-lib@v0.0.0: reading git.devcloud.ztgame.com/v-tangfangda/feishu-lib/go.mod at revision v0.0.0: unknown revision v0.0.0"
+        },
+        {
+          "tool_use_id": "call_2bfd4c31f1464cefa1737a0a",
+          "error": "Exit code 1\n# rain-qa-func/internal/common/game\ninternal\\common\\game\\excel.go:49:9: undefined: protoMsg\ninternal\\common\\game\\excel.go:62:20: undefined: protoMsg\ninternal\\common\\game\\excel.go:75:9: und..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "e4486337-d950-4f8e-9d0a-80d883cf153e",
+      "project": "rain-qa-func",
+      "first_display": "我修改了go.mod移除replace并将相关依赖推送，但构建提示找不到依赖",
+      "git_branch": "m",
+      "start_time": "2026-04-09T22:25:14.769000+08:00",
+      "end_time": "2026-04-09T22:33:34.384000+08:00",
+      "duration_minutes": 8.3,
+      "user_turns": 28,
+      "assistant_turns": 39,
+      "total_input_tokens": 182914,
+      "total_output_tokens": 4247,
+      "zero_usage_count": 0,
+      "tool_usage": {
+        "Read": 3,
+        "Bash": 19,
+        "Edit": 3,
+        "Grep": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_98df53a71b194ef9b26a315b",
+          "error": "Exit code 1\ngo: downloading git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker v0.0.0-20260331193815-01d800af0e92\ngo: downloading git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker v0.0...."
+        },
+        {
+          "tool_use_id": "call_b5e91a4d568f499fb2d201c0",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+        },
+        {
+          "tool_use_id": "call_b88df8b8cd2e4b2f9c9891b1",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-20260331193815-01d800af0e92: invalid version: unknown revision 01d800af0e92"
+        },
+        {
+          "tool_use_id": "call_4820282b08034db6a59617a0",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+        },
+        {
+          "tool_use_id": "call_b5ba119bee96436fba68683e",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker@v0.0.0-20260409221634-c2d45e34dc97: invalid pseudo-version: does not match version-control timestamp (expected 20260409141634)"
+        },
+        {
+          "tool_use_id": "call_85bdda9298e945daa4362bea",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\tgit.devcloud.ztgame.com/v-tangfangda/rain-excel-checker v0.0.0-20260409221634-c2d45e34dc97</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_46fc417ddd91454b99912a58",
+          "error": "Exit code 1\ngo: -insecure flag is no longer supported; use GOINSECURE instead"
+        },
+        {
+          "tool_use_id": "call_9e2f51bafb90439985b50ae2",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-20260331193815-01d800af0e92: invalid version: unknown revision 01d800af0e92"
+        },
+        {
+          "tool_use_id": "call_ab77cac7c9d340b2849c48b4",
+          "error": "Exit code 1\ngo: git.devcloud.ztgame.com/v-tangfangda/rain-resources-checker@v0.0.0-00010101000000-000000000000: invalid version: unknown revision 000000000000"
+        },
+        {
+          "tool_use_id": "call_8f5354f40de34473a70bb2ab",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\tgit.devcloud.ztgame.com/v-tangfangda/rain-resources-checker v0.0.0-00010101000000-000000000000\n</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_bf28076938d54d93bc27bf4d",
+          "error": "Exit code 1\n# rain-qa-func/internal/common/game\ninternal\\common\\game\\excel.go:49:9: undefined: protoMsg\ninternal\\common\\game\\excel.go:62:20: undefined: protoMsg\ninternal\\common\\game\\excel.go:75:9: und..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "b0be5526-3eef-4f7d-be19-d6a731502d0d",
+      "project": "rain-qa-func",
+      "first_display": "ultrathink 检查一下在merge的情况下 rain-excel-checker会为每个commit发送飞书消息的原因",
+      "git_branch": "main",
+      "start_time": "2026-04-09T23:56:25.394000+08:00",
+      "end_time": "2026-04-10T11:10:02.773000+08:00",
+      "duration_minutes": 673.6,
+      "user_turns": 253,
+      "assistant_turns": 359,
+      "total_input_tokens": 980571,
+      "total_output_tokens": 65228,
+      "zero_usage_count": 8,
+      "tool_usage": {
+        "Agent": 5,
+        "Read": 53,
+        "mcp__plugin_github_github__get_commit": 1,
+        "Glob": 2,
+        "Bash": 54,
+        "Grep": 43,
+        "EnterPlanMode": 1,
+        "AskUserQuestion": 1,
+        "Write": 3,
+        "ExitPlanMode": 1,
+        "TaskCreate": 8,
+        "TaskUpdate": 20,
+        "Edit": 42
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_3980f0712a3e445bbd0bbe6d",
+          "error": "failed to get commit: fb145661f1afb2890f4da69deae3b4df0d14f85c: GET https://api.github.com/repos/v-tangfangda/feishu-lib/commits/fb145661f1afb2890f4da69deae3b4df0d14f85c?page=1&per_page=30: 404 Not Fo..."
+        },
+        {
+          "tool_use_id": "call_80838e5ebc0748708bc98737",
+          "error": "Exit code 128\nfatal: ambiguous argument 'master': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+        },
+        {
+          "tool_use_id": "call_1f102fc6b2a1410fabe66234",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:212:36: undefined: notification.CommitSection\n.\\main.go:235:28: undefined: notification.CommitSection\n.\\main.go:279:3: u..."
+        },
+        {
+          "tool_use_id": "call_df93c0eaf69d4513996af1c0",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\treturn okRes, tableRes, stats, nil\n\t}\n\n\t// checkGeneralTableRulesWithBaseCommit 执行通用表级规则检查，指定对比基准 commit</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_ab62a64a912d460d8afce035",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4.1 从 parent commit 加载全量 xlsx 文件补充 sheetMap\n\t\t// commit 中只有变更的文件，跨表规则（如 HERO_DROP_CHECK）需要读取关联表\n\t\t// 优先使用 parentHash 版本的全量数据（比本地磁盘更准确）..."
+        },
+        {
+          "tool_use_id": "call_35fbd41b32514326b18b1a2a",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\tcolRes, tableRes, stats, err := check_manager.CheckWithGitHistory(\n\t\t\t\trepoRoot, \"\", config.casePath, commitHash, parentHash,\n\t\t\t)</tool..."
+        },
+        {
+          "tool_use_id": "call_a97e50c9eae549d4bb4c66dc",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:504:68: undefined: excelize"
+        },
+        {
+          "tool_use_id": "call_363b9853f6d34281a8a8946b",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_156eddf928eb405ca602e9cb",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_48efc7005c8f4908b8aea5a8",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4.1 补充 sheetMap 中缺失的关联表（跨表规则需要）\n\t\t// 优先使用调用方提供的缓存全量 sheetMap，避免每个 commit 重复读取\n\t\tif opt.fallbackSheetMap != nil {\n\t\t\tsupplementSheetMap..."
+        },
+        {
+          "tool_use_id": "call_553bf8528a1543d7a18b4e6e",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "<synthetic>",
+        "glm-4.7"
+      ]
+    }
+  ]
+}

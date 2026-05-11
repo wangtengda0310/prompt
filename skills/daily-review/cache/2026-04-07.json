@@ -1,0 +1,1768 @@
+{
+  "date": "2026-04-07",
+  "total_sessions": 8,
+  "sessions_with_files": 8,
+  "total_input_tokens": 4713464,
+  "total_output_tokens": 360081,
+  "zero_usage_count": 1456,
+  "total_user_turns": 1745,
+  "total_assistant_turns": 2912,
+  "avg_turns_per_session": 218.1,
+  "tool_usage_summary": {
+    "Bash": 564,
+    "Read": 435,
+    "Edit": 233,
+    "Grep": 100,
+    "Write": 64,
+    "Glob": 57,
+    "CronCreate": 13,
+    "TaskUpdate": 9,
+    "AskUserQuestion": 6,
+    "Skill": 6,
+    "mcp__ide__getDiagnostics": 6,
+    "CronList": 5,
+    "TaskCreate": 5,
+    "mcp__thinking__sequentialthinking": 4,
+    "analyze_image": 3,
+    "Agent": 2,
+    "ExitPlanMode": 2,
+    "mcp__rain-qa-func__preview_excel_sheet": 2,
+    "WebSearch": 1,
+    "EnterPlanMode": 1,
+    "TaskOutput": 1
+  },
+  "skill_usage_summary": {
+    "work-journal": {
+      "count": 1,
+      "sessions": [
+        "df6ea75a-9416-4f4b-800d-ac29e49a2414"
+      ]
+    },
+    "frontend-layout-docs": {
+      "count": 1,
+      "sessions": [
+        "df6ea75a-9416-4f4b-800d-ac29e49a2414"
+      ]
+    },
+    "writing-plans": {
+      "count": 1,
+      "sessions": [
+        "df6ea75a-9416-4f4b-800d-ac29e49a2414"
+      ]
+    },
+    "test-case-generator": {
+      "count": 2,
+      "sessions": [
+        "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+        "34f236cf-cf9c-434c-b101-be2d4b38108c"
+      ]
+    },
+    "game-config-analyzer": {
+      "count": 1,
+      "sessions": [
+        "0fc1cb46-9894-4016-a8c2-46886302dc7a"
+      ]
+    }
+  },
+  "project_distribution": {
+    "xcard-qa-tools": {
+      "sessions": 6,
+      "input_tokens": 4552715,
+      "output_tokens": 338369
+    },
+    "config": {
+      "sessions": 2,
+      "input_tokens": 160749,
+      "output_tokens": 21712
+    }
+  },
+  "sessions_by_hour": {
+    "10": 2,
+    "11": 2,
+    "14": 1,
+    "15": 1,
+    "16": 1,
+    "9": 1
+  },
+  "tool_patterns": [
+    {
+      "pattern": [
+        "Bash",
+        "Bash"
+      ],
+      "count": 316
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Bash"
+      ],
+      "count": 209
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read"
+      ],
+      "count": 167
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read"
+      ],
+      "count": 116
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit"
+      ],
+      "count": 113
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash"
+      ],
+      "count": 89
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash"
+      ],
+      "count": 80
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "count": 75
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Read"
+      ],
+      "count": 71
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Edit"
+      ],
+      "count": 57
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Read"
+      ],
+      "count": 54
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Edit"
+      ],
+      "count": 42
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Edit"
+      ],
+      "count": 41
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit",
+        "Bash"
+      ],
+      "count": 38
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read",
+        "Read"
+      ],
+      "count": 38
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash",
+        "Read"
+      ],
+      "count": 36
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit",
+        "Read"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Read",
+        "Edit"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Read",
+        "Grep"
+      ],
+      "count": 32
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash",
+        "Bash"
+      ],
+      "count": 31
+    }
+  ],
+  "errors": [
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issues:\nThe required parameter `questions[1].question` is missing\nThe required parameter `questions[1].header` is miss..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `cd rain-qa-func && npm run dev 2>&&1 | head -20'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `npm run dev 2>&&1 | head -20'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: ambiguous argument 'frontend/src/pages/excel-test/index.vue': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncat: rain-qa-func/frontend/src/pages/excel-test/composables/menu.ts: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'rain-qa-func/frontend/src/pages/excel-test/composables/': No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:active-key=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <n-layout position=\"absolute\" style=\"top: 34px; bottom: 64px\" has-sider>\n        <n-layout-sider\n            bordered\n            c..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:       <PageMenuBar\n        :menu-options=\"menuOptions()\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\">qwe\n        <template #right></..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:       <button class=\"idea-icon-button\" @click=\"router.push('/Roadmap')\">路线图</button>\n    </div></tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# ����: 2026-03-31, 2026-04-01, 2026-04-02, 2026-04-03 | ��Ŀ: 718 | ��Ŀ: activity_page, config, excel, fake_feishu_message_ui, gobee, rain-excel-checker, rain-qa-func, server, xcard-qa-too..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:               @dropdown-select=\"(key) => emit('dropdown-select', key)\"\n              @dropdown-clickoutside=\"() => emit('dropdown-clickouts..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Path does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Directory does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_err..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncat: 'D:/work/xcard-qa-tools/bindings/rain-qa-func/internal/function-test/funccaseconfigservice.ts': No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-resources-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: feishu-lib: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: debug-utils: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"C:\\Users\\v-wangtengda\\.claude\\skills\\daily-review\\scripts\\daily-review.py\", line 683, in <module>\r\n    main()\r\n    ~~~~^^\r\n  File \"C:\\Users\\v-wa..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n无 2026-04-04 的会话记录"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n无 2026-04-05 的会话记录"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n无 2026-04-06 的会话记录"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n无 2026-04-06 的会话记录"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func. Did you mean models.js?"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 5. 通用规则层：执行通用表级规则检查（NEW_ROW_NOTIFY、ROW_CHANGE_NOTIFY）\n\t\t// 这些规则自动应用于所有表，无需 JSON 配置\n\t\tgeneralTableResults := checkGeneralTableRules(she..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nsed: -e expression #1, char 85: unterminated `s' command"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 确定要处理的表名列表\n\tsheetsToProcess := make([]string, 0)\n\tif len(changedFiles) > 0 {\n\t\t// 增量检查：只处理变更文件对应的表\n\t\tfor _, file := range changedFiles ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:   // 确定要检查的表名列表\n  // 增量检查时只检查变更的表。全量检查时检查所有表\n  sheetsToCheck := make([]string, 0)\n  if len(changedFiles) > 0 {\n    // 增量检查：从变更文件提取表名\n    fo..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: no go files listed"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: no go files listed"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nflag provided but not defined: -executableskip\nusage: go run [build flags] [-exec xprog] package [arguments...]\nRun 'go help run' for details."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中）\n// 通过在 sh..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: no go files listed"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中）\n// 通过在 sh..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中)\n// 通过在 sh..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\npattern ./...: directory prefix . does not contain main module or its selected dependencies"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // FilterRulesByChangedFiles 根据变更文件过滤规则列表\n// 返回需要执行的规则子集\n//\n// 参数:\n//   - rules: 所有规则列表\n//   - changedFiles: 变更文件列表（相对路径或绝对路径）\n//\n// 返回:\n//..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 后缀匹配: \"武将|Hero\" 后缀匹配 \"Hero\"\n\t\t\tif strings.HasSuffix(sheetName, \"|\"+nameWithoutExt) {\n\t\t\t\t\treturn true\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn false\n\t..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 后缀匹配: \"武将|Hero\" 后缀匹配 \"Hero\"\n\t\t\tif strings.HasSuffix(sheetName, \"|\"+nameWithoutExt) {\n\t\t\t\t\treturn true\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn false\n\t..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \tchangedFiles := []string{\"Hero.xlsx\"}\n\t\tfiltered := FilterRulesByChangedFiles(rules, changedFiles)</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n\tFilterRulesByChangedFiles 接收的应该是已分割好的 []string\n\t changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason.xlsx\"}\n    fi..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n        FilterRulesByChangedFiles 接收的应该是已分割好的 []string\n        changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason...."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n\t // FilterRulesByChangedFiles 接收的应该是已分割好的 []string\n        changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason.xls..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nsed: -e expression #1, char 15: unknown option to `s'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:113:28: stats.TotalRules undefined (type *check_manager.CheckStats has no field or method TotalRules)\n.\\main.go:114:28: ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 添加统计信息\n\t\tif stats != nil {\n\t\t\tevent.Stats = &notification.CheckStats{\n\t\t\t\tTotalRules:       stats.TotalRules,\n\t\t\t\tFilteredRules:    st..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 添加统计信息\n\t\tif stats != nil {\n\t\t\tevent.Stats = &notification.CheckStats{\n\t\t\t\tTotalRules:       stats.TotalRules,\n\t\t\t\tFilteredRules:    st..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:9: assignment mismatch: 1 variable but supplementDefaultTableRules returns..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2. 规则层：加载列级规则（JSON)\n\t\tlist, err := check_internal.LoadCheck(casePath)\n\t\tif err != nil {\n\t\t\treturn nil, nil, nil, err\n\t\t}\n\n\t\t// 2.1 补充有..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2. 规则层：加载列级规则（JSON)\n\t\tlist, err := check_internal.LoadCheck(casePath)\n\t\tif err != nil {\n\t\t\treturn nil, nil, nil, err\n\t\t}\n\n\t\t// 2.1 补充有..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tlist = supplementDefaultTableRules(list, sheetMap, changedFiles)\n\n\t\t// 3. ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tlist = supplementDefaultTableRules(list, sheetMap, changedFiles)\n\n\t\t// 3. ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\tstats.GeneralRuleCount = generalRuleCount // 通用规则数\n\n\t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.She..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t fmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n\t\t}..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t fmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n   ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n\t\t}..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\tGeneralRuleCount int  // 通用规则数量（NEW_ROW_NOTIFY + ROW_CHANGE_NOTIFY × 表数）\n\t\tIsIncremental    bool // 是否为增量检查\n\t\tChangedFileCount int  // 变更..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t} else {\n\t\t\tt.Log(\"成功清理测试目录\")\n\t\t}\n\t}\n\t\n\tfunc TestCheckAll(t *testing.T) {\n\t\t// 读取文件\n\t\texcels, err := excel_internal.ReadFileOrDir(\"resourc..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tcolRulesMap, supplementedTableRules := supplementDefaultTableRules(list, s..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\filter.go:6:2: \"fmt\" imported and not used"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification [git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification.test]\nnotification\\event_test.go:18:19: event.Summarize undefin..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification [git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification.test]\nnotification\\formatter_test.go:191:6: TestCountNotificati..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:  // Handle 处理检查结果事件\n// 如果劫持开启，拦截消息并发送到前端，然后返回 ErrStopProcessing 龘止后续处理器\n// 如果劫持未开启，返回 nil 让后续处理器（如飞书卡片处理器）继续处理\nfunc (h *InterceptHandler) H..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `newline'\n/usr/bin/bash: eval: line 1: `go build ./... 2>&'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // Handle 处理检查结果事件\n// 如果劫持开启，拦截消息并发送到前端，然后返回 ErrStopProcessing 阻止后续处理器\n// 如果劫持未开启，返回 nil 让下一个处理器处理\nfunc (h *InterceptHandler) Handle(event ..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // Handle 处理检查结果事件\nfunc (h *FeishuCardHandler) Handle(event *notification.CheckResultEvent) error {\n\treturn handle(event)\n\n}</tool_use_erro..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nnotification\\handlers\\feishu.go:67:24: syntax error: missing parameter name\nnotification\\handlers\\feishu.go:145:1: s..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: ambiguous argument 'info': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: pathspec 'feishu-lib/notification/handlers' did not match any file(s) known to git"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nfeishu-lib\\notification\\handlers\\intercept.go:5:2: \"fmt\" imported and not used\nfeishu-lib\\notification\\handlers\\inte..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注册飞书卡片处理器（发送到飞书群）\n\t\tdispatcher.Register(handlers.NewFeishuCardHandler(\n\t\t\tconfig.feishuRobot,\n\t\t\thandlers.WithAtUser(config.commitName)..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注册飞书卡片处理器（发送到飞书群）\n\t\tdispatcher.Register(handlers.NewFeishuCardHandler(\n\t\t\tconfig.feishuRobot,\n\t\t\thandlers.WithAtUser(config.commitName)..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \tsummary, content := handle(event, nil) // 确定消息类型</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\npattern ./...: directory prefix . does not contain modules listed in go.work or their selected dependencies"
+    },
+    {
+      "session": "0a34fe0e-fc34-4fb1-b4e0-9dcef81febc4",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: package activity\n\nimport (\n\t\"reflect\"\n\t\"testing\"\n\n\t\"git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/excel_internal\"\n)\n\nfunc Te..."
+    },
+    {
+      "session": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/activity [git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/activity.test]\n.\\check_test.go:8:2: \"git.devcloud.ztgame.com/v-t..."
+    },
+    {
+      "session": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // TestHeroMeltCheckRule_Meta 测试规则元数据\nfunc TestHeroMeltCheckRule_Meta(t *testing.T) {\n\trule := &HeroMeltCheckRule{}\n\tmeta := rule.Meta()\n\n\t..."
+    },
+    {
+      "session": "0fc1cb46-9894-4016-a8c2-46886302dc7a",
+      "project": "config",
+      "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 15, in <module>\r\n    giftshop_rows = read_all_data('excel/GiftShop_����̵�.xlsx', 30)\r\n                    ~~~~~~~~~~~~~^^^^^^^^^..."
+    },
+    {
+      "session": "0fc1cb46-9894-4016-a8c2-46886302dc7a",
+      "project": "config",
+      "error": "Exit code 127\n/usr/bin/bash: line 41: iconv: command not found"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access ' D:/work/xcard-qa-tools/rain-qa-func/bindings': No such file or directory"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/': No such file or directory\n/:\ntotal 9660\ndrwxr-xr-x  1 v-wangtengda 1049089       0  3月 24 13:57 .\ndrwxr-xr-x  1 v-wangten..."
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/': No such file or directory"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/': No such file or directory"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'bindings/': No such file or directory"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: /**\n * 活动测试数据状态管理\n *\n * 管理当前选中的活动 Sheet 数据、检查规则映射和表级规则状态\n */\nimport {TreeOption, ref} from \"vue\";\nimport {TableRule, TableRuleMeta, SheetCo..."
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe parameter `` type is expected as `object` but provided as `array`</tool_use_error>"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1"
+    },
+    {
+      "session": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No task found with ID: bqxryz4hv</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <n-tree\n          :data=\"treeData\"\n          :pattern=\"localPattern\"\n          :node-props=\"nodeProps\"\n          :checked-keys=\"che..."
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: Pathspec 'rain-qa-func/frontend/src/pages/activity-test/index.vue' is in submodule 'rain-qa-func'"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issue:\nThe required parameter `questions[0].options` is missing</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    }
+  ],
+  "comparisons": {
+    "vs_yesterday": null,
+    "vs_7day_avg": {
+      "total_sessions": -50.0,
+      "total_input_tokens": -39.2,
+      "total_output_tokens": -16.5,
+      "total_user_turns": -18.5,
+      "tool_count": -100.0,
+      "error_count": -100.0
+    }
+  },
+  "sessions": [
+    {
+      "session_id": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "first_display": "使用frontend-layout-docs 为header-content-footer补充文档",
+      "git_branch": "main",
+      "start_time": "2026-04-03T16:01:15.837000+08:00",
+      "end_time": "2026-04-08T03:33:23.775000+08:00",
+      "duration_minutes": 6452.1,
+      "user_turns": 1050,
+      "assistant_turns": 1547,
+      "total_input_tokens": 3057203,
+      "total_output_tokens": 192719,
+      "zero_usage_count": 651,
+      "tool_usage": {
+        "Glob": 17,
+        "Write": 30,
+        "Read": 281,
+        "Edit": 173,
+        "Bash": 295,
+        "Grep": 58,
+        "AskUserQuestion": 5,
+        "Skill": 3,
+        "CronCreate": 13,
+        "CronList": 5,
+        "mcp__ide__getDiagnostics": 3,
+        "WebSearch": 1,
+        "mcp__thinking__sequentialthinking": 4,
+        "EnterPlanMode": 1,
+        "Agent": 1,
+        "ExitPlanMode": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "work-journal",
+          "args": "生成周报"
+        },
+        {
+          "skill": "frontend-layout-docs",
+          "args": "为 header-content-footer 组件补充文档"
+        },
+        {
+          "skill": "writing-plans",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_227648e8fbe44bea831ada54",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c491fc180bd14713a0677495",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d82edd2e97134b79a9799699",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_733681af93604aee9cdf9345",
+          "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issues:\nThe required parameter `questions[1].question` is missing\nThe required parameter `questions[1].header` is miss..."
+        },
+        {
+          "tool_use_id": "call_2f9a7825c483462ea082e02a",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `cd rain-qa-func && npm run dev 2>&&1 | head -20'"
+        },
+        {
+          "tool_use_id": "call_4f604413c7a34e7e9485815c",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `npm run dev 2>&&1 | head -20'"
+        },
+        {
+          "tool_use_id": "call_b6f7b7c9d3da4b3fb239d88f",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_ad6077cd1d6b4e2c874e49ad",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c9baf03bc7254a9d8612b782",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_bb5bc484a6424071816b6d7f",
+          "error": "Exit code 128\nfatal: ambiguous argument 'frontend/src/pages/excel-test/index.vue': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command..."
+        },
+        {
+          "tool_use_id": "call_62cd6b48db194ce7a081225b",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+        },
+        {
+          "tool_use_id": "call_7e728b67723e43b69f2e4b92",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+        },
+        {
+          "tool_use_id": "call_aef95d7328934cab8879c4c6",
+          "error": "Exit code 1\ncat: rain-qa-func/frontend/src/pages/excel-test/composables/menu.ts: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_ba9ec530bd784f0f90512730",
+          "error": "Exit code 2\nls: cannot access 'rain-qa-func/frontend/src/pages/excel-test/composables/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_39c382244cd34aa3b7a9e0d4",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c898b31bed0e4256a8c9f447",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:active-key=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d6cfc90ad3e6405caf62e75b",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <n-layout position=\"absolute\" style=\"top: 34px; bottom: 64px\" has-sider>\n        <n-layout-sider\n            bordered\n            c..."
+        },
+        {
+          "tool_use_id": "call_86b3f4a9247d44a0990e59ca",
+          "error": "<tool_use_error>String to replace not found in file.\nString:       <PageMenuBar\n        :menu-options=\"menuOptions()\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\">qwe\n        <template #right></..."
+        },
+        {
+          "tool_use_id": "call_cc931434eac34751b9f8e5cd",
+          "error": "<tool_use_error>String to replace not found in file.\nString:       <button class=\"idea-icon-button\" @click=\"router.push('/Roadmap')\">路线图</button>\n    </div></tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_9149caa874df49c385daa646",
+          "error": "Exit code 1\n# ����: 2026-03-31, 2026-04-01, 2026-04-02, 2026-04-03 | ��Ŀ: 718 | ��Ŀ: activity_page, config, excel, fake_feishu_message_ui, gobee, rain-excel-checker, rain-qa-func, server, xcard-qa-too..."
+        },
+        {
+          "tool_use_id": "call_4df53092deb247858508941b",
+          "error": "<tool_use_error>String to replace not found in file.\nString:               @dropdown-select=\"(key) => emit('dropdown-select', key)\"\n              @dropdown-clickoutside=\"() => emit('dropdown-clickouts..."
+        },
+        {
+          "tool_use_id": "call_b440ca8676164dc896d30731",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_dffab778f3c144a3baf94461",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_0b931f5b2ce94cc39467e23d",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_afba9fc17b7f4bb3a5d55712",
+          "error": "<tool_use_error>Path does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_94d66316b19b4d8c97a5af93",
+          "error": "<tool_use_error>Directory does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_err..."
+        },
+        {
+          "tool_use_id": "call_a09165d1cf574bf898415a57",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+        },
+        {
+          "tool_use_id": "call_534999fc209f4a068dea514a",
+          "error": "Exit code 1\ncat: 'D:/work/xcard-qa-tools/bindings/rain-qa-func/internal/function-test/funccaseconfigservice.ts': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_453f8ea6609c425b942e08f4",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_69fe885320904cd6bfe1bdf2",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_1144ecda57eb4defaae7b8a8",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-resources-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c867036d76434a4e8fb6eea3",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: feishu-lib: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8751f39b23f64022b55f5d11",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: debug-utils: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d6a04b6d4b9348c28e8762e2",
+          "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"C:\\Users\\v-wangtengda\\.claude\\skills\\daily-review\\scripts\\daily-review.py\", line 683, in <module>\r\n    main()\r\n    ~~~~^^\r\n  File \"C:\\Users\\v-wa..."
+        },
+        {
+          "tool_use_id": "call_7bdacc813a2b4892961ff3d4",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c877fecd56da4cbe8d474a98",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_7c5e974ecee846c980003b0a",
+          "error": "Exit code 1\n无 2026-04-04 的会话记录"
+        },
+        {
+          "tool_use_id": "call_30e5700692e54ede99c17ac6",
+          "error": "Exit code 1\n无 2026-04-05 的会话记录"
+        },
+        {
+          "tool_use_id": "call_892e4ea407cc425e86db93b6",
+          "error": "Exit code 1\n无 2026-04-06 的会话记录"
+        },
+        {
+          "tool_use_id": "call_cecb444681434ef5b6f7949d",
+          "error": "Exit code 1\n无 2026-04-06 的会话记录"
+        },
+        {
+          "tool_use_id": "call_3fdf0d7413bb483db9aac077",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func. Did you mean models.js?"
+        },
+        {
+          "tool_use_id": "call_88baca9a69ca4be998151ec0",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_1c72624f21f14b9fac990b7f",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_f6bdc30119f14543af576c86",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\tlist = supplementDefaultTableRules(list, sheetMap)</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d572e7541209452896e083db",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 5. 通用规则层：执行通用表级规则检查（NEW_ROW_NOTIFY、ROW_CHANGE_NOTIFY）\n\t\t// 这些规则自动应用于所有表，无需 JSON 配置\n\t\tgeneralTableResults := checkGeneralTableRules(she..."
+        },
+        {
+          "tool_use_id": "call_48f9735f5f8b49cab0bdcb2e",
+          "error": "Exit code 1\nsed: -e expression #1, char 85: unterminated `s' command"
+        },
+        {
+          "tool_use_id": "call_3295161ce52041069467d0c5",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 确定要处理的表名列表\n\tsheetsToProcess := make([]string, 0)\n\tif len(changedFiles) > 0 {\n\t\t// 增量检查：只处理变更文件对应的表\n\t\tfor _, file := range changedFiles ..."
+        },
+        {
+          "tool_use_id": "call_566289b55d5d401090865f1b",
+          "error": "<tool_use_error>String to replace not found in file.\nString:   // 确定要检查的表名列表\n  // 增量检查时只检查变更的表。全量检查时检查所有表\n  sheetsToCheck := make([]string, 0)\n  if len(changedFiles) > 0 {\n    // 增量检查：从变更文件提取表名\n    fo..."
+        },
+        {
+          "tool_use_id": "call_940e60523e7b4bcf9afbe384",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6b026272ed2b445cad449a54",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_eb2328ffacf343799827cf1b",
+          "error": "Exit code 1\ngo: no go files listed"
+        },
+        {
+          "tool_use_id": "call_53f565f286d443539717e998",
+          "error": "Exit code 1\ngo: no go files listed"
+        },
+        {
+          "tool_use_id": "call_ebf2c6d584324fe2aa5a4302",
+          "error": "Exit code 2\nflag provided but not defined: -executableskip\nusage: go run [build flags] [-exec xprog] package [arguments...]\nRun 'go help run' for details."
+        },
+        {
+          "tool_use_id": "call_e068ccd1144f49298e292595",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中）\n// 通过在 sh..."
+        },
+        {
+          "tool_use_id": "call_9177924590894ec88c181d06",
+          "error": "Exit code 1\ngo: no go files listed"
+        },
+        {
+          "tool_use_id": "call_cbb612493f0e487c8d57b4bd",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中）\n// 通过在 sh..."
+        },
+        {
+          "tool_use_id": "call_c3bbbfb38ecd49c0ac6b141e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // extractSheetNamesFromFile 从文件路径提取所有对应的 sheet 名称\n// 一个 Excel 文件可能对应多个 sheet（如 \"竞技场|Arena\" 和 \"竞技场积分|ArenaScore\" 都在 Arena.xlsx 中)\n// 通过在 sh..."
+        },
+        {
+          "tool_use_id": "call_e4dbb59667cb4d429d6b9666",
+          "error": "Exit code 1\npattern ./...: directory prefix . does not contain main module or its selected dependencies"
+        },
+        {
+          "tool_use_id": "call_5ef2b419fc4c42edb360c245",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // FilterRulesByChangedFiles 根据变更文件过滤规则列表\n// 返回需要执行的规则子集\n//\n// 参数:\n//   - rules: 所有规则列表\n//   - changedFiles: 变更文件列表（相对路径或绝对路径）\n//\n// 返回:\n//..."
+        },
+        {
+          "tool_use_id": "call_40d6dd79eb9643fd8b1d5275",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 后缀匹配: \"武将|Hero\" 后缀匹配 \"Hero\"\n\t\t\tif strings.HasSuffix(sheetName, \"|\"+nameWithoutExt) {\n\t\t\t\t\treturn true\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn false\n\t..."
+        },
+        {
+          "tool_use_id": "call_be5d077a3cde4f1994cc1279",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t\t// 后缀匹配: \"武将|Hero\" 后缀匹配 \"Hero\"\n\t\t\tif strings.HasSuffix(sheetName, \"|\"+nameWithoutExt) {\n\t\t\t\t\treturn true\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn false\n\t..."
+        },
+        {
+          "tool_use_id": "call_512c6d935153477ebf58c39d",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \tchangedFiles := []string{\"Hero.xlsx\"}\n\t\tfiltered := FilterRulesByChangedFiles(rules, changedFiles)</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_07a9c8a4fe93493e8aed8001",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n\tFilterRulesByChangedFiles 接收的应该是已分割好的 []string\n\t changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason.xlsx\"}\n    fi..."
+        },
+        {
+          "tool_use_id": "call_543470213a924b08ad6cbe42",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n        FilterRulesByChangedFiles 接收的应该是已分割好的 []string\n        changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason...."
+        },
+        {
+          "tool_use_id": "call_69fbfbe32fc24edc84163447",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注意：main.go 层面已修复分割逻辑\n\t // FilterRulesByChangedFiles 接收的应该是已分割好的 []string\n        changedFiles := []string{\"Hero.xlsx\", \"ArenaSeason.xls..."
+        },
+        {
+          "tool_use_id": "call_0b771a9255f14ad788784144",
+          "error": "Exit code 1\nsed: -e expression #1, char 15: unknown option to `s'"
+        },
+        {
+          "tool_use_id": "call_f5a11184c23f45b4ba9d4809",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_1e04b5b875154123980680ca",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b678998995c2462d95b529c3",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker\n.\\main.go:113:28: stats.TotalRules undefined (type *check_manager.CheckStats has no field or method TotalRules)\n.\\main.go:114:28: ..."
+        },
+        {
+          "tool_use_id": "call_761c7ad770134984b900a5c0",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 添加统计信息\n\t\tif stats != nil {\n\t\t\tevent.Stats = &notification.CheckStats{\n\t\t\t\tTotalRules:       stats.TotalRules,\n\t\t\t\tFilteredRules:    st..."
+        },
+        {
+          "tool_use_id": "call_d0fb30193d814493801f917f",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 添加统计信息\n\t\tif stats != nil {\n\t\t\tevent.Stats = &notification.CheckStats{\n\t\t\t\tTotalRules:       stats.TotalRules,\n\t\t\t\tFilteredRules:    st..."
+        },
+        {
+          "tool_use_id": "call_572e7f9abc5a42cf903f6097",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:9: assignment mismatch: 1 variable but supplementDefaultTableRules returns..."
+        },
+        {
+          "tool_use_id": "call_7d5f7a8821ea4449a2c8a287",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2. 规则层：加载列级规则（JSON)\n\t\tlist, err := check_internal.LoadCheck(casePath)\n\t\tif err != nil {\n\t\t\treturn nil, nil, nil, err\n\t\t}\n\n\t\t// 2.1 补充有..."
+        },
+        {
+          "tool_use_id": "call_a357ca862e0449f19de0a9e2",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2. 规则层：加载列级规则（JSON)\n\t\tlist, err := check_internal.LoadCheck(casePath)\n\t\tif err != nil {\n\t\t\treturn nil, nil, nil, err\n\t\t}\n\n\t\t// 2.1 补充有..."
+        },
+        {
+          "tool_use_id": "call_b27cc30e86e74b7f8c9ca7b2",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tlist = supplementDefaultTableRules(list, sheetMap, changedFiles)\n\n\t\t// 3. ..."
+        },
+        {
+          "tool_use_id": "call_3f34ce0b38434e0f95b118ae",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tlist = supplementDefaultTableRules(list, sheetMap, changedFiles)\n\n\t\t// 3. ..."
+        },
+        {
+          "tool_use_id": "call_6bacfc6cfe014a6482936122",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+        },
+        {
+          "tool_use_id": "call_7cbbf2a9dd194617a583e6e7",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+        },
+        {
+          "tool_use_id": "call_eb18acdec3554f3884687e0c",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+        },
+        {
+          "tool_use_id": "call_09a95995ad8b4ae699a867b4",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 计算总规则数 = 配置规则 + 通用规则\n\t\ttotalRulesWithGeneral := originalCount + generalRuleCount\n\t\t// 适用规则数 = 过滤后的配置规则 + 通用规则\n\t\tapplicableRules := len..."
+        },
+        {
+          "tool_use_id": "call_653dccfdcd6b4542a7b45a58",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+        },
+        {
+          "tool_use_id": "call_d4fac72e5b0946aaab9e769e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+        },
+        {
+          "tool_use_id": "call_24662ad2409245d887e007c4",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+        },
+        {
+          "tool_use_id": "call_f443f4103abd4130834dbe63",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)..."
+        },
+        {
+          "tool_use_id": "call_5496327e703d46ed83158339",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:81:2: declared and not used: colRulesMap\nxlsx\\check_manager\\manager_def.go:81..."
+        },
+        {
+          "tool_use_id": "call_1d8372e6f97648279232a6b3",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\tstats.GeneralRuleCount = generalRuleCount // 通用规则数\n\n\t\t// 4. 校验层：执行检查\n\t\tfor _, rule := range list {\n\t\t\tif xlsx, exist := sheetMap[rule.She..."
+        },
+        {
+          "tool_use_id": "call_29b88c6385d64f8c88f84306",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t fmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n\t\t}..."
+        },
+        {
+          "tool_use_id": "call_78cbd49a040f4b88b6315594",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t fmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n   ..."
+        },
+        {
+          "tool_use_id": "call_4ee96ebf733e45e2a08a69be",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 4. 校验层：执行检查\n\tfor _, rule := range list {\n\t\tif xlsx, exist := sheetMap[rule.Sheet]; !exist {\n\t\t\tfmt.Printf(\"表不存在: %s\\n\", rule.Sheet)\n\t\t}..."
+        },
+        {
+          "tool_use_id": "call_bfa6f29520514208822005b9",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\tGeneralRuleCount int  // 通用规则数量（NEW_ROW_NOTIFY + ROW_CHANGE_NOTIFY × 表数）\n\t\tIsIncremental    bool // 是否为增量检查\n\t\tChangedFileCount int  // 变更..."
+        },
+        {
+          "tool_use_id": "call_04c34a38e2a6471ab505c1dd",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t} else {\n\t\t\tt.Log(\"成功清理测试目录\")\n\t\t}\n\t}\n\t\n\tfunc TestCheckAll(t *testing.T) {\n\t\t// 读取文件\n\t\texcels, err := excel_internal.ReadFileOrDir(\"resourc..."
+        },
+        {
+          "tool_use_id": "call_43fee92a0b7643b3be5f2ffa",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 2.1 补充有默认表级规则但没有 JSON 文件的表\n\t\t// 增量检查时只为变更文件补充，全量检查时为所有表补充\n\t\tcolRulesMap, supplementedTableRules := supplementDefaultTableRules(list, s..."
+        },
+        {
+          "tool_use_id": "call_7c997e2170a149dd907eb661",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_002532afcc1d4fb4bb34742f",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\filter.go:6:2: \"fmt\" imported and not used"
+        },
+        {
+          "tool_use_id": "call_abea82fb259644f4b6c36b7a",
+          "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_db7414a5541249dba8bc270a",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+        },
+        {
+          "tool_use_id": "call_92eb7b3e31e1486ab5792786",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification [git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification.test]\nnotification\\event_test.go:18:19: event.Summarize undefin..."
+        },
+        {
+          "tool_use_id": "call_9d1c750fd83a4bb294355fd1",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification [git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification.test]\nnotification\\formatter_test.go:191:6: TestCountNotificati..."
+        },
+        {
+          "tool_use_id": "call_ca53494a1d76423192e384a0",
+          "error": "<tool_use_error>String to replace not found in file.\nString:  // Handle 处理检查结果事件\n// 如果劫持开启，拦截消息并发送到前端，然后返回 ErrStopProcessing 龘止后续处理器\n// 如果劫持未开启，返回 nil 让后续处理器（如飞书卡片处理器）继续处理\nfunc (h *InterceptHandler) H..."
+        },
+        {
+          "tool_use_id": "call_f2f8df037f314d2ca8618e6c",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `newline'\n/usr/bin/bash: eval: line 1: `go build ./... 2>&'"
+        },
+        {
+          "tool_use_id": "call_b14d224df20442359bae4389",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // Handle 处理检查结果事件\n// 如果劫持开启，拦截消息并发送到前端，然后返回 ErrStopProcessing 阻止后续处理器\n// 如果劫持未开启，返回 nil 让下一个处理器处理\nfunc (h *InterceptHandler) Handle(event ..."
+        },
+        {
+          "tool_use_id": "call_612c23057eab4164af21dd1e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // Handle 处理检查结果事件\nfunc (h *FeishuCardHandler) Handle(event *notification.CheckResultEvent) error {\n\treturn handle(event)\n\n}</tool_use_erro..."
+        },
+        {
+          "tool_use_id": "call_cb762844e2b24897a7c86cb9",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nnotification\\handlers\\feishu.go:67:24: syntax error: missing parameter name\nnotification\\handlers\\feishu.go:145:1: s..."
+        },
+        {
+          "tool_use_id": "call_5508c8523c5a4ab0b47e5b22",
+          "error": "Exit code 128\nfatal: ambiguous argument 'info': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'"
+        },
+        {
+          "tool_use_id": "call_eabeb82f5dc04be2af5a29db",
+          "error": "Exit code 1\nerror: pathspec 'feishu-lib/notification/handlers' did not match any file(s) known to git"
+        },
+        {
+          "tool_use_id": "call_2a3324592de3490ab9c4cbae",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nfeishu-lib\\notification\\handlers\\intercept.go:5:2: \"fmt\" imported and not used\nfeishu-lib\\notification\\handlers\\inte..."
+        },
+        {
+          "tool_use_id": "call_a257e0c692bb4fddbb8f1bd2",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注册飞书卡片处理器（发送到飞书群）\n\t\tdispatcher.Register(handlers.NewFeishuCardHandler(\n\t\t\tconfig.feishuRobot,\n\t\t\thandlers.WithAtUser(config.commitName)..."
+        },
+        {
+          "tool_use_id": "call_e9a2729f026a4db4bf530101",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// 注册飞书卡片处理器（发送到飞书群）\n\t\tdispatcher.Register(handlers.NewFeishuCardHandler(\n\t\t\tconfig.feishuRobot,\n\t\t\thandlers.WithAtUser(config.commitName)..."
+        },
+        {
+          "tool_use_id": "call_6915b6c45aeb4df7ab4d0ba3",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \tsummary, content := handle(event, nil) // 确定消息类型</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_0517d5decca14017986a9a49",
+          "error": "Exit code 1\npattern ./...: directory prefix . does not contain modules listed in go.work or their selected dependencies"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "0a34fe0e-fc34-4fb1-b4e0-9dcef81febc4",
+      "project": "xcard-qa-tools",
+      "first_display": "为我解释一下rain-excel-checker的excel加载流程",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-07T09:06:18.395000+08:00",
+      "end_time": "2026-04-07T09:36:45.868000+08:00",
+      "duration_minutes": 30.5,
+      "user_turns": 53,
+      "assistant_turns": 118,
+      "total_input_tokens": 99876,
+      "total_output_tokens": 11471,
+      "zero_usage_count": 71,
+      "tool_usage": {
+        "Glob": 1,
+        "Read": 19,
+        "Edit": 7,
+        "Bash": 15,
+        "Write": 3,
+        "mcp__ide__getDiagnostics": 2,
+        "Grep": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_815ba5efe0ce4e89811c5676",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "c1b7f777-51ee-4d6e-9417-2a771d50fd1f",
+      "project": "xcard-qa-tools",
+      "first_display": "补充 rain-excel-checker/activity/check_test.go:20",
+      "git_branch": "main",
+      "start_time": "2026-04-07T10:01:32.956000+08:00",
+      "end_time": "2026-04-07T11:14:19.309000+08:00",
+      "duration_minutes": 72.8,
+      "user_turns": 90,
+      "assistant_turns": 151,
+      "total_input_tokens": 218552,
+      "total_output_tokens": 28743,
+      "zero_usage_count": 69,
+      "tool_usage": {
+        "Read": 22,
+        "Grep": 11,
+        "Glob": 7,
+        "Edit": 16,
+        "Bash": 18,
+        "Write": 7,
+        "mcp__rain-qa-func__preview_excel_sheet": 2,
+        "Skill": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "test-case-generator",
+          "args": "校验 D:/work/xcard-qa-tools/rain-excel-checker/xlsx/check_rules/cross_table 目录下的单元测试用例是否符合规范"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_4b76161a44174c5180134514",
+          "error": "<tool_use_error>String to replace not found in file.\nString: package activity\n\nimport (\n\t\"reflect\"\n\t\"testing\"\n\n\t\"git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/excel_internal\"\n)\n\nfunc Te..."
+        },
+        {
+          "tool_use_id": "call_2ae8e65d78f24e1c8889184b",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/activity [git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/activity.test]\n.\\check_test.go:8:2: \"git.devcloud.ztgame.com/v-t..."
+        },
+        {
+          "tool_use_id": "call_33b57420c34c4113b74e0a85",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_94ce8947441a4db6bda98baa",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_632ceab2b8b2457ab84bdb37",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // TestHeroMeltCheckRule_Meta 测试规则元数据\nfunc TestHeroMeltCheckRule_Meta(t *testing.T) {\n\trule := &HeroMeltCheckRule{}\n\tmeta := rule.Meta()\n\n\t..."
+        }
+      ],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "0fc1cb46-9894-4016-a8c2-46886302dc7a",
+      "project": "config",
+      "first_display": "结合一下现有文档，并配合使用game-config-anylize技能分析一下如下规则：",
+      "git_branch": "v0.0.8-pre-release",
+      "start_time": "2026-04-07T10:41:12.734000+08:00",
+      "end_time": "2026-04-07T11:43:51.486000+08:00",
+      "duration_minutes": 62.6,
+      "user_turns": 55,
+      "assistant_turns": 92,
+      "total_input_tokens": 154517,
+      "total_output_tokens": 21348,
+      "zero_usage_count": 65,
+      "tool_usage": {
+        "Skill": 1,
+        "Read": 4,
+        "Glob": 3,
+        "Bash": 38,
+        "Write": 3,
+        "Grep": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "game-config-analyzer",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_3920eafb9f89432d8d7f788b",
+          "error": "Exit code 1\nTraceback (most recent call last):\r\n  File \"<string>\", line 15, in <module>\r\n    giftshop_rows = read_all_data('excel/GiftShop_����̵�.xlsx', 30)\r\n                    ~~~~~~~~~~~~~^^^^^^^^^..."
+        },
+        {
+          "tool_use_id": "call_4b7c659611c147c6800c4f88",
+          "error": "Exit code 127\n/usr/bin/bash: line 41: iconv: command not found"
+        }
+      ],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "34f236cf-cf9c-434c-b101-be2d4b38108c",
+      "project": "xcard-qa-tools",
+      "first_display": "test case generator技能中是否有对单元测试断言相关的要求或约束或指导或方法论",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-07T11:14:02.420000+08:00",
+      "end_time": "2026-04-07T12:15:39.823000+08:00",
+      "duration_minutes": 61.6,
+      "user_turns": 40,
+      "assistant_turns": 67,
+      "total_input_tokens": 195481,
+      "total_output_tokens": 13521,
+      "zero_usage_count": 44,
+      "tool_usage": {
+        "Skill": 1,
+        "Glob": 2,
+        "Read": 9,
+        "TaskCreate": 4,
+        "TaskUpdate": 7,
+        "Write": 1,
+        "Edit": 3,
+        "Bash": 8
+      },
+      "skill_calls": [
+        {
+          "skill": "test-case-generator",
+          "args": ""
+        }
+      ],
+      "errors": [],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "2a7360c7-37bf-4877-a0fa-58fb1a16c4b7",
+      "project": "config",
+      "first_display": "Activity_活动配置.xlsx最后一次修改的commit hash",
+      "git_branch": "main",
+      "start_time": "2026-04-07T11:30:59.716000+08:00",
+      "end_time": "2026-04-07T11:32:58.334000+08:00",
+      "duration_minutes": 2.0,
+      "user_turns": 19,
+      "assistant_turns": 13,
+      "total_input_tokens": 6232,
+      "total_output_tokens": 364,
+      "zero_usage_count": 7,
+      "tool_usage": {
+        "Bash": 4,
+        "Glob": 3
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "98761c7f-dbcd-4864-812e-a808e71fcc23",
+      "project": "xcard-qa-tools",
+      "first_display": "[Image #1]如图将配表测试用例配置界面中 0.表级校验规则 面板提取为单独的vue组件 将如图[Image #2]每个字段的校验配置面板提取为单独的vu",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-07T14:56:07.147000+08:00",
+      "end_time": "2026-04-07T16:45:20.147000+08:00",
+      "duration_minutes": 109.2,
+      "user_turns": 184,
+      "assistant_turns": 392,
+      "total_input_tokens": 383573,
+      "total_output_tokens": 46797,
+      "zero_usage_count": 243,
+      "tool_usage": {
+        "Glob": 10,
+        "Grep": 7,
+        "Read": 44,
+        "Write": 14,
+        "Edit": 20,
+        "Bash": 68,
+        "Agent": 1,
+        "ExitPlanMode": 1,
+        "TaskOutput": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_25f101b8357943faa18f3d8b",
+          "error": "Exit code 2\nls: cannot access ' D:/work/xcard-qa-tools/rain-qa-func/bindings': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_05332ef6df4744cb81917b8f",
+          "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/': No such file or directory\n/:\ntotal 9660\ndrwxr-xr-x  1 v-wangtengda 1049089       0  3月 24 13:57 .\ndrwxr-xr-x  1 v-wangten..."
+        },
+        {
+          "tool_use_id": "call_e3129458eeaf48d897e662a2",
+          "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d84fa66d84464794a57cc721",
+          "error": "Exit code 2\nls: cannot access 'D:/work/xcard-qa-tools/rain-qa-func/bindings/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d2545cf1c2284a6eac52f248",
+          "error": "Exit code 2\nls: cannot access 'bindings/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_030c9bb48ba14fcaac65a2f1",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_fe0b953b69824460afd1a944",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_96f921bd6db8417797fc2b50",
+          "error": "<tool_use_error>String to replace not found in file.\nString: /**\n * 活动测试数据状态管理\n *\n * 管理当前选中的活动 Sheet 数据、检查规则映射和表级规则状态\n */\nimport {TreeOption, ref} from \"vue\";\nimport {TableRule, TableRuleMeta, SheetCo..."
+        },
+        {
+          "tool_use_id": "call_4d39d19cf78441fb8610f35e",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe parameter `` type is expected as `object` but provided as `array`</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_acec24fe9ed44a6a9d1492e0",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_bc069f62baf14ef79a7ae62e",
+          "error": "Exit code 1"
+        },
+        {
+          "tool_use_id": "call_97afa4de68c3499182bd38f1",
+          "error": "<tool_use_error>No task found with ID: bqxryz4hv</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "9a552787-103f-4efe-9879-b82ea52ccdeb",
+      "project": "xcard-qa-tools",
+      "first_display": "活动测试左侧导航1 搜索功能并没有正常工作，搜索丹青两个字后山河争峰仍然显示 2 显示描述按钮无法点击 3 显示全部按钮无法点击",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-07T15:39:36.283000+08:00",
+      "end_time": "2026-04-07T22:10:03.065000+08:00",
+      "duration_minutes": 390.4,
+      "user_turns": 254,
+      "assistant_turns": 532,
+      "total_input_tokens": 598030,
+      "total_output_tokens": 45118,
+      "zero_usage_count": 306,
+      "tool_usage": {
+        "Glob": 14,
+        "Bash": 118,
+        "Read": 56,
+        "Edit": 14,
+        "analyze_image": 3,
+        "AskUserQuestion": 1,
+        "Grep": 21,
+        "TaskCreate": 1,
+        "TaskUpdate": 2,
+        "Write": 6,
+        "mcp__ide__getDiagnostics": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_936df64776e146be8b8dcd74",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <n-tree\n          :data=\"treeData\"\n          :pattern=\"localPattern\"\n          :node-props=\"nodeProps\"\n          :checked-keys=\"che..."
+        },
+        {
+          "tool_use_id": "call_fbae8943f2f54068a3b44593",
+          "error": "Exit code 128\nfatal: Pathspec 'rain-qa-func/frontend/src/pages/activity-test/index.vue' is in submodule 'rain-qa-func'"
+        },
+        {
+          "tool_use_id": "call_f3a6d5bd230747d983c34590",
+          "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issue:\nThe required parameter `questions[0].options` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_1620db7277b94929869e7e03",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_892a352addf04d1ca6c83c40",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_f4be1e166db8417e81166929",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_8deb6c0dddd5486d83f47a85",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_82073b20a4554f0ebf64f357",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    }
+  ]
+}

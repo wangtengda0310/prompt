@@ -1,0 +1,42 @@
+{
+  "2026-04-01": {
+    "total_sessions": 26,
+    "total_input_tokens": 9755229,
+    "total_output_tokens": 451603,
+    "total_user_turns": 1790,
+    "tool_count": 1508,
+    "error_count": 86
+  },
+  "2026-04-02": {
+    "total_sessions": 10,
+    "total_input_tokens": 8300628,
+    "total_output_tokens": 423440,
+    "total_user_turns": 2286,
+    "tool_count": 1975,
+    "error_count": 161
+  },
+  "2026-04-03": {
+    "total_sessions": 12,
+    "total_input_tokens": 5205984,
+    "total_output_tokens": 418120,
+    "total_user_turns": 2347,
+    "tool_count": 2004,
+    "error_count": 209
+  },
+  "2026-04-07": {
+    "total_sessions": 8,
+    "total_input_tokens": 4713464,
+    "total_output_tokens": 360081,
+    "total_user_turns": 1745,
+    "tool_count": 1519,
+    "error_count": 138
+  },
+  "2026-04-09": {
+    "total_sessions": 18,
+    "total_input_tokens": 11470420,
+    "total_output_tokens": 645549,
+    "total_user_turns": 1962,
+    "tool_count": 1694,
+    "error_count": 101
+  }
+}

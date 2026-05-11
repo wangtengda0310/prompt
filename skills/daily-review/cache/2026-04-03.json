@@ -1,0 +1,2588 @@
+{
+  "date": "2026-04-03",
+  "total_sessions": 12,
+  "sessions_with_files": 12,
+  "total_input_tokens": 5205984,
+  "total_output_tokens": 418120,
+  "zero_usage_count": 1825,
+  "total_user_turns": 2347,
+  "total_assistant_turns": 3614,
+  "avg_turns_per_session": 195.6,
+  "tool_usage_summary": {
+    "Bash": 933,
+    "Read": 455,
+    "Edit": 180,
+    "Write": 92,
+    "Grep": 81,
+    "Glob": 67,
+    "TaskUpdate": 66,
+    "TaskCreate": 39,
+    "Agent": 33,
+    "AskUserQuestion": 16,
+    "Skill": 12,
+    "ExitPlanMode": 8,
+    "mcp__plugin_github_github__get_file_contents": 8,
+    "TaskList": 6,
+    "CronList": 3,
+    "mcp__thinking__sequentialthinking": 2,
+    "TaskGet": 1,
+    "analyze_image": 1,
+    "CronCreate": 1
+  },
+  "skill_usage_summary": {
+    "superpowers:requesting-code-review": {
+      "count": 3,
+      "sessions": [
+        "d513170b-0f57-4f12-948b-03eb6464dc84",
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "test-case-generator": {
+      "count": 1,
+      "sessions": [
+        "cade4364-f973-466b-85d7-ea60df2a2523"
+      ]
+    },
+    "work-journal": {
+      "count": 2,
+      "sessions": [
+        "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+        "00246c85-f8f6-4529-b6a3-5a2588c6ae3b"
+      ]
+    },
+    "web-access": {
+      "count": 1,
+      "sessions": [
+        "a7b401b3-d56e-4dc6-82a3-db4fda78a28e"
+      ]
+    },
+    "superpowers:brainstorming": {
+      "count": 1,
+      "sessions": [
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "superpowers:writing-plans": {
+      "count": 2,
+      "sessions": [
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "superpowers:dispatching-parallel-agents": {
+      "count": 1,
+      "sessions": [
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "lark-sheets": {
+      "count": 1,
+      "sessions": [
+        "c1aa0665-f12b-464e-99e7-221bb8604669"
+      ]
+    }
+  },
+  "project_distribution": {
+    "xcard-qa-tools": {
+      "sessions": 7,
+      "input_tokens": 3219981,
+      "output_tokens": 256387
+    },
+    "activity_page": {
+      "sessions": 3,
+      "input_tokens": 697540,
+      "output_tokens": 69744
+    },
+    "gobee": {
+      "sessions": 1,
+      "input_tokens": 1281604,
+      "output_tokens": 90973
+    },
+    "config": {
+      "sessions": 1,
+      "input_tokens": 6859,
+      "output_tokens": 1016
+    }
+  },
+  "sessions_by_hour": {
+    "10": 2,
+    "13": 1,
+    "14": 1,
+    "16": 2,
+    "22": 2,
+    "6": 1,
+    "8": 3
+  },
+  "tool_patterns": [
+    {
+      "pattern": [
+        "Bash",
+        "Bash"
+      ],
+      "count": 666
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Bash"
+      ],
+      "count": 527
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read"
+      ],
+      "count": 169
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read"
+      ],
+      "count": 130
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash"
+      ],
+      "count": 111
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit"
+      ],
+      "count": 97
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "count": 76
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Read"
+      ],
+      "count": 74
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash"
+      ],
+      "count": 65
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash",
+        "Bash"
+      ],
+      "count": 59
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Read"
+      ],
+      "count": 54
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read",
+        "Bash"
+      ],
+      "count": 43
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read",
+        "Read"
+      ],
+      "count": 42
+    },
+    {
+      "pattern": [
+        "Write",
+        "Bash"
+      ],
+      "count": 39
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Edit"
+      ],
+      "count": 37
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Bash"
+      ],
+      "count": 37
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Write"
+      ],
+      "count": 36
+    },
+    {
+      "pattern": [
+        "TaskUpdate",
+        "TaskUpdate"
+      ],
+      "count": 36
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Read"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit",
+        "Bash"
+      ],
+      "count": 34
+    }
+  ],
+  "errors": [
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: bad object 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: git cat-file: could not get object info"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `)'\n/usr/bin/bash: eval: line 1: `cd rain-robot && git log --oneline -5 --no-ff -- head -5} | head -5 | head -5（HEAD commit)..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 27: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: bad object 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func. Did you mean D:\\work\\xcard-qa-tools\\rain-qa-func\\main.go?"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# ./internal/serverlog/...\npattern ./internal/serverlog/...: GetFileAttributesEx .\\internal\\serverlog\\: The system cannot find the path specified.\nFAIL\t./internal/serverlog/... [setup fail..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: git cat-file: could not get object info"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 129\nerror: no such commit 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\train-qa-func.exe\nPlease commit your changes or stash them before you switch branches.\nAborting"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: downloading github.com/klauspost/compress v1.18.3\ninternal\\excelCheckService.go:9:2: package rain-excel-checker/xlsx/xlsx_def is not in std (C:\\Program Files\\Go\\src\\rain-excel-checker\\..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\tgo.mod\nPlease commit your changes or stash them before you switch branches.\nAborting"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nYou must edit all merge conflicts and then\nmark them as resolved using git add"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nYou must edit all merge conflicts and then\nmark them as resolved using git add"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:   // 添加评论\n  async addComment(itemId: string, content: string): Promise<Comment | undefined> {\n    await this.delay(200)\n    const item = th..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access '.claude/plugins/': No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access '.superpowers/': No such file or directory"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 16: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\ngrep: max-height: No such file or directory\nfrontend/src/pages/Roadmap.vue:277:  height: 100%;\nfrontend/src/pages/Roadmap.vue:304:  overflow-y: auto;\nfrontend/src/pages/Roadmap.vue:317:  h..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: .item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n.item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: .item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n }\n        }\n      }\n    }\n  }\n\n    }\n  }\n\n    .roadmap-item {\n    ..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: .list-container {\n  flex: 1;\n  overflow-y: auto;\n}\n\n}\n        }\n      }\n    }\n    }\n  }\n\n    .empty-state {\n      display: flex;\n      just..."
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nwarning: could not open directory 'frontend/frontend/src/pages/': No such file or directory\nfatal: pathspec 'frontend/src/pages/Roadmap.vue' did not match any files"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: .vote-buttons {\n  margin-left: auto;\n  display: flex;\n  gap: 8px;\n}\n\n }\n        }\n      }\n    </style></tool_use_error>"
+    },
+    {
+      "session": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "error": "File content (33688 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole f..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // 只收集有内容的结果（有 ErrCells 或有 Reason）\n\t\t\t\thasContent := result.Ok || len(result.ErrCells) > 0\n\t\t\t\tif hasContent {</tool_use_error>"
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncp: cannot create regular file '/d/work/xcard-qa-tools/feishu-lib/vendor/git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager/manager_def.go': No such file or directo..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issue:\nThe required parameter `questions[0].question` is missing</tool_use_error>"
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// ==================== Git Diff 支持 ====================\n\n\t// GetFileAtCommit 获取指定 commit 的文件内容\n\t//\n\t// 使用 git show 命令获取历史版本文件：git show <c..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// ==================== Git Diff 支持 ====================\n\n// GetFileAtCommit 获取指定 commit 的文件内容\n//\n// 使用 git show 命令获取历史版本文件：git show <comm..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:109: 当前逻辑与期望逻辑不一致:\n    ..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:109: 当前逻辑与期望逻辑不一致:\n    ..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:205: 当前逻辑与期望逻辑不一致:\n    ..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_HasContentLogic\n=== RUN   TestCheckGeneralTableRules_HasContentLogic/获取历史版本失败应被收集\n=== RUN   TestCheckGeneralTableRules_HasContentLogic/无变更不应被收集\n=== RUN..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nnotification\\handlers\\intercept_test.go:25:12: expected type, found ':'\nFAIL\tgit.devcloud.ztgame.com/v-tangfangda/fe..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestInterceptHandler_TableNotifications\n--- PASS: TestInterceptHandler_TableNotifications (0.01s)\n=== RUN   TestInterceptHandler_HistoryFetchFailure\n    intercept_test.go:116: 不应..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatTableErrors_ParseError(t *testing.T) {\n\tsheetName := \"Hero\"\n\ttableName := \"Hero.xlsx\"\n\n\t// 创建解析错误\n\tresult := &check_rule_def..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# ./xlsx/check_manager/...\npattern ./xlsx/check_manager/...: GetFileAttributesEx .\\xlsx\\check_manager\\: The system cannot find the path specified.\nFAIL\t./xlsx/check_manager/... [setup fail..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatTableErrors_ParseError(t *testing.T) {\n\tsheetName := \"Hero\"\n\ttableName := \"Hero.xlsx\"\n\n\t// 创建解析错误\n\tresult := &check_rule_def..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: // TestFormatConsoleOutput\nfunc TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n    results := []*check_rul..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n\tresults := []*check_rule_def.ColCheckResult{\n\t\t{Sheet..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n\tresults := []*check_rule_def.ColCheckResult{\n\t\t{Sheet..."
+    },
+    {
+      "session": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 (6.6s)\n\n\n  1) [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 ───────────────────..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n\nRunning 12 tests using 12 workers\n\n  ok  2 [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 (1.8s)\n  ok 11 [chromium] › e2e\\layout.spec.ts:169:3 › 通用布局测试 › 页面布局结构验证 (2.9s)\n  ok  ..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\home.spec.ts:22:3 › 首页 - AI 助手测试 › 页面加载 - 主要元素验证 (6.4s)\n\n\n  1) [chromium] › e2e\\home.spec.ts:22:3 › 首页 - AI 助手测试 › 页面加载 - 主要元素验证 ───..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:   /**\n   * 消息输入框可输入\n   * 验证输入框可以正常输入文本\n   */\n  test('消息输入框可输入', async ({ page }) => {\n    const testText = '这是一条测试消息';\n\n    await homePage...."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\home.spec.ts:51:3 › 首页 - AI 助手测试 › 消息输入框可输入 (2.0s)\n\n\n  1) [chromium] › e2e\\home.spec.ts:51:3 › 首页 - AI 助手测试 › 消息输入框可输入 ─────────────..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: cannot rebase: You have unstaged changes.\nerror: Please commit or stash them."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nSaved working directory and index state WIP on feature/roadmap: 98ac94f feat(e2e): 添加 Playwright E2E 测试框架\nerror: unable to unlink old 'rain-qa-func.exe': Invalid argument\nfatal: Could not ..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 255\nerror: unable to unlink old 'rain-qa-func.exe': Invalid argument"
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\train-qa-func.exe\nPlease commit your changes or stash them before you switch branches.\nAborting\nerror: co..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nerror: the branch 'backup-before-squash-20260403082233' is not fully merged\nhint: If you are sure you want to delete it, run 'git branch -D backup-before-squash-20260403082233'\nhint: Disab..."
+    },
+    {
+      "session": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nwarning: not deleting branch 'feature/roadmap' that is not yet merged to\n         'refs/remotes/origin/worktree-开发路线图', even though it is merged to HEAD\nerror: the branch 'feature/roadmap'..."
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "<tool_use_error>Path does not exist: rain-qa-func/frontend. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page.</tool_use_error>"
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "<tool_use_error>Path does not exist: rain-qa-func/frontend. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page.</tool_use_error>"
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vu..."
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "Exit code 128\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgrade..."
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "Exit code 128\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgrade..."
+    },
+    {
+      "session": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:86:7: declared and not used: j"
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t// CheckStats 检查统计\n\ttype CheckStats struct {\n\t\tTotalRules       int // 总规则数\n\t\tFilteredRules    int // 过滤后适用的规则数\n\t\tChangedFileCount int // ..."
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 检查统计\n\t\tif event.Stats != nil {\n\t\t\tif event.IsIncremental {\n\t\t\t\tlines = append(lines, fmt.Sprintf(\"**增量检查**: 加载规则 %d 条，适用于当前提交文件 %d 条，变..."
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\v-wangtengda\\AppData\\Local\\Programs\\Git\\scripts\\check-deps.mjs'\r\n    at Module._resolveFilen..."
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vuln..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be v..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nmain.go:15:2: package rain-qa-func/internal/activity-test is not in std (C:\\Program Files\\Go\\src\\rain-qa-func\\internal\\activity-test)"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/internal/activity-test/': No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n同步记录f..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n刚才我问你..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n每个新提取..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\ncp: cannot stat '/d/work/xcard-qa-tools/rain-excel-checker/activity/check.go': No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-excel-checker/activity/': No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 128\nCould not remove submodule work tree 'rain-qa-func'\ncould not create empty submodule directory rain-qa-funcSubmodule 'rain-qa-func' (git@git.devcloud.ztgame.com:v-tangfangda/rain-qa-func..."
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/frontend': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove 'rain-qa-func/frontend': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove 'rain-qa-func': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\nrm: cannot remove 'rain-qa-func': Device or resource busy"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 255"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 255"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 45860��\r\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 40116��\r\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 49640��"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: rain-qa-func/.git: No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 128\nfatal: not a git repository: D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/../.git/modules/rain-qa-func"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: rain-qa-func/.git: No such file or directory"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 128\nfatal: not a git repository: rain-qa-func/../.git/modules/rain-qa-func"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "Exit code 128\nfatal: not a git repository: rain-qa-func/../.git/modules/rain-qa-func"
+    },
+    {
+      "session": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\nOn branch main\nYour branch is ahead of 'origin/main' by 7 commits.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add/rm <file>...\" to update ..."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/relay [github.com/wangtengda0310/gobee/echo-input/pkg/relay.test]\npkg\\relay\\client_test.go:79:17: invalid operation: cannot receive from se..."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/qrcode [github.com/wangtengda0310/gobee/echo-input/pkg/qrcode.test]\npkg\\qrcode\\qrcode_test.go:4:2: \"encoding/json\" imported and not used\nFA..."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/cmd/server\ncmd\\server\\main.go:1:1: expected 'package', found 'EOF'\nFAIL\tgithub.com/wangtengda0310/gobee/echo-input/cmd/server [setup failed]\n==..."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n=== RUN   TestHealthHandler\n--- PASS: TestHealthHandler (0.00s)\n=== RUN   TestCreateSessionHandler\n=== RUN   TestCreateSessionHandler/正常创建会话\n2026/04/03 11:54:24 创建会话: zvxldj\n    http_test...."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/server [github.com/wangtengda0310/gobee/echo-input/pkg/server.test]\npkg\\server\\http.go:71:19: undefined: net\nFAIL\tgithub.com/wangtengda0310..."
+    },
+    {
+      "session": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "error": "Exit code 1\n=== RUN   TestHealthHandler\n--- PASS: TestHealthHandler (0.00s)\n=== RUN   TestCreateSessionHandler\n=== RUN   TestCreateSessionHandler/正常创建会话\n2026/04/03 11:56:20 创建会话: l2u6fe\n--- PASS: Test..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "Exit code 1\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vuln..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be v..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "Exit code 1\nmain.go:15:2: package rain-qa-func/internal/activity-test is not in std (C:\\Program Files\\Go\\src\\rain-qa-func\\internal\\activity-test)"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/internal/activity-test/': No such file or directory"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n同步记录f..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n刚才我问你..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n每个新提取..."
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope sheets:spreadsheet:read [99991672]\"..."
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 1\n�ַ���ȱ����ֹ��: '��\r\n    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\r\n    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString"
+    },
+    {
+      "session": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"Permission denied [99991672]\",\n    \"hint\": \"check app permissions or re-a..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issues:\nThe required parameter `questions[1].question` is missing\nThe required parameter `questions[1].header` is miss..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `cd rain-qa-func && npm run dev 2>&&1 | head -20'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `npm run dev 2>&&1 | head -20'"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: ambiguous argument 'frontend/src/pages/excel-test/index.vue': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncat: rain-qa-func/frontend/src/pages/excel-test/composables/menu.ts: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\nls: cannot access 'rain-qa-func/frontend/src/pages/excel-test/composables/': No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:active-key=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:         <n-layout position=\"absolute\" style=\"top: 34px; bottom: 64px\" has-sider>\n        <n-layout-sider\n            bordered\n            c..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:       <PageMenuBar\n        :menu-options=\"menuOptions()\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\">qwe\n        <template #right></..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:       <button class=\"idea-icon-button\" @click=\"router.push('/Roadmap')\">路线图</button>\n    </div></tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# ����: 2026-03-31, 2026-04-01, 2026-04-02, 2026-04-03 | ��Ŀ: 718 | ��Ŀ: activity_page, config, excel, fake_feishu_message_ui, gobee, rain-excel-checker, rain-qa-func, server, xcard-qa-too..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:               @dropdown-select=\"(key) => emit('dropdown-select', key)\"\n              @dropdown-clickoutside=\"() => emit('dropdown-clickouts..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Path does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Directory does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_err..."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ncat: 'D:/work/xcard-qa-tools/bindings/rain-qa-func/internal/function-test/funccaseconfigservice.ts': No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-resources-checker: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: feishu-lib: No such file or directory"
+    },
+    {
+      "session": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: debug-utils: No such file or directory"
+    }
+  ],
+  "comparisons": {
+    "vs_yesterday": {
+      "total_sessions": 20.0,
+      "total_input_tokens": -37.3,
+      "total_output_tokens": -1.3,
+      "total_user_turns": 2.7,
+      "tool_count": -100.0,
+      "error_count": -100.0
+    },
+    "vs_7day_avg": {
+      "total_sessions": -33.3,
+      "total_input_tokens": -42.3,
+      "total_output_tokens": -4.4,
+      "total_user_turns": 15.2,
+      "tool_count": -100.0,
+      "error_count": -100.0
+    }
+  },
+  "sessions": [
+    {
+      "session_id": "d513170b-0f57-4f12-948b-03eb6464dc84",
+      "project": "xcard-qa-tools",
+      "first_display": "git提交",
+      "git_branch": "main",
+      "start_time": "2026-04-02T22:03:03.620000+08:00",
+      "end_time": "2026-04-03T03:21:31.084000+08:00",
+      "duration_minutes": 318.5,
+      "user_turns": 288,
+      "assistant_turns": 382,
+      "total_input_tokens": 521967,
+      "total_output_tokens": 28879,
+      "zero_usage_count": 170,
+      "tool_usage": {
+        "Bash": 175,
+        "Read": 49,
+        "Glob": 3,
+        "Grep": 2,
+        "Edit": 15,
+        "Skill": 2,
+        "Write": 3,
+        "CronList": 2
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:requesting-code-review",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:requesting-code-review",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_d8ed94755b9947c4938bee0b",
+          "error": "Exit code 128\nfatal: bad object 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+        },
+        {
+          "tool_use_id": "call_bdb6afac85024e1ca8436c4f",
+          "error": "Exit code 128\nfatal: git cat-file: could not get object info"
+        },
+        {
+          "tool_use_id": "call_00074fd5f1594e72bfab5e54",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_2062f5ccab2240f786160c15",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_e043e7e300124945ade54ecb",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8575df0f55c64474bdce24be",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_e7769e89b1d046bea5877cdd",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_1f55250e774044a6a97e30df",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d9eb75d7289648d199da2e18",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_fb50c4e91a654b1e89a416aa",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_7b1844a45bf444b482527bfa",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_3ab83d8fb84d4516855711c8",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_348fc0c7720145eab181e725",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_f63ffcfb86094c9eb758ff29",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_f2c7f789e1f841519e2e463e",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_4d2ef08ecfb04f47b7a6e7aa",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_19ce656f71164b018e829b1a",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-robot: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_bfdff1d0a84d4e3c91d10382",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `)'\n/usr/bin/bash: eval: line 1: `cd rain-robot && git log --oneline -5 --no-ff -- head -5} | head -5 | head -5（HEAD commit)..."
+        },
+        {
+          "tool_use_id": "call_509f19e277174bd2a32d910a",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 27: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_3f5d259d5a094d9b89bbe13c",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_e3bb9689412d4a4693ea0f0b",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_a69e0702f87c4dc88d1c7765",
+          "error": "Exit code 128\nfatal: bad object 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+        },
+        {
+          "tool_use_id": "call_87a05181d145466889524402",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_3601889d7e4e47dbb443ff0a",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_bb34634bd2e846a3b835c662",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_f2d84fc76587401287eb83d5",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func. Did you mean D:\\work\\xcard-qa-tools\\rain-qa-func\\main.go?"
+        },
+        {
+          "tool_use_id": "call_6207ff544b974d1ab7e05fda",
+          "error": "Exit code 1\n# ./internal/serverlog/...\npattern ./internal/serverlog/...: GetFileAttributesEx .\\internal\\serverlog\\: The system cannot find the path specified.\nFAIL\t./internal/serverlog/... [setup fail..."
+        },
+        {
+          "tool_use_id": "call_5996b6cd6e7b46e3aca4f3ba",
+          "error": "Exit code 128\nfatal: git cat-file: could not get object info"
+        },
+        {
+          "tool_use_id": "call_b47d92ba15ae4883b403278b",
+          "error": "Exit code 129\nerror: no such commit 15cafcab7923e38d9eca37ae8d69c134bcf90494"
+        },
+        {
+          "tool_use_id": "call_504eedc14c5a4a81b4c75d65",
+          "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\train-qa-func.exe\nPlease commit your changes or stash them before you switch branches.\nAborting"
+        },
+        {
+          "tool_use_id": "call_d155fe2158c54b229a37abca",
+          "error": "Exit code 1\ngo: downloading github.com/klauspost/compress v1.18.3\ninternal\\excelCheckService.go:9:2: package rain-excel-checker/xlsx/xlsx_def is not in std (C:\\Program Files\\Go\\src\\rain-excel-checker\\..."
+        },
+        {
+          "tool_use_id": "call_63bc0ab0f1d04b88b9b9e19e",
+          "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\tgo.mod\nPlease commit your changes or stash them before you switch branches.\nAborting"
+        },
+        {
+          "tool_use_id": "call_30800b5c0fb44aee89c48fde",
+          "error": "Exit code 1\nYou must edit all merge conflicts and then\nmark them as resolved using git add"
+        },
+        {
+          "tool_use_id": "call_b5fdc2b856d64e08a9035d54",
+          "error": "Exit code 1\nYou must edit all merge conflicts and then\nmark them as resolved using git add"
+        },
+        {
+          "tool_use_id": "call_6f5a55fdc01e4fc18e58f527",
+          "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_5dd45250a3e94703819ac1aa",
+          "error": "<tool_use_error>String to replace not found in file.\nString:   // 添加评论\n  async addComment(itemId: string, content: string): Promise<Comment | undefined> {\n    await this.delay(200)\n    const item = th..."
+        },
+        {
+          "tool_use_id": "call_06a4a8f889de4530adaaeb1d",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+        },
+        {
+          "tool_use_id": "call_f60c594dbfba412b8946ed07",
+          "error": "Exit code 2\nls: cannot access '.claude/plugins/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8391240b875544fa9bf1883c",
+          "error": "Exit code 2\nls: cannot access '.superpowers/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_f6db2ab7d3994205ad287697",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 16: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_abc37f68613c4e2cb63b9afc",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_c8e66b12d04f4a30a392d3cc",
+          "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_fbea744bc5ec4e0b85c3b2dc",
+          "error": "Exit code 2\ngrep: max-height: No such file or directory\nfrontend/src/pages/Roadmap.vue:277:  height: 100%;\nfrontend/src/pages/Roadmap.vue:304:  overflow-y: auto;\nfrontend/src/pages/Roadmap.vue:317:  h..."
+        },
+        {
+          "tool_use_id": "call_e02e26a2d01b4c27ba6370b3",
+          "error": "<tool_use_error>String to replace not found in file.\nString: .item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n.item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px..."
+        },
+        {
+          "tool_use_id": "call_8bcb8a58ca6f4468a068cfc8",
+          "error": "<tool_use_error>String to replace not found in file.\nString: .item-list {\n  display: flex;\n  flex-direction: column;\n  gap: 12px;\n}\n\n }\n        }\n      }\n    }\n  }\n\n    }\n  }\n\n    .roadmap-item {\n    ..."
+        },
+        {
+          "tool_use_id": "call_94a44ae21e804789a0b29d03",
+          "error": "<tool_use_error>String to replace not found in file.\nString: .list-container {\n  flex: 1;\n  overflow-y: auto;\n}\n\n}\n        }\n      }\n    }\n    }\n  }\n\n    .empty-state {\n      display: flex;\n      just..."
+        },
+        {
+          "tool_use_id": "call_de873958546c44748b58521d",
+          "error": "Exit code 128\nwarning: could not open directory 'frontend/frontend/src/pages/': No such file or directory\nfatal: pathspec 'frontend/src/pages/Roadmap.vue' did not match any files"
+        },
+        {
+          "tool_use_id": "call_bf9334c340ce4c5b9e07932f",
+          "error": "<tool_use_error>String to replace not found in file.\nString: .vote-buttons {\n  margin-left: auto;\n  display: flex;\n  gap: 8px;\n}\n\n }\n        }\n      }\n    </style></tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_5d33f15379eb4de090be7224",
+          "error": "File content (33688 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole f..."
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "bd9f5786-a2b5-4214-ab12-2915104db90b",
+      "project": "xcard-qa-tools",
+      "first_display": "调整测试用例为为无bug版本后修复bug",
+      "git_branch": "main",
+      "start_time": "2026-04-02T22:59:24.617000+08:00",
+      "end_time": "2026-04-03T08:31:48.841000+08:00",
+      "duration_minutes": 572.4,
+      "user_turns": 274,
+      "assistant_turns": 376,
+      "total_input_tokens": 868928,
+      "total_output_tokens": 62323,
+      "zero_usage_count": 141,
+      "tool_usage": {
+        "Grep": 28,
+        "Glob": 17,
+        "Read": 98,
+        "AskUserQuestion": 3,
+        "Edit": 15,
+        "Bash": 60,
+        "Write": 16
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_99ffa2a91f664344b06fc0ca",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_e0914a20b64347c2941400ca",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_0a1ff21404804fcb94c836f5",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_77438b015b8f427089f8c87b",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // 只收集有内容的结果（有 ErrCells 或有 Reason）\n\t\t\t\thasContent := result.Ok || len(result.ErrCells) > 0\n\t\t\t\tif hasContent {</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b41a4c752ce14789896bd1cf",
+          "error": "Exit code 1\ncp: cannot create regular file '/d/work/xcard-qa-tools/feishu-lib/vendor/git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager/manager_def.go': No such file or directo..."
+        },
+        {
+          "tool_use_id": "call_14df7315563d4172b5cd1b94",
+          "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issue:\nThe required parameter `questions[0].question` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b0e36cf2a0274130b457539d",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// ==================== Git Diff 支持 ====================\n\n\t// GetFileAtCommit 获取指定 commit 的文件内容\n\t//\n\t// 使用 git show 命令获取历史版本文件：git show <c..."
+        },
+        {
+          "tool_use_id": "call_0cfe02ffd79642b9997ac177",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// ==================== Git Diff 支持 ====================\n\n// GetFileAtCommit 获取指定 commit 的文件内容\n//\n// 使用 git show 命令获取历史版本文件：git show <comm..."
+        },
+        {
+          "tool_use_id": "call_06dfbe02a8134975ad779b77",
+          "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:109: 当前逻辑与期望逻辑不一致:\n    ..."
+        },
+        {
+          "tool_use_id": "call_1d797542cc2b463ea8c4b513",
+          "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:109: 当前逻辑与期望逻辑不一致:\n    ..."
+        },
+        {
+          "tool_use_id": "call_cce86b3a69a54195b546d9b2",
+          "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected\n=== RUN   TestCheckGeneralTableRules_CurrentLogicVsExpected/获取历史版本失败应被收集\n    general_table_rules_test.go:205: 当前逻辑与期望逻辑不一致:\n    ..."
+        },
+        {
+          "tool_use_id": "call_9007406075a842e8bc53b8b5",
+          "error": "Exit code 1\n=== RUN   TestCheckGeneralTableRules_HasContentLogic\n=== RUN   TestCheckGeneralTableRules_HasContentLogic/获取历史版本失败应被收集\n=== RUN   TestCheckGeneralTableRules_HasContentLogic/无变更不应被收集\n=== RUN..."
+        },
+        {
+          "tool_use_id": "call_53b99098df624fe1a975b240",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/feishu-lib/notification/handlers\nnotification\\handlers\\intercept_test.go:25:12: expected type, found ':'\nFAIL\tgit.devcloud.ztgame.com/v-tangfangda/fe..."
+        },
+        {
+          "tool_use_id": "call_85b944bf161f405ab84dfeb4",
+          "error": "Exit code 1\n=== RUN   TestInterceptHandler_TableNotifications\n--- PASS: TestInterceptHandler_TableNotifications (0.01s)\n=== RUN   TestInterceptHandler_HistoryFetchFailure\n    intercept_test.go:116: 不应..."
+        },
+        {
+          "tool_use_id": "call_0455d88f1915431bbc59c925",
+          "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatTableErrors_ParseError(t *testing.T) {\n\tsheetName := \"Hero\"\n\ttableName := \"Hero.xlsx\"\n\n\t// 创建解析错误\n\tresult := &check_rule_def..."
+        },
+        {
+          "tool_use_id": "call_56ddf81bc40942e794f1c1df",
+          "error": "Exit code 1\n# ./xlsx/check_manager/...\npattern ./xlsx/check_manager/...: GetFileAttributesEx .\\xlsx\\check_manager\\: The system cannot find the path specified.\nFAIL\t./xlsx/check_manager/... [setup fail..."
+        },
+        {
+          "tool_use_id": "call_665d6dadddeb40bbb2fd4d43",
+          "error": "<tool_use_error>InputValidationError: Edit failed due to the following issue:\nThe required parameter `new_string` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_ab88226e31e84c87bb1f5afe",
+          "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatTableErrors_ParseError(t *testing.T) {\n\tsheetName := \"Hero\"\n\ttableName := \"Hero.xlsx\"\n\n\t// 创建解析错误\n\tresult := &check_rule_def..."
+        },
+        {
+          "tool_use_id": "call_62caf53189e444bab09f9f05",
+          "error": "<tool_use_error>String to replace not found in file.\nString: // TestFormatConsoleOutput\nfunc TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n    results := []*check_rul..."
+        },
+        {
+          "tool_use_id": "call_55003d07fcee4128a4c275e3",
+          "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n\tresults := []*check_rule_def.ColCheckResult{\n\t\t{Sheet..."
+        },
+        {
+          "tool_use_id": "call_29f525223b4c4646adbc853b",
+          "error": "<tool_use_error>String to replace not found in file.\nString: func TestFormatConsoleOutput(t *testing.T) {\n\tsheetName := \"Test\"\n\tcolName := \"Col\"\n\n\tresults := []*check_rule_def.ColCheckResult{\n\t\t{Sheet..."
+        },
+        {
+          "tool_use_id": "call_fd4bca3bcffe4a95b3f45043",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "cade4364-f973-466b-85d7-ea60df2a2523",
+      "project": "xcard-qa-tools",
+      "first_display": "使用test-case-generator技能为playwright生成前端页面完整的测试步骤用于全量回归测试所有功能",
+      "git_branch": "main",
+      "start_time": "2026-04-03T06:58:24.054000+08:00",
+      "end_time": "2026-04-03T08:32:55.203000+08:00",
+      "duration_minutes": 94.5,
+      "user_turns": 211,
+      "assistant_turns": 411,
+      "total_input_tokens": 333285,
+      "total_output_tokens": 69271,
+      "zero_usage_count": 251,
+      "tool_usage": {
+        "Skill": 1,
+        "Glob": 6,
+        "Read": 36,
+        "AskUserQuestion": 1,
+        "TaskCreate": 7,
+        "TaskUpdate": 8,
+        "Write": 15,
+        "Bash": 85,
+        "Agent": 7,
+        "Grep": 3,
+        "Edit": 21
+      },
+      "skill_calls": [
+        {
+          "skill": "test-case-generator",
+          "args": "为 playwright 生成前端页面完整的测试步骤，用于全量回归测试所有功能"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_0b5ab0bd582d4268ab39e105",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_219019dc54894fc684e34226",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_209da9f391d144bbab09db63",
+          "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 (6.6s)\n\n\n  1) [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 ───────────────────..."
+        },
+        {
+          "tool_use_id": "call_2ed0350806404018a34832fc",
+          "error": "Exit code 1\n\nRunning 12 tests using 12 workers\n\n  ok  2 [chromium] › e2e\\layout.spec.ts:35:3 › 通用布局测试 › 顶部导航栏渲染验证 (1.8s)\n  ok 11 [chromium] › e2e\\layout.spec.ts:169:3 › 通用布局测试 › 页面布局结构验证 (2.9s)\n  ok  ..."
+        },
+        {
+          "tool_use_id": "call_7b9a748a9c1346f2b4e24a59",
+          "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\home.spec.ts:22:3 › 首页 - AI 助手测试 › 页面加载 - 主要元素验证 (6.4s)\n\n\n  1) [chromium] › e2e\\home.spec.ts:22:3 › 首页 - AI 助手测试 › 页面加载 - 主要元素验证 ───..."
+        },
+        {
+          "tool_use_id": "call_3027e67815184a99b22aba4f",
+          "error": "<tool_use_error>String to replace not found in file.\nString:   /**\n   * 消息输入框可输入\n   * 验证输入框可以正常输入文本\n   */\n  test('消息输入框可输入', async ({ page }) => {\n    const testText = '这是一条测试消息';\n\n    await homePage...."
+        },
+        {
+          "tool_use_id": "call_778fd0f7fee84263bf3afa4b",
+          "error": "Exit code 1\n\nRunning 1 test using 1 worker\n\n  x  1 [chromium] › e2e\\home.spec.ts:51:3 › 首页 - AI 助手测试 › 消息输入框可输入 (2.0s)\n\n\n  1) [chromium] › e2e\\home.spec.ts:51:3 › 首页 - AI 助手测试 › 消息输入框可输入 ─────────────..."
+        },
+        {
+          "tool_use_id": "call_2708719b3e6f40379f4f90eb",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+        },
+        {
+          "tool_use_id": "call_6048b89542b4467c81f36074",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b35eb9dd82d8417fb7c2cd90",
+          "error": "Exit code 1\nerror: cannot rebase: You have unstaged changes.\nerror: Please commit or stash them."
+        },
+        {
+          "tool_use_id": "call_14366428b93c47b4861e768e",
+          "error": "Exit code 1\nSaved working directory and index state WIP on feature/roadmap: 98ac94f feat(e2e): 添加 Playwright E2E 测试框架\nerror: unable to unlink old 'rain-qa-func.exe': Invalid argument\nfatal: Could not ..."
+        },
+        {
+          "tool_use_id": "call_0e683336c89c4eadb78ec3c2",
+          "error": "Exit code 255\nerror: unable to unlink old 'rain-qa-func.exe': Invalid argument"
+        },
+        {
+          "tool_use_id": "call_1e809548fd8c492790a7a16b",
+          "error": "Exit code 1\nerror: Your local changes to the following files would be overwritten by checkout:\n\train-qa-func.exe\nPlease commit your changes or stash them before you switch branches.\nAborting\nerror: co..."
+        },
+        {
+          "tool_use_id": "call_c08d6920835742b7a85395a1",
+          "error": "Exit code 1\nerror: the branch 'backup-before-squash-20260403082233' is not fully merged\nhint: If you are sure you want to delete it, run 'git branch -D backup-before-squash-20260403082233'\nhint: Disab..."
+        },
+        {
+          "tool_use_id": "call_269cb560f66742e29b15ed43",
+          "error": "Exit code 1\nwarning: not deleting branch 'feature/roadmap' that is not yet merged to\n         'refs/remotes/origin/worktree-开发路线图', even though it is merged to HEAD\nerror: the branch 'feature/roadmap'..."
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "122d7b92-00b4-4a34-b0d4-59123feca705",
+      "project": "activity_page",
+      "first_display": "你来辅助我开发一个活动页面，此次会话不需要你自动执行编码逻辑并一次性生成可交付成果，按我的要求执行每个步骤",
+      "git_branch": "HEAD",
+      "start_time": "2026-04-03T08:02:45.695000+08:00",
+      "end_time": "2026-04-03T12:32:10.490000+08:00",
+      "duration_minutes": 269.4,
+      "user_turns": 35,
+      "assistant_turns": 68,
+      "total_input_tokens": 35813,
+      "total_output_tokens": 2823,
+      "zero_usage_count": 44,
+      "tool_usage": {
+        "Glob": 6,
+        "Grep": 4,
+        "Bash": 16,
+        "Read": 4
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_8bdbdd2392e94a85a319c1b9",
+          "error": "<tool_use_error>Path does not exist: rain-qa-func/frontend. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_a3207b40cb1d45bca253a2dd",
+          "error": "<tool_use_error>Path does not exist: rain-qa-func/frontend. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_fbb3325fdcba4b73828d0163",
+          "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vu..."
+        },
+        {
+          "tool_use_id": "call_394421be5fd8442ca6f68bb1",
+          "error": "Exit code 128\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgrade..."
+        },
+        {
+          "tool_use_id": "call_210c2ed662f844329876fc7d",
+          "error": "Exit code 128\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgrade..."
+        },
+        {
+          "tool_use_id": "call_7dfa3929175444fa9a6b4467",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "00246c85-f8f6-4529-b6a3-5a2588c6ae3b",
+      "project": "xcard-qa-tools",
+      "first_display": "1PS D:\\work\\xcard-qa-tools> claude -w activity_page\nError creating worktree: Fai",
+      "git_branch": "main",
+      "start_time": "2026-04-03T08:35:29.566000+08:00",
+      "end_time": "2026-04-03T10:46:19.333000+08:00",
+      "duration_minutes": 130.8,
+      "user_turns": 16,
+      "assistant_turns": 27,
+      "total_input_tokens": 50329,
+      "total_output_tokens": 1344,
+      "zero_usage_count": 20,
+      "tool_usage": {
+        "Bash": 9,
+        "Skill": 1,
+        "Read": 1,
+        "Write": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "work-journal",
+          "args": "生成晨会报告"
+        }
+      ],
+      "errors": [],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "a7b401b3-d56e-4dc6-82a3-db4fda78a28e",
+      "project": "xcard-qa-tools",
+      "first_display": "[Pasted text #1 +39 lines]参考上面流水先的脚本使用go run 命令运行rain-excel-checker，不要发送飞书消息，配表使",
+      "git_branch": "main",
+      "start_time": "2026-04-03T08:38:04.223000+08:00",
+      "end_time": "2026-04-03T15:26:59.913000+08:00",
+      "duration_minutes": 408.9,
+      "user_turns": 229,
+      "assistant_turns": 478,
+      "total_input_tokens": 504760,
+      "total_output_tokens": 48152,
+      "zero_usage_count": 290,
+      "tool_usage": {
+        "Read": 34,
+        "Bash": 106,
+        "Grep": 13,
+        "Glob": 3,
+        "Write": 8,
+        "Edit": 19,
+        "TaskCreate": 2,
+        "TaskUpdate": 4,
+        "TaskGet": 1,
+        "Skill": 1,
+        "analyze_image": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "web-access",
+          "args": "访问 https://devops.devcloud.ztgame.com/projects/xcard/pipelines/p-5e007d6a5e3e472e9b3abb99b48e1064 获取"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_4bc81993198b4a44a909ef6f",
+          "error": "Exit code 1\n# git.devcloud.ztgame.com/v-tangfangda/rain-excel-checker/xlsx/check_manager\nxlsx\\check_manager\\manager_def.go:86:7: declared and not used: j"
+        },
+        {
+          "tool_use_id": "call_30857e2522c64bb494d7086e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t// CheckStats 检查统计\n\ttype CheckStats struct {\n\t\tTotalRules       int // 总规则数\n\t\tFilteredRules    int // 过滤后适用的规则数\n\t\tChangedFileCount int // ..."
+        },
+        {
+          "tool_use_id": "call_9355526b017d4ab99167451e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\t// 检查统计\n\t\tif event.Stats != nil {\n\t\t\tif event.IsIncremental {\n\t\t\t\tlines = append(lines, fmt.Sprintf(\"**增量检查**: 加载规则 %d 条，适用于当前提交文件 %d 条，变..."
+        },
+        {
+          "tool_use_id": "call_547b967f692545e58d5e86b0",
+          "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\v-wangtengda\\AppData\\Local\\Programs\\Git\\scripts\\check-deps.mjs'\r\n    at Module._resolveFilen..."
+        },
+        {
+          "tool_use_id": "call_56c6514968f24ec4a910a82b",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_e363a3266a144968874bb996",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "df870212-4bf3-4bed-9496-303c5fecaec4",
+      "project": "activity_page",
+      "first_display": "查看当前工作目录和git分支",
+      "git_branch": "worktree-activity_page",
+      "start_time": "2026-04-03T10:47:25.865000+08:00",
+      "end_time": "2026-04-03T15:14:18.738000+08:00",
+      "duration_minutes": 266.9,
+      "user_turns": 406,
+      "assistant_turns": 552,
+      "total_input_tokens": 569803,
+      "total_output_tokens": 43782,
+      "zero_usage_count": 213,
+      "tool_usage": {
+        "Bash": 203,
+        "Write": 24,
+        "Read": 54,
+        "Edit": 31,
+        "Glob": 10,
+        "Grep": 8,
+        "Agent": 1,
+        "AskUserQuestion": 1,
+        "ExitPlanMode": 4,
+        "TaskCreate": 3,
+        "TaskUpdate": 7
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_ec890c7b2fcc4dad994e55d2",
+          "error": "Exit code 1\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vuln..."
+        },
+        {
+          "tool_use_id": "call_00c20de40da84673b0194310",
+          "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be v..."
+        },
+        {
+          "tool_use_id": "call_af1daaa114634526a2ff5c6c",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+        },
+        {
+          "tool_use_id": "call_0282ad7df52644fc96b90b42",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+        },
+        {
+          "tool_use_id": "call_4337967e2d4648f6bc8bc44a",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d3a9b1e66ed14f219f233a74",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_575e19a81bbd4c7c801e5bae",
+          "error": "Exit code 1\nmain.go:15:2: package rain-qa-func/internal/activity-test is not in std (C:\\Program Files\\Go\\src\\rain-qa-func\\internal\\activity-test)"
+        },
+        {
+          "tool_use_id": "call_2dbec92555734d6181eafaa3",
+          "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/internal/activity-test/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_73a8ed1229de421fa01eb8cc",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_83b5f36be2224c8b84ebbedb",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6569330826b0473ba200504d",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n同步记录f..."
+        },
+        {
+          "tool_use_id": "call_b947d8c6a2c84c8e95ea43dc",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n刚才我问你..."
+        },
+        {
+          "tool_use_id": "call_81615c46f03d4cbfabe1c7ca",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n每个新提取..."
+        },
+        {
+          "tool_use_id": "call_c603af825ed748b38c758d4b",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_3c48264cf3d3453f990614a3",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_740f16440efa4c158834c9e9",
+          "error": "Exit code 1\ncp: cannot stat '/d/work/xcard-qa-tools/rain-excel-checker/activity/check.go': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_7422e817c51f416cb4841b5c",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_4b480e2ee29e4413803a5063",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_f5d9ebf3630b4184a5dbc540",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_a1ac99843a13415db1da607e",
+          "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-excel-checker/activity/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_6bad85fdc96a453285cb5874",
+          "error": "Exit code 128\nCould not remove submodule work tree 'rain-qa-func'\ncould not create empty submodule directory rain-qa-funcSubmodule 'rain-qa-func' (git@git.devcloud.ztgame.com:v-tangfangda/rain-qa-func..."
+        },
+        {
+          "tool_use_id": "call_b46a371695644c18b445390d",
+          "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/frontend': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_65d105231b354cae98b05ad5",
+          "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_12541a8467fb47ea9dd2f9f3",
+          "error": "Exit code 1\nrm: cannot remove '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_d808f25cd8504978905290e6",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6384f86d7c754682a1b4793f",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_748e49c1408d4c0ebe27f539",
+          "error": "<tool_use_error>No changes to make: old_string and new_string are exactly the same.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_b41f816deca34fd9b76fa25c",
+          "error": "Exit code 1\nrm: cannot remove 'rain-qa-func/frontend': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_ea4b3b4df9de4c449871308a",
+          "error": "Exit code 1\nrm: cannot remove 'rain-qa-func': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_11ed925c061c447a983c29cd",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_727933b53a854a29b0f55f52",
+          "error": "Exit code 1\nrm: cannot remove 'rain-qa-func': Device or resource busy"
+        },
+        {
+          "tool_use_id": "call_de4b983dfce44376ae6668c7",
+          "error": "Exit code 255"
+        },
+        {
+          "tool_use_id": "call_ab6eb33fffcd431e8329d3ec",
+          "error": "Exit code 255"
+        },
+        {
+          "tool_use_id": "call_1a861768b28a4c6c90c0e6a3",
+          "error": "Exit code 1\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 45860��\r\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 40116��\r\n�ɹ�: ����ֹ���� \"bash.exe\"���� PID Ϊ 49640��"
+        },
+        {
+          "tool_use_id": "call_322c71c2d52a4381a6a4b307",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        },
+        {
+          "tool_use_id": "call_bccd3c24b12a4b7eb359ed51",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: rain-qa-func/.git: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_32eff38b757249d7a1c606e3",
+          "error": "Exit code 128\nfatal: not a git repository: D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/../.git/modules/rain-qa-func"
+        },
+        {
+          "tool_use_id": "call_1a2372c9b43b4b418d933903",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: rain-qa-func/.git: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_b0c6e3aef9a549e5a5a85bbf",
+          "error": "Exit code 128\nfatal: not a git repository: rain-qa-func/../.git/modules/rain-qa-func"
+        },
+        {
+          "tool_use_id": "call_27d2dde246df487a9818aea4",
+          "error": "Exit code 128\nfatal: not a git repository: rain-qa-func/../.git/modules/rain-qa-func"
+        },
+        {
+          "tool_use_id": "call_0a8f401cf3c043ad9d03e717",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "first_display": "是",
+      "git_branch": "main",
+      "start_time": "2026-04-01T16:38:53.768000+08:00",
+      "end_time": "2026-04-03T14:25:03.775000+08:00",
+      "duration_minutes": 2746.2,
+      "user_turns": 388,
+      "assistant_turns": 586,
+      "total_input_tokens": 1281604,
+      "total_output_tokens": 90973,
+      "zero_usage_count": 384,
+      "tool_usage": {
+        "mcp__plugin_github_github__get_file_contents": 8,
+        "Agent": 21,
+        "Skill": 5,
+        "TaskCreate": 27,
+        "TaskUpdate": 47,
+        "AskUserQuestion": 6,
+        "Bash": 105,
+        "Write": 4,
+        "Read": 56,
+        "Edit": 7,
+        "mcp__thinking__sequentialthinking": 2,
+        "Grep": 4,
+        "TaskList": 6,
+        "Glob": 7
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:brainstorming",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:writing-plans",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:writing-plans",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:requesting-code-review",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:dispatching-parallel-agents",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_a3cc4ffaf26c4ee29b5ee5ca",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_66f1e5cdc3cc4444b24b2dc9",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d4f8b56da3f0428dadfc5352",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_48a544f50a3345449d9060c8",
+          "error": "<tool_use_error>InputValidationError: TaskCreate failed due to the following issue:\nThe required parameter `subject` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_ab95befca6e84b3a8f00e454",
+          "error": "Exit code 1\nOn branch main\nYour branch is ahead of 'origin/main' by 7 commits.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add/rm <file>...\" to update ..."
+        },
+        {
+          "tool_use_id": "call_f799c57a39254715b98e258b",
+          "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/relay [github.com/wangtengda0310/gobee/echo-input/pkg/relay.test]\npkg\\relay\\client_test.go:79:17: invalid operation: cannot receive from se..."
+        },
+        {
+          "tool_use_id": "call_6d231465fd5c4a85838ef821",
+          "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/qrcode [github.com/wangtengda0310/gobee/echo-input/pkg/qrcode.test]\npkg\\qrcode\\qrcode_test.go:4:2: \"encoding/json\" imported and not used\nFA..."
+        },
+        {
+          "tool_use_id": "call_236c7a4e81a844cea9c516ae",
+          "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/cmd/server\ncmd\\server\\main.go:1:1: expected 'package', found 'EOF'\nFAIL\tgithub.com/wangtengda0310/gobee/echo-input/cmd/server [setup failed]\n==..."
+        },
+        {
+          "tool_use_id": "call_bd44a710dd72471abf4da901",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6a10e4c1ce804a3d9b854bd2",
+          "error": "Exit code 1\n=== RUN   TestHealthHandler\n--- PASS: TestHealthHandler (0.00s)\n=== RUN   TestCreateSessionHandler\n=== RUN   TestCreateSessionHandler/正常创建会话\n2026/04/03 11:54:24 创建会话: zvxldj\n    http_test...."
+        },
+        {
+          "tool_use_id": "call_e7acb3e3b4f1445688de6190",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_4b0ff41953334ab89b666ffa",
+          "error": "Exit code 1\n# github.com/wangtengda0310/gobee/echo-input/pkg/server [github.com/wangtengda0310/gobee/echo-input/pkg/server.test]\npkg\\server\\http.go:71:19: undefined: net\nFAIL\tgithub.com/wangtengda0310..."
+        },
+        {
+          "tool_use_id": "call_5d4ba31e22674dd7850ac98d",
+          "error": "Exit code 1\n=== RUN   TestHealthHandler\n--- PASS: TestHealthHandler (0.00s)\n=== RUN   TestCreateSessionHandler\n=== RUN   TestCreateSessionHandler/正常创建会话\n2026/04/03 11:56:20 创建会话: l2u6fe\n--- PASS: Test..."
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5.1",
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "6fe4754f-5eca-4131-8ff4-d32d3273f700",
+      "project": "activity_page",
+      "first_display": "/resume",
+      "git_branch": "HEAD",
+      "start_time": "2026-04-03T10:47:25.865000+08:00",
+      "end_time": "2026-04-03T12:25:08.246000+08:00",
+      "duration_minutes": 97.7,
+      "user_turns": 187,
+      "assistant_turns": 255,
+      "total_input_tokens": 91924,
+      "total_output_tokens": 23139,
+      "zero_usage_count": 105,
+      "tool_usage": {
+        "Bash": 72,
+        "Write": 12,
+        "Read": 35,
+        "Edit": 16,
+        "Glob": 10,
+        "Grep": 8,
+        "Agent": 1,
+        "AskUserQuestion": 1,
+        "ExitPlanMode": 4
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_ec890c7b2fcc4dad994e55d2",
+          "error": "Exit code 1\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/debug-utils'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vuln..."
+        },
+        {
+          "tool_use_id": "call_00c20de40da84673b0194310",
+          "error": "Exit code 128\nCloning into 'D:/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func'...\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be v..."
+        },
+        {
+          "tool_use_id": "call_af1daaa114634526a2ff5c6c",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+        },
+        {
+          "tool_use_id": "call_0282ad7df52644fc96b90b42",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\.claude\\worktrees\\activity_page."
+        },
+        {
+          "tool_use_id": "call_4337967e2d4648f6bc8bc44a",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d3a9b1e66ed14f219f233a74",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_575e19a81bbd4c7c801e5bae",
+          "error": "Exit code 1\nmain.go:15:2: package rain-qa-func/internal/activity-test is not in std (C:\\Program Files\\Go\\src\\rain-qa-func\\internal\\activity-test)"
+        },
+        {
+          "tool_use_id": "call_2dbec92555734d6181eafaa3",
+          "error": "Exit code 2\nls: cannot access '/d/work/xcard-qa-tools/.claude/worktrees/activity_page/rain-qa-func/internal/activity-test/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_73a8ed1229de421fa01eb8cc",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_83b5f36be2224c8b84ebbedb",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import { ref } from 'vue'\n\timport { TestCheck } from '@wailsjs/rain-qa-func/internal/activity-test'</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_6569330826b0473ba200504d",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n同步记录f..."
+        },
+        {
+          "tool_use_id": "call_b947d8c6a2c84c8e95ea43dc",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n刚才我问你..."
+        },
+        {
+          "tool_use_id": "call_81615c46f03d4cbfabe1c7ca",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\n每个新提取..."
+        },
+        {
+          "tool_use_id": "call_c603af825ed748b38c758d4b",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_3c48264cf3d3453f990614a3",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "1f670286-079b-47cb-b96d-d11f6a472664",
+      "project": "xcard-qa-tools",
+      "first_display": "你支持agent team功能吗",
+      "git_branch": "main",
+      "start_time": "2026-04-03T13:27:50.557000+08:00",
+      "end_time": "2026-04-03T15:40:46.385000+08:00",
+      "duration_minutes": 132.9,
+      "user_turns": 8,
+      "assistant_turns": 15,
+      "total_input_tokens": 114555,
+      "total_output_tokens": 1797,
+      "zero_usage_count": 9,
+      "tool_usage": {
+        "Agent": 3
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "c1aa0665-f12b-464e-99e7-221bb8604669",
+      "project": "config",
+      "first_display": "https://ztgame.feishu.cn/sheets/shtcncUUelPtASbMMtCxbNNWWoh?sheet=QPHa0K 你能否读取这篇",
+      "git_branch": "main",
+      "start_time": "2026-04-03T14:51:07.528000+08:00",
+      "end_time": "2026-04-03T14:53:34.400000+08:00",
+      "duration_minutes": 2.4,
+      "user_turns": 16,
+      "assistant_turns": 32,
+      "total_input_tokens": 6859,
+      "total_output_tokens": 1016,
+      "zero_usage_count": 20,
+      "tool_usage": {
+        "Skill": 1,
+        "Read": 2,
+        "Bash": 11
+      },
+      "skill_calls": [
+        {
+          "skill": "lark-sheets",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_f5d5f6d42d6a4ec8bb7e0a75",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_8126cb77df2d4cac80337b61",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope sheets:spreadsheet:read [99991672]\"..."
+        },
+        {
+          "tool_use_id": "call_9ba256767d9f4fecb73928f8",
+          "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+        },
+        {
+          "tool_use_id": "call_ff988e584ac94aca8cabd392",
+          "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+        },
+        {
+          "tool_use_id": "call_91e8aa064b7a42f5944d2753",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_b2c7df0942204ce782b4c2f9",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_08ce3b6e710d490082a22edb",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: unexpected EOF while looking for matching `\"'"
+        },
+        {
+          "tool_use_id": "call_a14c18d18465404f97eedd26",
+          "error": "Exit code 1\n�ַ���ȱ����ֹ��: '��\r\n    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException\r\n    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString"
+        },
+        {
+          "tool_use_id": "call_e86990522505460a96834931",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"Permission denied [99991672]\",\n    \"hint\": \"check app permissions or re-a..."
+        }
+      ],
+      "models_used": [
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "df6ea75a-9416-4f4b-800d-ac29e49a2414",
+      "project": "xcard-qa-tools",
+      "first_display": "当前会话你来辅助我开发，暂时忽略某些工作流或技能对你的强制要求，听我指挥。创建feature.md并在claude.md中引用，我会随时手工修改feature.",
+      "git_branch": "work-activity_page",
+      "start_time": "2026-04-03T16:01:15.837000+08:00",
+      "end_time": "2026-04-04T03:18:40.740000+08:00",
+      "duration_minutes": 677.4,
+      "user_turns": 289,
+      "assistant_turns": 432,
+      "total_input_tokens": 826157,
+      "total_output_tokens": 44621,
+      "zero_usage_count": 178,
+      "tool_usage": {
+        "Glob": 5,
+        "Write": 9,
+        "Read": 86,
+        "Edit": 56,
+        "Bash": 91,
+        "Grep": 11,
+        "AskUserQuestion": 4,
+        "Skill": 1,
+        "CronCreate": 1,
+        "CronList": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "work-journal",
+          "args": "生成周报"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_227648e8fbe44bea831ada54",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c491fc180bd14713a0677495",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_d82edd2e97134b79a9799699",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_733681af93604aee9cdf9345",
+          "error": "<tool_use_error>InputValidationError: AskUserQuestion failed due to the following issues:\nThe required parameter `questions[1].question` is missing\nThe required parameter `questions[1].header` is miss..."
+        },
+        {
+          "tool_use_id": "call_2f9a7825c483462ea082e02a",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `cd rain-qa-func && npm run dev 2>&&1 | head -20'"
+        },
+        {
+          "tool_use_id": "call_4f604413c7a34e7e9485815c",
+          "error": "Exit code 2\n/usr/bin/bash: eval: line 1: syntax error near unexpected token `&'\n/usr/bin/bash: eval: line 1: `npm run dev 2>&&1 | head -20'"
+        },
+        {
+          "tool_use_id": "call_b6f7b7c9d3da4b3fb239d88f",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_ad6077cd1d6b4e2c874e49ad",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c9baf03bc7254a9d8612b782",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: frontend: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_bb5bc484a6424071816b6d7f",
+          "error": "Exit code 128\nfatal: ambiguous argument 'frontend/src/pages/excel-test/index.vue': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command..."
+        },
+        {
+          "tool_use_id": "call_62cd6b48db194ce7a081225b",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+        },
+        {
+          "tool_use_id": "call_7e728b67723e43b69f2e4b92",
+          "error": "<tool_use_error>String to replace not found in file.\nString: import {activeKey, menuOptions} from \"./composables/menu\";\nimport PageMenuBar from \"@shared/components/page-menu-bar/index.vue\";import Page..."
+        },
+        {
+          "tool_use_id": "call_aef95d7328934cab8879c4c6",
+          "error": "Exit code 1\ncat: rain-qa-func/frontend/src/pages/excel-test/composables/menu.ts: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_ba9ec530bd784f0f90512730",
+          "error": "Exit code 2\nls: cannot access 'rain-qa-func/frontend/src/pages/excel-test/composables/': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_39c382244cd34aa3b7a9e0d4",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c898b31bed0e4256a8c9f447",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <page-menu-bar\n :menu-options=\"menuOptions(dialog, message)\" v-model:active-key=\"activeKey\" :inverted=\"inverted\"</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_d6cfc90ad3e6405caf62e75b",
+          "error": "<tool_use_error>String to replace not found in file.\nString:         <n-layout position=\"absolute\" style=\"top: 34px; bottom: 64px\" has-sider>\n        <n-layout-sider\n            bordered\n            c..."
+        },
+        {
+          "tool_use_id": "call_86b3f4a9247d44a0990e59ca",
+          "error": "<tool_use_error>String to replace not found in file.\nString:       <PageMenuBar\n        :menu-options=\"menuOptions()\" v-model:activeKey=\"activeKey\" :inverted=\"inverted\">qwe\n        <template #right></..."
+        },
+        {
+          "tool_use_id": "call_cc931434eac34751b9f8e5cd",
+          "error": "<tool_use_error>String to replace not found in file.\nString:       <button class=\"idea-icon-button\" @click=\"router.push('/Roadmap')\">路线图</button>\n    </div></tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_9149caa874df49c385daa646",
+          "error": "Exit code 1\n# ����: 2026-03-31, 2026-04-01, 2026-04-02, 2026-04-03 | ��Ŀ: 718 | ��Ŀ: activity_page, config, excel, fake_feishu_message_ui, gobee, rain-excel-checker, rain-qa-func, server, xcard-qa-too..."
+        },
+        {
+          "tool_use_id": "call_4df53092deb247858508941b",
+          "error": "<tool_use_error>String to replace not found in file.\nString:               @dropdown-select=\"(key) => emit('dropdown-select', key)\"\n              @dropdown-clickoutside=\"() => emit('dropdown-clickouts..."
+        },
+        {
+          "tool_use_id": "call_b440ca8676164dc896d30731",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_dffab778f3c144a3baf94461",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_0b931f5b2ce94cc39467e23d",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_afba9fc17b7f4bb3a5d55712",
+          "error": "<tool_use_error>Path does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_94d66316b19b4d8c97a5af93",
+          "error": "<tool_use_error>Directory does not exist: D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend\\src\\bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_err..."
+        },
+        {
+          "tool_use_id": "call_a09165d1cf574bf898415a57",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend."
+        },
+        {
+          "tool_use_id": "call_534999fc209f4a068dea514a",
+          "error": "Exit code 1\ncat: 'D:/work/xcard-qa-tools/bindings/rain-qa-func/internal/function-test/funccaseconfigservice.ts': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_453f8ea6609c425b942e08f4",
+          "error": "<tool_use_error>InputValidationError: Write failed due to the following issue:\nThe required parameter `file_path` is missing</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_69fe885320904cd6bfe1bdf2",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_1144ecda57eb4defaae7b8a8",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-resources-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_c867036d76434a4e8fb6eea3",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: feishu-lib: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8751f39b23f64022b55f5d11",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: debug-utils: No such file or directory"
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    }
+  ]
+}
