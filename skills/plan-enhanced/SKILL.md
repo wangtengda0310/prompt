@@ -102,33 +102,110 @@ description: "增强计划模式的质量控制。当进入计划模式（EnterP
 
 审核反馈纳入计划后再提交给用户确认。
 
+## 与 task-master 集成（本机已安装）
+
+本机安装了 `task-master` CLI（路径：`C:/Users/v-wangtengda/AppData/Roaming/npm/task-master`），用于结构化的任务分解、依赖管理与进度跟踪。**在符合下述触发条件时，必须使用 task-master 管理计划任务**，而不仅仅是写 Markdown 文件。
+
+### 何时使用 task-master
+
+**必须使用**（满足任一）：
+- 计划包含 **≥5 个 Phase** 或 **≥10 个子任务**
+- 计划涉及 **多个 agent 并行**，需要明确依赖关系
+- 计划周期跨 **多个会话**（需要持久化任务状态）
+- 用户明确要求"用 task-master 管理"、"创建 tasks"、"分解任务"
+
+**不需要使用**：
+- 单个 Phase 的小型修改（直接写 Markdown 计划即可）
+- 探索性、一次性的临时任务
+- 仅 1-2 步的简单流程
+
+### task-master 与本技能的协作流程
+
+1. **初始化**（仅项目首次使用）：
+   ```bash
+   task-master init -y                          # 在项目根创建 .taskmaster/
+   task-master models --setup                   # 配置 AI 模型（首次）
+   ```
+
+2. **从计划生成任务**：写完计划 Markdown 后，将计划作为 PRD 输入：
+   ```bash
+   task-master parse-prd --input=<plan.md> --num-tasks=<N>
+   ```
+   或手工添加：
+   ```bash
+   task-master add-task --prompt="<Phase 描述>" --priority=high
+   ```
+
+3. **分解复杂任务**：
+   ```bash
+   task-master analyze-complexity --threshold=5     # 找出需要拆分的任务
+   task-master expand --id=<id> --num=5             # 拆为子任务
+   task-master expand --all                         # 全部展开
+   ```
+
+4. **管理依赖**：
+   ```bash
+   task-master add-dependency --id=<id> --depends-on=<id>
+   task-master validate-dependencies                # 检查循环/无效依赖
+   ```
+
+5. **执行中跟踪**：
+   ```bash
+   task-master next                                 # 查询下一个可执行任务
+   task-master show <id>                            # 查看任务详情
+   task-master set-status <id> in-progress          # 开始
+   task-master set-status <id> done                 # 完成
+   task-master list -w                              # watch 模式跟踪进度
+   ```
+
+6. **会话恢复**（compact 后或新会话）：
+   ```bash
+   task-master list                                 # 查看所有任务状态
+   task-master next                                 # 找到下一步
+   ```
+
+### task-master 与 progress-tracker 的分工
+
+| 工具 | 职责 |
+|------|------|
+| **task-master** | 结构化任务树、依赖图、状态机、AI 辅助分解 |
+| **progress-tracker (memory/active-plan.md)** | 调度者身份、变更日志、当前角色、跨会话恢复上下文 |
+
+两者并存：task-master 管"做什么"和"做到哪了"，active-plan.md 管"我是谁、我在干嘛、刚才发生了什么"。
+
+### 使用约束
+
+- **API Key**：task-master 的 AI 功能（parse-prd / expand / research）需要 `ANTHROPIC_API_KEY` 等环境变量，未配置时只能用纯手动命令（add-task / set-status / list）
+- **项目本地化**：tasks.json 存储在项目根 `.taskmaster/tasks/`，不污染全局
+- **tag 隔离**：用 `task-master tags add <feature-name> --from-branch` 为每个 worktree/feature 创建独立任务上下文，避免任务混淆
+- **失败回退**：task-master 命令失败时（如未 init、无 API key），降级为只写 active-plan.md，不阻塞计划制定
+
 ## 执行纪律
 
 ### 写计划时
 1. 先收集需求和技术背景
 2. 按模板写计划（实施步骤 + 测试策略 + 验收清单 + Agent 分工）
-3. 自动检查清单
-4. 复杂计划 spawn 审核 agent
-5. 综合审核结果修改计划
-6. 调用 ExitPlanMode 提交给用户
+3. **判断是否启用 task-master**（见上节"何时使用"）；如启用，将 Phase 同步为 task-master 任务
+4. 自动检查清单
+5. 复杂计划 spawn 审核 agent
+6. 综合审核结果修改计划与任务
+7. 调用 ExitPlanMode 提交给用户
 
 ### 计划确认后（必须执行）
 - 立即使用 progress-tracker 技能创建 `memory/active-plan.md` 进度文件
 - 写入完整的 Phase 列表和初始状态（全部 🔲 未开始）
 - 确保 `memory/MEMORY.md` 索引中包含 active-plan.md 条目
+- **如启用 task-master**：执行 `task-master parse-prd --input=memory/active-plan.md` 或逐个 `add-task` 同步任务；用 `tags add` 为本次计划建立独立 tag
 
 ### 计划执行中（每个 Phase 完成后必须执行）
 1. 在计划文件验收清单中勾选已完成项（Edit 工具将 `[ ]` 改为 `[x]`）
 2. 使用 progress-tracker 技能的 PHASE_DONE 操作更新 `memory/active-plan.md`
-   - 更新 Phase 状态为 ✅ 完成
-   - 记录产出文件
-   - 更新角色和活跃 agent
-   - 更新下一步指向
-   - 追加变更日志
-3. 遇到阻塞时使用 PHASE_BLOCKED 操作
-4. 遇到计划外发现时，先更新计划再继续执行
+3. **如启用 task-master**：`task-master set-status <id> done`，再 `task-master next` 决定下一步
+4. 遇到阻塞时使用 PHASE_BLOCKED；在 task-master 中 `set-status <id> review` 或追加 dependency
+5. 遇到计划外发现时，先 `update-task` / `add-task` 同步任务，再继续执行
 
 ### 计划执行完
 - 逐项检查验收清单
 - 将 active-plan.md 状态改为 completed
 - 从 MEMORY.md 索引中移除 active-plan.md 条目
+- **如启用 task-master**：确认 `task-master list` 全部为 done；归档 tag（`tags rename` 加 `-archived` 后缀）
