@@ -1,0 +1,172 @@
+{
+  "table_info": {
+    "file_path": "D:/work/config/excel/Hero.xlsx",
+    "sheet_name": "武将表|Hero",
+    "total_columns": 23,
+    "data_columns": 21
+  },
+  "columns": [
+    {
+      "index": 0,
+      "chinese_name": "武将ID",
+      "field_name": "Id",
+      "type": "EHeroId",
+      "description": "武将唯一标识符"
+    },
+    {
+      "index": 1,
+      "chinese_name": "武将名称",
+      "field_name": "Name",
+      "type": "string",
+      "description": "武将显示名称"
+    },
+    {
+      "index": 2,
+      "chinese_name": "",
+      "field_name": "",
+      "type": "E#EHeroId",
+      "description": "枚举列"
+    },
+    {
+      "index": 3,
+      "chinese_name": "武将是否开放",
+      "field_name": "IsOpen",
+      "type": "bool",
+      "description": "武将是否可用"
+    },
+    {
+      "index": 4,
+      "chinese_name": "开放时间",
+      "field_name": "OpenDate",
+      "type": "string",
+      "description": "武将开放时间"
+    },
+    {
+      "index": 5,
+      "chinese_name": "性别",
+      "field_name": "Gender",
+      "type": "int",
+      "description": "1=男, 2=女"
+    },
+    {
+      "index": 6,
+      "chinese_name": "初始体力",
+      "field_name": "Point",
+      "type": "int",
+      "description": "武将初始体力值"
+    },
+    {
+      "index": 7,
+      "chinese_name": "体力上限",
+      "field_name": "HpLimit",
+      "type": "int",
+      "description": "武将体力上限"
+    },
+    {
+      "index": 8,
+      "chinese_name": "手牌上限",
+      "field_name": "HandLimit",
+      "type": "int",
+      "description": "武将手牌上限"
+    },
+    {
+      "index": 9,
+      "chinese_name": "装备上限",
+      "field_name": "EquipLimit",
+      "type": "int",
+      "description": "武将装备上限"
+    },
+    {
+      "index": 10,
+      "chinese_name": "国号",
+      "field_name": "Country",
+      "type": "ECountry",
+      "description": "武将所属国家"
+    },
+    {
+      "index": 11,
+      "chinese_name": "是否常备主公",
+      "field_name": "IsAlwaysZhuGong",
+      "type": "bool",
+      "description": "是否为主公武将"
+    },
+    {
+      "index": 12,
+      "chinese_name": "技能 ID",
+      "field_name": "Skill",
+      "type": "ESkillId[]",
+      "description": "武将拥有的技能列表"
+    },
+    {
+      "index": 13,
+      "chinese_name": "排除的身份枚举",
+      "field_name": "ExcludeIdentity",
+      "type": "int[]",
+      "description": "排除的身份"
+    },
+    {
+      "index": 14,
+      "chinese_name": "不可以使用的房间模式",
+      "field_name": "NotUseModeType",
+      "type": "EModeRuleType[]",
+      "description": "限制使用的游戏模式"
+    },
+    {
+      "index": 15,
+      "chinese_name": "武将类型",
+      "field_name": "HeroType",
+      "type": "EHeroType",
+      "description": "武将类型分类（可能对应品质）"
+    },
+    {
+      "index": 16,
+      "chinese_name": "",
+      "field_name": "",
+      "type": "E#EHeroType",
+      "description": "武将类型枚举列"
+    },
+    {
+      "index": 17,
+      "chinese_name": "是否能熔炼",
+      "field_name": "CanMelt",
+      "type": "bool",
+      "description": "是否可熔炼"
+    },
+    {
+      "index": 18,
+      "chinese_name": "熔炼名称",
+      "field_name": "MeltName",
+      "type": "string[]",
+      "description": "熔炼相关的名称"
+    },
+    {
+      "index": 19,
+      "chinese_name": "是否为新增武将",
+      "field_name": "IsNewHero",
+      "type": "bool",
+      "description": "是否为新增武将"
+    },
+    {
+      "index": 20,
+      "chinese_name": "是否招募产出",
+      "field_name": "IsGacha",
+      "type": "bool",
+      "description": "是否可通过招募获得"
+    },
+    {
+      "index": 21,
+      "chinese_name": "所属扩展包",
+      "field_name": "BelongExpansionPack",
+      "type": "EHeroExpansionPackType",
+      "description": "所属扩展包"
+    },
+    {
+      "index": 22,
+      "chinese_name": "Buff ID",
+      "field_name": "Buff",
+      "type": "EBuffId[]",
+      "description": "武将Buff列表"
+    }
+  ],
+  "note": "表中没有明确的'品质'字段，最接近的是'HeroType'（武将类型）字段"
+}

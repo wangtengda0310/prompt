@@ -1,0 +1,5 @@
+# Kubo 安装包（大文件，不提交到 git）
+kubo_v0.40.1.zip
+
+# Claude 工作目录
+.claude/

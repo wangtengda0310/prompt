@@ -1,0 +1,33 @@
+{
+  "skill_name": "align-markdown-tables",
+  "evals": [
+    {
+      "id": 1,
+      "name": "cjk-mixed-misaligned",
+      "prompt": "这个 markdown 文件的表格在 IDE 里报 \"Table is not correctly formatted\"，帮我修掉这些提示。",
+      "expected_output": "所有表格按 JetBrains 风格对齐：分隔行 dash 紧贴 |、数据行按字符数 padding。文字内容不变。",
+      "files": ["inputs/eval-1-cjk-mixed-misaligned.md"]
+    },
+    {
+      "id": 2,
+      "name": "separator-with-spaces",
+      "prompt": "表格格式不对，IDE 一直提示，帮我格式化一下让提示消失。",
+      "expected_output": "分隔行 | ------- | 改为紧贴 |---|，数据行 padding 对齐。",
+      "files": ["inputs/eval-2-separator-with-spaces.md"]
+    },
+    {
+      "id": 3,
+      "name": "align-markers-multi-table",
+      "prompt": "文档里两个表格都要对齐，注意保留对齐标记（冒号）。",
+      "expected_output": "保留 :---/---:/:--: 标记，两表都对齐，分隔行紧贴 |。",
+      "files": ["inputs/eval-3-align-markers-multi-table.md"]
+    },
+    {
+      "id": 4,
+      "name": "comprehensive-codeblock-align",
+      "prompt": "这个文档有表格，还含代码块。IDE 报表格格式提示，帮我修掉，注意别动代码块里的内容。",
+      "expected_output": "代码块外表格对齐（含 align 标记 + right/center 数据行按 align 方向）；代码块内伪表格原样保留（跳过）。",
+      "files": ["inputs/eval-comprehensive.md"]
+    }
+  ]
+}

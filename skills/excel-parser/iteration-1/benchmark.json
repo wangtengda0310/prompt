@@ -1,0 +1,88 @@
+{
+  "skill_name": "excel-parser",
+  "model": "claude-opus-4-6",
+  "iteration": 1,
+  "timestamp": "2026-03-24T19:00:00+08:00",
+  "configurations": [
+    {
+      "name": "with_skill",
+      "display_name": "With Skill"
+    },
+    {
+      "name": "without_skill",
+      "display_name": "Without Skill (Baseline)"
+    }
+  ],
+  "evals": [
+    {
+      "id": 1,
+      "name": "browse-and-filter-hero-data",
+      "results": {
+        "with_skill": {
+          "total_tokens": 64605,
+          "duration_ms": 105337,
+          "total_duration_seconds": 105.3
+        },
+        "without_skill": {
+          "total_tokens": 39673,
+          "duration_ms": 188938,
+          "total_duration_seconds": 188.9
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "generate-test-hero-data",
+      "results": {
+        "with_skill": {
+          "total_tokens": 33272,
+          "duration_ms": 123455,
+          "total_duration_seconds": 123.5
+        },
+        "without_skill": {
+          "total_tokens": 50894,
+          "duration_ms": 209961,
+          "total_duration_seconds": 210.0
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "paginated-query-large-table",
+      "results": {
+        "with_skill": {
+          "total_tokens": 51604,
+          "duration_ms": 84488,
+          "total_duration_seconds": 84.5
+        },
+        "without_skill": {
+          "total_tokens": 53802,
+          "duration_ms": 87578,
+          "total_duration_seconds": 87.6
+        }
+      }
+    }
+  ],
+  "summary": {
+    "with_skill": {
+      "total_tokens": 149481,
+      "avg_tokens": 49827,
+      "total_duration_ms": 313280,
+      "avg_duration_ms": 104427,
+      "total_duration_seconds": 313.3
+    },
+    "without_skill": {
+      "total_tokens": 144369,
+      "avg_tokens": 48123,
+      "total_duration_ms": 486477,
+      "avg_duration_ms": 162159,
+      "total_duration_seconds": 486.5
+    }
+  },
+  "comparison": {
+    "time_delta_ms": -173197,
+    "time_delta_percent": -35.6,
+    "tokens_delta": 5112,
+    "tokens_delta_percent": 3.5
+  }
+}

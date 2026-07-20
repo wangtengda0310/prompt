@@ -1,0 +1,26 @@
+{
+  "skill_name": "渐进式披露",
+  "evals": [
+    {
+      "id": 1,
+      "name": "create-missing-docs",
+      "prompt": "rain-excel-checker/xlsx/check_manager/ 目录缺少 CLAUDE.md，请为这个子模块创建文档。先读取目录下的代码文件了解模块职责，然后按照渐进式披露原则编写文档。项目根文档是 D:/work/xcard-qa-tools/rain-excel-checker/CLAUDE.md，上级模块文档是 D:/work/xcard-qa-tools/rain-excel-checker/xlsx/CLAUDE.md。创建完成后需要在上级文档中添加索引条目。",
+      "expected_output": "创建 check_manager/CLAUDE.md，内容符合 Level 2 模板（≤100行），引用代码而非复制，并在 xlsx/CLAUDE.md 中添加引用",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "update-docs-after-change",
+      "prompt": "我刚刚在 rain-qa-func/internal/excelCheckService.go 中新增了一个方法 GetTableRuleMetasForSheet(sheetName string) ([]TableRuleMeta, error)，并在 rain-qa-func/internal/mcp/server.go 中新增了对应的 MCP 工具 get_table_rule_metas_for_sheet。请更新相关文档，确保渐进式披露结构完整。",
+      "expected_output": "更新 rain-qa-func/CLAUDE.md 的关键入口表、MCP 接口章节，并在 docs/MCP-USAGE.md 中添加新工具说明。不重复已有内容，只添加增量信息。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "create-new-module-docs",
+      "prompt": "rain-robot/ 目录缺少 CLAUDE.md。这是机器人测试框架，有两个入口：cmd/qafunc/main.go 用于流水线构建，main.go 用于压测。请先读取代码了解项目结构，然后为这个子模块创建完整的渐进式披露文档体系。上级文档是 D:/work/xcard-qa-tools/CLAUDE.md。",
+      "expected_output": "创建 rain-robot/CLAUDE.md（Level 1），如果需要则创建子目录 CLAUDE.md（Level 2），在根 CLAUDE.md 中更新引用。文档控制大小，引用代码而非复制。",
+      "files": []
+    }
+  ]
+}

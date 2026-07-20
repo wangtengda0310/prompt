@@ -1,0 +1,83 @@
+{
+  "filePath": "D:/work/test_output.xlsx",
+  "sheetName": "Hero",
+  "description": "测试用 Hero 表 Excel 文件,包含 5 个测试英雄",
+  "headers": {
+    "row1_chinese": ["英雄ID", "英雄名称", "品质", "战斗力"],
+    "row2_type": ["int", "string", "int", "int"],
+    "row3_fieldName": ["Id", "Name", "Quality", "Power"],
+    "row4_exportTag": ["server/client", "server/client", "server/client", "server/client"]
+  },
+  "columns": [
+    {
+      "chsName": "英雄ID",
+      "fieldName": "Id",
+      "type": "int",
+      "exportTag": "server/client",
+      "colStatus": "NORMAL"
+    },
+    {
+      "chsName": "英雄名称",
+      "fieldName": "Name",
+      "type": "string",
+      "exportTag": "server/client",
+      "colStatus": "NORMAL"
+    },
+    {
+      "chsName": "品质",
+      "fieldName": "Quality",
+      "type": "int",
+      "exportTag": "server/client",
+      "colStatus": "NORMAL"
+    },
+    {
+      "chsName": "战斗力",
+      "fieldName": "Power",
+      "type": "int",
+      "exportTag": "server/client",
+      "colStatus": "NORMAL"
+    }
+  ],
+  "dataRows": [
+    {
+      "Id": "1001",
+      "Name": "测试关羽",
+      "Quality": "5",
+      "Power": "9500"
+    },
+    {
+      "Id": "1002",
+      "Name": "测试张飞",
+      "Quality": "5",
+      "Power": "9200"
+    },
+    {
+      "Id": "1003",
+      "Name": "测试赵云",
+      "Quality": "5",
+      "Power": "9800"
+    },
+    {
+      "Id": "1004",
+      "Name": "测试诸葛亮",
+      "Quality": "5",
+      "Power": "8900"
+    },
+    {
+      "Id": "1005",
+      "Name": "测试吕布",
+      "Quality": "5",
+      "Power": "10000"
+    }
+  ],
+  "statistics": {
+    "totalHeroes": 5,
+    "fields": 4,
+    "dataStartRow": 5,
+    "allQuality5": true,
+    "powerRange": {
+      "min": 8900,
+      "max": 10000
+    }
+  }
+}

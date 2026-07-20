@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "paginated-query-large-table",
+  "prompt": "Hero 表数据很多，我需要分页查看数据。请帮我获取第 1 页（第 1-20 行）和第 2 页（第 21-40 行）的数据，每页都要包含列名表头，让我知道每页有多少条数据。",
+  "assertions": []
+}

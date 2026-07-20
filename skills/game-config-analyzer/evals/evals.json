@@ -1,0 +1,46 @@
+{
+  "skill_name": "game-config-analyzer",
+  "version": "3.0.0",
+  "evals": [
+    {
+      "id": 1,
+      "name": "系统配表结构分析",
+      "prompt": "分析一下成就系统涉及哪些配表，各表的作用和关键引用关系",
+      "expected_output": "扫描 Achieve.xlsx 和 AchieveHero.xlsx，读取字段结构，分析 HeroItemId 引用关系，生成包含表关系图的 Markdown 文档",
+      "files": [],
+      "tags": ["core", "structure", "relations"],
+      "assertions": [
+        {"name": "识别到 Achieve 和 AchieveHero 两个核心表", "check": "output_mentions_both_tables"},
+        {"name": "读取了表的字段结构", "check": "output_contains_field_names"},
+        {"name": "分析了跨表引用关系", "check": "output_contains_reference_analysis"},
+        {"name": "生成了文档", "check": "output_file_created", "pattern": "*.md"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "关键词搜索定位",
+      "prompt": "搜索一下兵力这个道具在哪些配表中出现，分析它的用途",
+      "expected_output": "在 Item.xlsx 中找到兵力道具(Id=1000011)，在 HeroWar.xlsx 中找到兵力消耗配置，分析出兵力=群雄逐鹿入场券+难度调节器的完整链路",
+      "files": [],
+      "tags": ["search", "cross-reference", "analysis"],
+      "assertions": [
+        {"name": "找到 Item 表中的兵力道具", "check": "output_contains_item_data"},
+        {"name": "追踪到 HeroWar 中的兵力消耗", "check": "output_contains_herowar_usage"},
+        {"name": "总结出兵力的完整用途", "check": "output_contains_purpose_summary"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "多系统扫描与文档生成",
+      "prompt": "分析活动配置表涉及到的文件以及各文件主要作用",
+      "expected_output": "扫描 excel 目录下所有活动相关文件，按系统分类（核心/赛季/限时等），生成活动总览文档",
+      "files": [],
+      "tags": ["scan", "categorize", "document"],
+      "assertions": [
+        {"name": "扫描了完整的活动文件列表", "check": "output_contains_file_list"},
+        {"name": "按系统进行了分类", "check": "output_contains_categories"},
+        {"name": "生成了文档", "check": "output_file_created", "pattern": "*.md"}
+      ]
+    }
+  ]
+}

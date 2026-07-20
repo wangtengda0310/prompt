@@ -1,0 +1,1827 @@
+{
+  "date": "2026-04-01",
+  "total_sessions": 26,
+  "sessions_with_files": 20,
+  "total_input_tokens": 9755229,
+  "total_output_tokens": 451603,
+  "zero_usage_count": 1620,
+  "total_user_turns": 1790,
+  "total_assistant_turns": 2890,
+  "avg_turns_per_session": 68.8,
+  "tool_usage_summary": {
+    "Bash": 486,
+    "Read": 279,
+    "TaskUpdate": 131,
+    "Write": 117,
+    "Grep": 102,
+    "Edit": 98,
+    "TaskCreate": 63,
+    "Agent": 58,
+    "Glob": 56,
+    "AskUserQuestion": 25,
+    "TaskOutput": 15,
+    "mcp__ide__getDiagnostics": 13,
+    "Skill": 12,
+    "mcp__plugin_github_github__get_file_contents": 9,
+    "mcp__feishu-mcp__fetch-doc": 7,
+    "ExitPlanMode": 5,
+    "mcp__thinking__sequentialthinking": 5,
+    "CronCreate": 4,
+    "mcp__feishu-mcp__fetch-file": 4,
+    "analyze_image": 4,
+    "EnterPlanMode": 3,
+    "mcp__feishu-mcp__update-doc": 2,
+    "TaskStop": 2,
+    "mcp__plugin_playwright_playwright__browser_navigate": 2,
+    "TaskList": 1,
+    "WebSearch": 1,
+    "mcp__rain-qa-func__send_feishu_message": 1,
+    "CronDelete": 1,
+    "mcp__plugin_playwright_playwright__browser_close": 1,
+    "webReader": 1
+  },
+  "skill_usage_summary": {
+    "superpowers:brainstorming": {
+      "count": 2,
+      "sessions": [
+        "48460a46-ee39-4804-b68b-3d226a4b2456",
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "superpowers:writing-plans": {
+      "count": 3,
+      "sessions": [
+        "48460a46-ee39-4804-b68b-3d226a4b2456",
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "superpowers:systematic-debugging": {
+      "count": 1,
+      "sessions": [
+        "48460a46-ee39-4804-b68b-3d226a4b2456"
+      ]
+    },
+    "frontend-layout-docs": {
+      "count": 1,
+      "sessions": [
+        "48460a46-ee39-4804-b68b-3d226a4b2456"
+      ]
+    },
+    "superpowers:requesting-code-review": {
+      "count": 1,
+      "sessions": [
+        "03138e25-da09-4c63-a20a-a64ef8f192ad"
+      ]
+    },
+    "lark-sheets": {
+      "count": 1,
+      "sessions": [
+        "b3fdcbf8-32ff-449d-94b2-f66860c87081"
+      ]
+    },
+    "lark-im": {
+      "count": 1,
+      "sessions": [
+        "b3fdcbf8-32ff-449d-94b2-f66860c87081"
+      ]
+    },
+    "lark-event": {
+      "count": 1,
+      "sessions": [
+        "b3fdcbf8-32ff-449d-94b2-f66860c87081"
+      ]
+    },
+    "lark-shared": {
+      "count": 1,
+      "sessions": [
+        "cc32dd4d-292e-4643-a4b1-f223bc323384"
+      ]
+    }
+  },
+  "project_distribution": {
+    "xcard-qa-tools": {
+      "sessions": 13,
+      "input_tokens": 5969036,
+      "output_tokens": 239698
+    },
+    "gobee": {
+      "sessions": 9,
+      "input_tokens": 1731949,
+      "output_tokens": 114227
+    },
+    "server": {
+      "sessions": 3,
+      "input_tokens": 1992311,
+      "output_tokens": 95545
+    },
+    "rain-qa-func": {
+      "sessions": 1,
+      "input_tokens": 61933,
+      "output_tokens": 2133
+    }
+  },
+  "sessions_by_hour": {
+    "10": 1,
+    "11": 3,
+    "14": 4,
+    "15": 1,
+    "16": 6,
+    "20": 1,
+    "21": 1,
+    "22": 3,
+    "23": 1,
+    "8": 1
+  },
+  "tool_patterns": [
+    {
+      "pattern": [
+        "Bash",
+        "Bash"
+      ],
+      "count": 331
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Bash"
+      ],
+      "count": 237
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read"
+      ],
+      "count": 112
+    },
+    {
+      "pattern": [
+        "Write",
+        "Write"
+      ],
+      "count": 65
+    },
+    {
+      "pattern": [
+        "Read",
+        "Edit"
+      ],
+      "count": 55
+    },
+    {
+      "pattern": [
+        "Read",
+        "Read",
+        "Read"
+      ],
+      "count": 52
+    },
+    {
+      "pattern": [
+        "TaskUpdate",
+        "TaskUpdate"
+      ],
+      "count": 51
+    },
+    {
+      "pattern": [
+        "Write",
+        "Write",
+        "Write"
+      ],
+      "count": 48
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Grep"
+      ],
+      "count": 44
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Read"
+      ],
+      "count": 42
+    },
+    {
+      "pattern": [
+        "TaskCreate",
+        "TaskCreate"
+      ],
+      "count": 42
+    },
+    {
+      "pattern": [
+        "Grep",
+        "Read"
+      ],
+      "count": 35
+    },
+    {
+      "pattern": [
+        "Read",
+        "Bash"
+      ],
+      "count": 33
+    },
+    {
+      "pattern": [
+        "TaskCreate",
+        "TaskCreate",
+        "TaskCreate"
+      ],
+      "count": 32
+    },
+    {
+      "pattern": [
+        "Read",
+        "Grep"
+      ],
+      "count": 31
+    },
+    {
+      "pattern": [
+        "Agent",
+        "Agent"
+      ],
+      "count": 31
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Bash"
+      ],
+      "count": 30
+    },
+    {
+      "pattern": [
+        "Bash",
+        "TaskUpdate"
+      ],
+      "count": 27
+    },
+    {
+      "pattern": [
+        "Bash",
+        "Bash",
+        "Read"
+      ],
+      "count": 27
+    },
+    {
+      "pattern": [
+        "Edit",
+        "Read"
+      ],
+      "count": 26
+    }
+  ],
+  "errors": [
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Found 2 matches of the string to replace, but replace_all is false. To replace all occurrences, set replace_all to true. To replace only one occurrence, please provide more context to ..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: Pathspec 'rain-excel-checker/xlsx/check_internal/path_normalizer.go' is in submodule 'rain-excel-checker'"
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# rain-qa-func/internal/excel-test [rain-qa-func/internal/excel-test.test]\ninternal\\excel-test\\wails_filter_test.go:159:2: undefined: os\nFAIL\train-qa-func/internal/excel-test [build failed..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n# rain-qa-func/internal/excel-test [rain-qa-func/internal/excel-test.test]\ninternal\\excel-test\\regression_test.go:5:2: \"os/exec\" imported and not used\nFAIL\train-qa-func/internal/excel-test..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestRegression_PathMismatch\n=== RUN   TestRegression_PathMismatch/绝对路径\n[DEBUG] 变更文件: C:/Users/v-wangtengda/AppData/Local/Temp/TestRegression_PathMismatch3421296933/001/config/exc..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n=== RUN   TestRegression_SheetNameFilter\n=== RUN   TestRegression_SheetNameFilter/武将|Hero\n=== RUN   TestRegression_SheetNameFilter/技能|Skill\n=== RUN   TestRegression_SheetNameFilter/竞技场|Are..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Path does not exist: D:/work/xcard-qa-tools/rain-qa-func/frontend/src/bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t changedSet[normalized] := make(map[string]bool, 0)\n    for _, f := range changedFiles {\n        normalized := normalizer.Normalize(f.AbsP..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString:     console.log('[Check List]', checkList)\n    ExcelCheckService.CheckAllExcelRules(ExcelResourceDir.value, checkList).then(res => {\n      ..."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>Directory does not exist: D:/work/xcard-qa-tools/rain-qa-func/docs/layout. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func.</tool_use_error>"
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+    },
+    {
+      "session": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: # 前端布局文档索引\n\n## 文档列表\n\n| 文档 | 页面 | 路由 | 说明 |\n|------|------|-------|------|\n| [Normal-layout.md](./Normal-layout.md) | Layout 组件 | - | 外层布局 |..."
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>No task found with ID: bylj8m1ng</tool_use_error>"
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n  File \"<string>\", line 10\r\n    proj = d.get('project','?').split('\\')[-1]\r\n                                      ^\r\nSyntaxError: unterminated string literal (detected at line 10); perhaps..."
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n  File \"<string>\", line 7\r\n    try:\r\n    ^^^\r\nIndentationError: expected an indented block after 'for' statement on line 6"
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Users/v-wangtengda/AppData/Local/Programs/Git/usr/bin/bash\""
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Program Files/Git/bin/bash.exe\""
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n/usr/bin/bash"
+    },
+    {
+      "session": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Users/v-wangtengda/AppData/Local/Programs/Git/bin/bash.exe\""
+    },
+    {
+      "session": "bc6e3427-32d5-4f43-8483-95f4f9da6ee7",
+      "project": "gobee",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\nThe u..."
+    },
+    {
+      "session": "10749bb3-39f4-43ec-8c06-1355a541d523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\ngo vendor: unknown command\nRun 'go help' for usage."
+    },
+    {
+      "session": "10749bb3-39f4-43ec-8c06-1355a541d523",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\ngo: 'go mod vendor' cannot be run in workspace mode. Run 'go work vendor' to vendor the workspace or set 'GOWORK=off' to exit workspace mode."
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\nThe u..."
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "<tool_use_error>InputValidationError: [\n  {\n    \"origin\": \"array\",\n    \"code\": \"too_big\",\n    \"maximum\": 4,\n    \"inclusive\": true,\n    \"path\": [\n      \"questions\",\n      0,\n      \"options\"\n    ],\n    ..."
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "Exit code 1\n# github.com/wangtengda0310/gobee/textrelay\nruntime.main_main·f: function main is undeclared in the main package"
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "Exit code 2\nls: cannot access '/d/github.com/gobee/textrelay/CLAUDE.md': No such file or directory\nls: cannot access '/d/github.com/gobee/textrelay/README.md': No such file or directory"
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "Exit code 2\nls: cannot access '/d/github.com/gobee/textrelay/README.md': No such file or directory"
+    },
+    {
+      "session": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "<tool_use_error>String to replace not found in file.\nString: # CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## 项目架构\n\n本项目是基于 **go-s..."
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "<tool_use_error>String to replace not found in file.\nString: # CLAUDE.md\n\n**项目文档索引** - 本文件采用[渐进式披露](https://en.wikipedia.org/wiki/Progressive_disclosure)原则组织文档，帮助 Claude Code 快速定位所需信息。\n\n## 🚀 快速开始\n\n- *..."
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "File content (35943 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole f..."
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\server."
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "<tool_use_error>No task found with ID: aea622f11eb03ca6f</tool_use_error>"
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "<tool_use_error>No task found with ID: a2d57ab0972e01374</tool_use_error>"
+    },
+    {
+      "session": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "error": "<tool_use_error>No task found with ID: a1000ffbf0922e5d2</tool_use_error>"
+    },
+    {
+      "session": "35a0311c-02f9-4d5f-879c-444eb8d064a7",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "35a0311c-02f9-4d5f-879c-444eb8d064a7",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "31397f5a-c0e8-40b8-8c49-7e6df6a391fc",
+      "project": "gobee",
+      "error": "Exit code 1\n0"
+    },
+    {
+      "session": "6c0ebb91-7587-47a2-8b0d-9939e885e0b4",
+      "project": "gobee",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "6c0ebb91-7587-47a2-8b0d-9939e885e0b4",
+      "project": "gobee",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "04a084e6-3583-461e-ade8-19a69a101dfe",
+      "project": "gobee",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "04a084e6-3583-461e-ade8-19a69a101dfe",
+      "project": "gobee",
+      "error": "Exit code 137\n[Request interrupted by user for tool use]"
+    },
+    {
+      "session": "5bb3be35-8b8f-4339-80e7-07af76620796",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "5bb3be35-8b8f-4339-80e7-07af76620796",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+    },
+    {
+      "session": "05d90034-0b14-4b8b-a616-8c7bbb04caa4",
+      "project": "server",
+      "error": "Exit code 127\n/usr/bin/bash: line 1: redis-cli: command not found"
+    },
+    {
+      "session": "05d90034-0b14-4b8b-a616-8c7bbb04caa4",
+      "project": "server",
+      "error": "Exit code 127\n/usr/bin/bash: line 1: mongosh: command not found\n/usr/bin/bash: line 1: mongo: command not found"
+    },
+    {
+      "session": "05d90034-0b14-4b8b-a616-8c7bbb04caa4",
+      "project": "server",
+      "error": "Exit code 1"
+    },
+    {
+      "session": "05d90034-0b14-4b8b-a616-8c7bbb04caa4",
+      "project": "server",
+      "error": "Exit code 1"
+    },
+    {
+      "session": "ed2d6ed2-2442-4583-9e41-4345478206f9",
+      "project": "xcard-qa-tools",
+      "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+    },
+    {
+      "session": "ed2d6ed2-2442-4583-9e41-4345478206f9",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: rain-qa-func.exe~\nrain-qa-func.exe</tool_use_error>"
+    },
+    {
+      "session": "ed2d6ed2-2442-4583-9e41-4345478206f9",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+    },
+    {
+      "session": "ed2d6ed2-2442-4583-9e41-4345478206f9",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "EISDIR: illegal operation on a directory, read 'D:\\work\\xcard-qa-tools\\rain-excel-checker'"
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "{\"error\":\"[VALIDATION:1101] 未找到匹配的标题\\n💡 Suggestion: Please check if the input parameters meet the requirements\\n📍 Context: available_titles=## 检查规则 | ## 配置模版 | # 工具bug修复, suggestion=请检查标题是否正确，可以使用 fet..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: pathspec 'xlsx/check_rules/general/table_check_new_row_notify.go' did not match any files"
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nfatal: pathspec 'xlsx/check_rules/general/table_check_new_row_notify.go' did not match any files"
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope wiki:node:read [99991672]\",\n    \"hi..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 3\n{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"auth\",\n    \"message\": \"not logged in\",\n    \"hint\": \"run `lark-cli auth login` in the background. It blocks and outputs a ve..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nUsage:\n  lark-cli sheets +info [flags]\n\nFlags:\n      --as string                  identity type: user | bot (default \"user\")\n      --dry-run                    print request without execut..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope sheets:spreadsheet.meta:read [99991..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 3\n在浏览器中打开以下链接进行认证:\n\n  https://accounts.feishu.cn/oauth/v1/device/verify?flow_id=ON3NWOp0eo9lOOOOOOOOOOOg-m0RbIFOyHkk_y3oaa6Z&user_code=D9M2-LTE4\n\n等待用户授权...\n{\n  \"ok\": false,\n  \"error\": {\n    ..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nUsage:\n  lark-cli im +chat-messages-list [flags]\n\nFlags:\n      --as string           identity type: user | bot (default \"user\")\n      --chat-id string      (required, mutually exclusive wi..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"api_error\",\n    \"code\": 230002,\n    \"message\": \"HTTP 400: Bot/User can NOT be out of the chat.\"\n  }\n}"
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 3\n{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"auth\",\n    \"message\": \"not logged in\",\n    \"hint\": \"run `lark-cli auth login` in the background. It blocks and outputs a ve..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "{\"error\":\"[NETWORK:5002] Failed to get child blocks\\n💡 Suggestion: Network temporarily unavailable, please try again later\\n📍 Context: api=/open-apis/docx/v1/documents/V1nBsHQnVhnYm8tP6LAcNRZTnBd/bloc..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope wiki:node:read [99991672]\",\n    \"hi..."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+    },
+    {
+      "session": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "<tool_use_error>String to replace not found in file.\nString: \t\tMac: application.MacOptions{\n\t\t\t\tApplicationShouldTerminateAfterLastWindowClosed: true,\n\t\t\t},\n\t\t\tLogLevel: slog.LevelWarn,</tool_use_erro..."
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 128\nerror: corrupt patch at line 15"
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'playwright'\r\nRequire stack:\r\n- D:\\work\\xcard-qa-tools\\rain-qa-func\\[eval]\r\n    at Module._resolveFile..."
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "Exit code 1"
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+    },
+    {
+      "session": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+    },
+    {
+      "session": "5fe6ecbc-06e1-49ec-a15a-7788c42c29dd",
+      "project": "rain-qa-func",
+      "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\v-wangtengda\\AppData\\Local\\Programs\\Git\\scripts\\check-deps.mjs'\r\n    at Module._resolveFilen..."
+    },
+    {
+      "session": "5fe6ecbc-06e1-49ec-a15a-7788c42c29dd",
+      "project": "rain-qa-func",
+      "error": "{\"error\":\"[NETWORK:5002] Failed to get child blocks\\n💡 Suggestion: Network temporarily unavailable, please try again later\\n📍 Context: api=/open-apis/docx/v1/documents/V1nBsHQnVhnYm8tP6LAcNRZTnBd/bloc..."
+    },
+    {
+      "session": "5fe6ecbc-06e1-49ec-a15a-7788c42c29dd",
+      "project": "rain-qa-func",
+      "error": "Exit code 28"
+    }
+  ],
+  "comparisons": {
+    "vs_yesterday": null,
+    "vs_7day_avg": null
+  },
+  "sessions": [
+    {
+      "session_id": "48460a46-ee39-4804-b68b-3d226a4b2456",
+      "project": "xcard-qa-tools",
+      "first_display": "可以",
+      "git_branch": "main",
+      "start_time": "2026-03-31T22:36:11.032000+08:00",
+      "end_time": "2026-04-01T14:44:03.371000+08:00",
+      "duration_minutes": 967.9,
+      "user_turns": 434,
+      "assistant_turns": 908,
+      "total_input_tokens": 1455043,
+      "total_output_tokens": 99659,
+      "zero_usage_count": 539,
+      "tool_usage": {
+        "Grep": 53,
+        "Read": 86,
+        "Glob": 11,
+        "Edit": 44,
+        "Bash": 111,
+        "Skill": 4,
+        "Write": 14,
+        "AskUserQuestion": 3,
+        "TaskCreate": 10,
+        "TaskUpdate": 23,
+        "mcp__ide__getDiagnostics": 3,
+        "TaskList": 1,
+        "EnterPlanMode": 1,
+        "Agent": 6,
+        "ExitPlanMode": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:brainstorming",
+          "args": "为 rain-qa-func/internal/excel-test 模块设计改进计划，解决以下问题：\n1. 查询方法有副作用（发送通知），违反 CQS 原则\n2. 路径格式不一致导致匹配失败（相对路"
+        },
+        {
+          "skill": "superpowers:writing-plans",
+          "args": "基于设计文档 docs/superpowers/specs/2026-04-01-excel-test-refactor-design.md 创建实施计划"
+        },
+        {
+          "skill": "superpowers:systematic-debugging",
+          "args": "排查配表测试页面中\"执行日志\"不显示表级增删改信息的问题\n\n**问题描述**：\n- 页面位置：配表测试 -> 执行检查 -> 执行日志\n- 预期行为：显示表级增删改（NEW_ROW_NOTIFY、RO"
+        },
+        {
+          "skill": "frontend-layout-docs",
+          "args": "优化 Excel 检查执行日志面板，当前问题：\n1. 表级检查结果（如 ROW_CHANGE_NOTIFY 行变更通知）需要点击展开才能看到\n2. 展开后的提示信息不够直观\n3. 用户希望表级增删改信"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_12634ca5731d46559cd490fd",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_d210797d12c447bc9aec4202",
+          "error": "<tool_use_error>Found 2 matches of the string to replace, but replace_all is false. To replace all occurrences, set replace_all to true. To replace only one occurrence, please provide more context to ..."
+        },
+        {
+          "tool_use_id": "call_f8215c56966546a39613f671",
+          "error": "Exit code 128\nfatal: Pathspec 'rain-excel-checker/xlsx/check_internal/path_normalizer.go' is in submodule 'rain-excel-checker'"
+        },
+        {
+          "tool_use_id": "call_477cd4e8287b4027bcd613cf",
+          "error": "Exit code 1\n# rain-qa-func/internal/excel-test [rain-qa-func/internal/excel-test.test]\ninternal\\excel-test\\wails_filter_test.go:159:2: undefined: os\nFAIL\train-qa-func/internal/excel-test [build failed..."
+        },
+        {
+          "tool_use_id": "call_edd4e378021a4a138232cb72",
+          "error": "Exit code 1\n# rain-qa-func/internal/excel-test [rain-qa-func/internal/excel-test.test]\ninternal\\excel-test\\regression_test.go:5:2: \"os/exec\" imported and not used\nFAIL\train-qa-func/internal/excel-test..."
+        },
+        {
+          "tool_use_id": "call_553de0bdb74548c9bdedabc9",
+          "error": "Exit code 1\n=== RUN   TestRegression_PathMismatch\n=== RUN   TestRegression_PathMismatch/绝对路径\n[DEBUG] 变更文件: C:/Users/v-wangtengda/AppData/Local/Temp/TestRegression_PathMismatch3421296933/001/config/exc..."
+        },
+        {
+          "tool_use_id": "call_36ffb6421c3a400bb6a7d550",
+          "error": "Exit code 1\n=== RUN   TestRegression_SheetNameFilter\n=== RUN   TestRegression_SheetNameFilter/武将|Hero\n=== RUN   TestRegression_SheetNameFilter/技能|Skill\n=== RUN   TestRegression_SheetNameFilter/竞技场|Are..."
+        },
+        {
+          "tool_use_id": "call_00ccab5f8fc1402ca21d2cc0",
+          "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+        },
+        {
+          "tool_use_id": "call_29dceafd777c4e7fa4e062ab",
+          "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+        },
+        {
+          "tool_use_id": "call_0fcdf6a7484b49938b65e30d",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to..."
+        },
+        {
+          "tool_use_id": "call_96cb00a2371c470cb26b3bc8",
+          "error": "<tool_use_error>Path does not exist: D:/work/xcard-qa-tools/rain-qa-func/frontend/src/bindings. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func\\frontend.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_3a8b82bd25e94d11b4038aaa",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t changedSet[normalized] := make(map[string]bool, 0)\n    for _, f := range changedFiles {\n        normalized := normalizer.Normalize(f.AbsP..."
+        },
+        {
+          "tool_use_id": "call_607fa43d4cf9483aa4032522",
+          "error": "<tool_use_error>String to replace not found in file.\nString:     console.log('[Check List]', checkList)\n    ExcelCheckService.CheckAllExcelRules(ExcelResourceDir.value, checkList).then(res => {\n      ..."
+        },
+        {
+          "tool_use_id": "call_c9d560a54d6045a2a27a69d5",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+        },
+        {
+          "tool_use_id": "call_dfe9ef8a14324ebb96532b6c",
+          "error": "<tool_use_error>Directory does not exist: D:/work/xcard-qa-tools/rain-qa-func/docs/layout. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_ca4eb2ff92364e68a3b8a043",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools\\rain-qa-func."
+        },
+        {
+          "tool_use_id": "call_5d310272da5645e99ce8b895",
+          "error": "<tool_use_error>String to replace not found in file.\nString: # 前端布局文档索引\n\n## 文档列表\n\n| 文档 | 页面 | 路由 | 说明 |\n|------|------|-------|------|\n| [Normal-layout.md](./Normal-layout.md) | Layout 组件 | - | 外层布局 |..."
+        }
+      ],
+      "models_used": [
+        "<synthetic>",
+        "glm-5"
+      ]
+    },
+    {
+      "session_id": "375e9cf4-a980-450b-a2b6-a5a0e0c89c0f",
+      "project": "xcard-qa-tools",
+      "first_display": "统计一下当前项目一共开发了多少各mcp工具",
+      "git_branch": "main",
+      "start_time": "2026-04-01T08:15:08.108000+08:00",
+      "end_time": "2026-04-01T14:58:34.379000+08:00",
+      "duration_minutes": 403.4,
+      "user_turns": 182,
+      "assistant_turns": 269,
+      "total_input_tokens": 1934668,
+      "total_output_tokens": 36956,
+      "zero_usage_count": 132,
+      "tool_usage": {
+        "Agent": 6,
+        "Glob": 3,
+        "Bash": 58,
+        "Read": 27,
+        "AskUserQuestion": 3,
+        "TaskCreate": 6,
+        "TaskUpdate": 13,
+        "Write": 14,
+        "Edit": 14,
+        "CronCreate": 3,
+        "Grep": 10,
+        "TaskOutput": 1,
+        "mcp__thinking__sequentialthinking": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_e93a939abf4f4d1cb573f4f4",
+          "error": "<tool_use_error>No task found with ID: bylj8m1ng</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_a87ad07a7e0e41b7991ea363",
+          "error": "Exit code 1\n  File \"<string>\", line 10\r\n    proj = d.get('project','?').split('\\')[-1]\r\n                                      ^\r\nSyntaxError: unterminated string literal (detected at line 10); perhaps..."
+        },
+        {
+          "tool_use_id": "call_cf5849cadde346fbbe609ca9",
+          "error": "Exit code 1\n  File \"<string>\", line 7\r\n    try:\r\n    ^^^\r\nIndentationError: expected an indented block after 'for' statement on line 6"
+        },
+        {
+          "tool_use_id": "call_70d0d43e276a412398615510",
+          "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Users/v-wangtengda/AppData/Local/Programs/Git/usr/bin/bash\""
+        },
+        {
+          "tool_use_id": "call_e90217f2a9aa493caa9e3df1",
+          "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Program Files/Git/bin/bash.exe\""
+        },
+        {
+          "tool_use_id": "call_32ed2e82578e45cb8b1866cc",
+          "error": "Exit code 2\n/usr/bin/bash"
+        },
+        {
+          "tool_use_id": "call_4b50f03e43b64bf9979613e6",
+          "error": "Exit code 1\nClaude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path \"C:/Users/v-wangtengda/AppData/Local/Programs/Git/bin/bash.exe\""
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "bc6e3427-32d5-4f43-8483-95f4f9da6ee7",
+      "project": "gobee",
+      "first_display": "/model",
+      "git_branch": "main",
+      "start_time": "2026-04-01T10:05:47.489000+08:00",
+      "end_time": "2026-04-01T11:31:44.104000+08:00",
+      "duration_minutes": 85.9,
+      "user_turns": 85,
+      "assistant_turns": 141,
+      "total_input_tokens": 336832,
+      "total_output_tokens": 22715,
+      "zero_usage_count": 97,
+      "tool_usage": {
+        "Agent": 3,
+        "Bash": 22,
+        "Write": 16,
+        "AskUserQuestion": 3,
+        "ExitPlanMode": 1,
+        "TaskCreate": 6,
+        "TaskUpdate": 10,
+        "Read": 10,
+        "Edit": 4,
+        "Grep": 2,
+        "mcp__ide__getDiagnostics": 4,
+        "Glob": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_05cb91c7eb8b46d3b22dbb0a",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\nThe u..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "10749bb3-39f4-43ec-8c06-1355a541d523",
+      "project": "xcard-qa-tools",
+      "first_display": "进入feishu-lib目录执行go vendor命令将依赖下载到本地并提交",
+      "git_branch": "main",
+      "start_time": "2026-04-01T11:23:07.985000+08:00",
+      "end_time": "2026-04-01T11:25:05.252000+08:00",
+      "duration_minutes": 2.0,
+      "user_turns": 9,
+      "assistant_turns": 14,
+      "total_input_tokens": 101368,
+      "total_output_tokens": 451,
+      "zero_usage_count": 6,
+      "tool_usage": {
+        "Bash": 8
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_dee132a6d4254701983c048b",
+          "error": "Exit code 2\ngo vendor: unknown command\nRun 'go help' for usage."
+        },
+        {
+          "tool_use_id": "call_542a99902e844836a1591314",
+          "error": "Exit code 1\ngo: 'go mod vendor' cannot be run in workspace mode. Run 'go work vendor' to vendor the workspace or set 'GOWORK=off' to exit workspace mode."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "8b3d78ba-0fbe-4248-96da-a75aba5bc236",
+      "project": "gobee",
+      "first_display": "superpowers：我要实现一个手机语音录入双端同步的功能，双端指的是普通的输入框和手机端，以解决键盘打字效率低下的问题。\r\n\r\n具体一点就是\r\n\r\n1 我",
+      "git_branch": "main",
+      "start_time": "2026-04-01T11:32:03.716000+08:00",
+      "end_time": "2026-04-01T14:14:00.010000+08:00",
+      "duration_minutes": 161.9,
+      "user_turns": 96,
+      "assistant_turns": 147,
+      "total_input_tokens": 384930,
+      "total_output_tokens": 23285,
+      "zero_usage_count": 63,
+      "tool_usage": {
+        "EnterPlanMode": 1,
+        "Agent": 7,
+        "AskUserQuestion": 6,
+        "Write": 7,
+        "ExitPlanMode": 1,
+        "TaskCreate": 6,
+        "TaskUpdate": 9,
+        "Bash": 21,
+        "Grep": 7,
+        "Glob": 3,
+        "Read": 17,
+        "Edit": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_80920f6f92b14d6a9fb62297",
+          "error": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). To tell you how to proceed, the user said:\nThe u..."
+        },
+        {
+          "tool_use_id": "call_d17fe064d41c4b8cad92c1c1",
+          "error": "<tool_use_error>InputValidationError: [\n  {\n    \"origin\": \"array\",\n    \"code\": \"too_big\",\n    \"maximum\": 4,\n    \"inclusive\": true,\n    \"path\": [\n      \"questions\",\n      0,\n      \"options\"\n    ],\n    ..."
+        },
+        {
+          "tool_use_id": "call_a4e042bec9c14f9294e7de6a",
+          "error": "<tool_use_error>File has been modified since read, either by the user or by a linter. Read it again before attempting to write it.</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_f656f1adc0704f608975cb9f",
+          "error": "Exit code 1\n# github.com/wangtengda0310/gobee/textrelay\nruntime.main_main·f: function main is undeclared in the main package"
+        },
+        {
+          "tool_use_id": "call_aa58449c9974445c91d73a94",
+          "error": "Exit code 2\nls: cannot access '/d/github.com/gobee/textrelay/CLAUDE.md': No such file or directory\nls: cannot access '/d/github.com/gobee/textrelay/README.md': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_db1be782bbca4d66b15bda6a",
+          "error": "Exit code 2\nls: cannot access '/d/github.com/gobee/textrelay/README.md': No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8728355f0b3846f3a0069408",
+          "error": "<tool_use_error>File has not been read yet. Read it first before writing to it.</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "3d69e7c5-526a-4aa5-b666-e5ee4732a711",
+      "project": "server",
+      "first_display": "渐进式披露组织尽可能详细的部署文档",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-03-31T23:00:09.797000+08:00",
+      "end_time": "2026-04-01T21:13:29.516000+08:00",
+      "duration_minutes": 1333.3,
+      "user_turns": 193,
+      "assistant_turns": 324,
+      "total_input_tokens": 1825720,
+      "total_output_tokens": 94100,
+      "zero_usage_count": 197,
+      "tool_usage": {
+        "Glob": 15,
+        "Read": 36,
+        "Bash": 25,
+        "TaskCreate": 6,
+        "TaskUpdate": 12,
+        "Edit": 7,
+        "Write": 41,
+        "mcp__ide__getDiagnostics": 1,
+        "Grep": 12,
+        "mcp__thinking__sequentialthinking": 1,
+        "Agent": 8,
+        "TaskOutput": 14
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_72171856b76841cda016910e",
+          "error": "<tool_use_error>String to replace not found in file.\nString: # CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## 项目架构\n\n本项目是基于 **go-s..."
+        },
+        {
+          "tool_use_id": "call_3853d65cc5c04f6aac3bc06f",
+          "error": "<tool_use_error>String to replace not found in file.\nString: # CLAUDE.md\n\n**项目文档索引** - 本文件采用[渐进式披露](https://en.wikipedia.org/wiki/Progressive_disclosure)原则组织文档，帮助 Claude Code 快速定位所需信息。\n\n## 🚀 快速开始\n\n- *..."
+        },
+        {
+          "tool_use_id": "call_ca3412bc51fe4937b920b3f6",
+          "error": "File content (35943 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole f..."
+        },
+        {
+          "tool_use_id": "call_f37db31e799f41ed8af022a8",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\server."
+        },
+        {
+          "tool_use_id": "call_da566dd31495457f8d1fd8b8",
+          "error": "<tool_use_error>No task found with ID: aea622f11eb03ca6f</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_fd574c56dbe3462db6635924",
+          "error": "<tool_use_error>No task found with ID: a2d57ab0972e01374</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_169bda5180384f109d56453b",
+          "error": "<tool_use_error>No task found with ID: a1000ffbf0922e5d2</tool_use_error>"
+        }
+      ],
+      "models_used": [
+        "glm-5.1",
+        "glm-4.7"
+      ]
+    },
+    {
+      "session_id": "35a0311c-02f9-4d5f-879c-444eb8d064a7",
+      "project": "xcard-qa-tools",
+      "first_display": "/skill-creator",
+      "git_branch": "main",
+      "start_time": "2026-04-01T11:54:11.776000+08:00",
+      "end_time": "2026-04-01T15:01:56.583000+08:00",
+      "duration_minutes": 187.7,
+      "user_turns": 64,
+      "assistant_turns": 98,
+      "total_input_tokens": 688769,
+      "total_output_tokens": 22265,
+      "zero_usage_count": 50,
+      "tool_usage": {
+        "Agent": 2,
+        "Read": 13,
+        "Glob": 2,
+        "TaskCreate": 3,
+        "TaskUpdate": 8,
+        "Bash": 11,
+        "Write": 7,
+        "AskUserQuestion": 2,
+        "Edit": 3,
+        "mcp__thinking__sequentialthinking": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_e8f51aec79474fcbaf3ef7f8",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_bfe8cca7c4754c4e8581a861",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "31397f5a-c0e8-40b8-8c49-7e6df6a391fc",
+      "project": "gobee",
+      "first_display": "superpowers：我要实现一个手机语音录入双端同步的功能，双端指的是普通的输入框和手机端，以解决键盘打字效率低下的问题。\r\n\r\n具体一点就是\r\n\r\n1 我",
+      "git_branch": "main",
+      "start_time": "2026-04-01T14:19:19.411000+08:00",
+      "end_time": "2026-04-01T15:27:06.490000+08:00",
+      "duration_minutes": 67.8,
+      "user_turns": 73,
+      "assistant_turns": 108,
+      "total_input_tokens": 460707,
+      "total_output_tokens": 17482,
+      "zero_usage_count": 57,
+      "tool_usage": {
+        "Agent": 8,
+        "WebSearch": 1,
+        "AskUserQuestion": 1,
+        "EnterPlanMode": 1,
+        "Write": 12,
+        "ExitPlanMode": 1,
+        "TaskCreate": 6,
+        "TaskUpdate": 13,
+        "Bash": 17,
+        "Read": 3,
+        "Grep": 1,
+        "Glob": 3,
+        "mcp__ide__getDiagnostics": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_20714f9251884c82bbb47823",
+          "error": "Exit code 1\n0"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "6c0ebb91-7587-47a2-8b0d-9939e885e0b4",
+      "project": "gobee",
+      "first_display": "使用superpowers技能：我要实现一个手机语音录入双端同步的功能，双端指的是普通的输入框和手机端，以解决键盘打字效率低下的问题。\r\n\r\n具体一点就是\r\n\r",
+      "git_branch": "main",
+      "start_time": "2026-04-01T14:20:24.342000+08:00",
+      "end_time": "2026-04-01T14:20:51.270000+08:00",
+      "duration_minutes": 0.4,
+      "user_turns": 5,
+      "assistant_turns": 5,
+      "total_input_tokens": 46803,
+      "total_output_tokens": 227,
+      "zero_usage_count": 4,
+      "tool_usage": {
+        "Bash": 2,
+        "Glob": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_e3614149db05439b87bc7b34",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        },
+        {
+          "tool_use_id": "call_df445b0ff51142838b845af2",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "04a084e6-3583-461e-ade8-19a69a101dfe",
+      "project": "gobee",
+      "first_display": "使用superpowers技能：我要实现一个手机语音录入双端同步的功能，双端指的是普通的输入框和手机端，以解决键盘打字效率低下的问题。\r\n\r\n具体一点就是\r\n\r",
+      "git_branch": "main",
+      "start_time": "2026-04-01T14:21:07.851000+08:00",
+      "end_time": "2026-04-01T14:21:29.950000+08:00",
+      "duration_minutes": 0.4,
+      "user_turns": 5,
+      "assistant_turns": 4,
+      "total_input_tokens": 211,
+      "total_output_tokens": 126,
+      "zero_usage_count": 3,
+      "tool_usage": {
+        "Bash": 2,
+        "Glob": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_92d762d0561e4e1e982ca3b5",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        },
+        {
+          "tool_use_id": "call_172f54c5d07c4f65837f00dd",
+          "error": "Exit code 137\n[Request interrupted by user for tool use]"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "5376cc43-57f0-4838-858f-2a468c95e58f",
+      "project": "gobee",
+      "first_display": "使用superpowers技能：我要实现一个手机语音录入双端同步的功能，双端指的是普通的输入框和手机端，以解决键盘打字效率低下的问题。\r\n\r\n具体一点就是\r\n\r",
+      "git_branch": null,
+      "start_time": null,
+      "end_time": null,
+      "duration_minutes": 0,
+      "user_turns": 0,
+      "assistant_turns": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": []
+    },
+    {
+      "session_id": "5bb3be35-8b8f-4339-80e7-07af76620796",
+      "project": "xcard-qa-tools",
+      "first_display": "检查.gitmodules配置是否有问题",
+      "git_branch": "main",
+      "start_time": "2026-04-01T14:26:13.757000+08:00",
+      "end_time": "2026-04-01T15:03:42.186000+08:00",
+      "duration_minutes": 37.5,
+      "user_turns": 16,
+      "assistant_turns": 20,
+      "total_input_tokens": 119524,
+      "total_output_tokens": 2299,
+      "zero_usage_count": 9,
+      "tool_usage": {
+        "Read": 1,
+        "Bash": 9
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_b23c448d3d1647cb92971b04",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_da28d066e0314eebab272487",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-qa-func: No such file or directory"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "6207e53e-dc97-4770-83aa-9a5f81c69f1e",
+      "project": "xcard-qa-tools",
+      "first_display": "如何卸载npm方式安装的claude",
+      "git_branch": "main",
+      "start_time": "2026-04-01T15:26:54.055000+08:00",
+      "end_time": "2026-04-01T15:27:00.412000+08:00",
+      "duration_minutes": 0.1,
+      "user_turns": 1,
+      "assistant_turns": 2,
+      "total_input_tokens": 48463,
+      "total_output_tokens": 72,
+      "zero_usage_count": 1,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "82527b33-b549-41c7-a3a3-a8aaa1e80875",
+      "project": "xcard-qa-tools",
+      "first_display": "/buddy",
+      "git_branch": null,
+      "start_time": null,
+      "end_time": null,
+      "duration_minutes": 0,
+      "user_turns": 0,
+      "assistant_turns": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": []
+    },
+    {
+      "session_id": "6cb70b21-a768-460b-9a15-3845c7fb9f25",
+      "project": "xcard-qa-tools",
+      "first_display": "/ide",
+      "git_branch": null,
+      "start_time": null,
+      "end_time": null,
+      "duration_minutes": 0,
+      "user_turns": 0,
+      "assistant_turns": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": []
+    },
+    {
+      "session_id": "34a52783-be19-431c-8288-74218c5be478",
+      "project": "server",
+      "first_display": "/ide",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-04-01T16:08:11.731000+08:00",
+      "end_time": "2026-04-01T16:08:11.731000+08:00",
+      "duration_minutes": 0.0,
+      "user_turns": 3,
+      "assistant_turns": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": []
+    },
+    {
+      "session_id": "05d90034-0b14-4b8b-a616-8c7bbb04caa4",
+      "project": "server",
+      "first_display": "使用superpowers相关技能排查bug\n[Pasted text #1 +8 lines]\n上面日志中显示Hero表有更新，当前代码中针对Hero有多个校",
+      "git_branch": "v-wangtengda/v0.0.8-pre-release",
+      "start_time": "2026-04-01T16:12:31.561000+08:00",
+      "end_time": "2026-04-01T16:28:54.494000+08:00",
+      "duration_minutes": 16.4,
+      "user_turns": 28,
+      "assistant_turns": 32,
+      "total_input_tokens": 166591,
+      "total_output_tokens": 1445,
+      "zero_usage_count": 24,
+      "tool_usage": {
+        "Agent": 2,
+        "Read": 8,
+        "Glob": 4,
+        "Bash": 11
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_7ef5cef516444042a69fc3f3",
+          "error": "Exit code 127\n/usr/bin/bash: line 1: redis-cli: command not found"
+        },
+        {
+          "tool_use_id": "call_b925516df6c14dc694c5d59e",
+          "error": "Exit code 127\n/usr/bin/bash: line 1: mongosh: command not found\n/usr/bin/bash: line 1: mongo: command not found"
+        },
+        {
+          "tool_use_id": "call_f78462a64bef45819a02f063",
+          "error": "Exit code 1"
+        },
+        {
+          "tool_use_id": "call_5329b316c3b64c74b6944a59",
+          "error": "Exit code 1"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "ed2d6ed2-2442-4583-9e41-4345478206f9",
+      "project": "xcard-qa-tools",
+      "first_display": "用superpowers相关技能排查bug                                                           ",
+      "git_branch": "main",
+      "start_time": "2026-04-01T16:22:01.085000+08:00",
+      "end_time": "2026-04-01T20:28:22.520000+08:00",
+      "duration_minutes": 246.4,
+      "user_turns": 143,
+      "assistant_turns": 214,
+      "total_input_tokens": 982743,
+      "total_output_tokens": 41545,
+      "zero_usage_count": 122,
+      "tool_usage": {
+        "Agent": 5,
+        "Read": 42,
+        "Grep": 8,
+        "Glob": 4,
+        "TaskCreate": 5,
+        "TaskUpdate": 12,
+        "Write": 2,
+        "AskUserQuestion": 1,
+        "ExitPlanMode": 1,
+        "Edit": 10,
+        "Bash": 34,
+        "mcp__ide__getDiagnostics": 2
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_80690ee2b212433aaaa1e52a",
+          "error": "File does not exist. Note: your current working directory is D:\\work\\xcard-qa-tools."
+        },
+        {
+          "tool_use_id": "call_2a2433d745c9456489eca6cb",
+          "error": "<tool_use_error>String to replace not found in file.\nString: rain-qa-func.exe~\nrain-qa-func.exe</tool_use_error>"
+        },
+        {
+          "tool_use_id": "call_c2e4d9a9938746ddb112a62c",
+          "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+        },
+        {
+          "tool_use_id": "call_a3132f27c76846cf9e047fa2",
+          "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "7a061939-51a3-4bd2-ac5c-3037caae54a2",
+      "project": "gobee",
+      "first_display": "/doctor",
+      "git_branch": "main",
+      "start_time": "2026-04-01T16:24:47.249000+08:00",
+      "end_time": "2026-04-01T16:28:32.856000+08:00",
+      "duration_minutes": 3.8,
+      "user_turns": 5,
+      "assistant_turns": 7,
+      "total_input_tokens": 49883,
+      "total_output_tokens": 616,
+      "zero_usage_count": 3,
+      "tool_usage": {
+        "Read": 1,
+        "Edit": 2
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "b22a0021-3fce-4d73-82fe-e96d36b2ac9b",
+      "project": "gobee",
+      "first_display": "当前环境是否安装了superpowers",
+      "git_branch": "main",
+      "start_time": "2026-04-01T16:31:42.254000+08:00",
+      "end_time": "2026-04-01T16:38:01.337000+08:00",
+      "duration_minutes": 6.3,
+      "user_turns": 10,
+      "assistant_turns": 17,
+      "total_input_tokens": 47605,
+      "total_output_tokens": 524,
+      "zero_usage_count": 10,
+      "tool_usage": {
+        "Bash": 5,
+        "mcp__plugin_github_github__get_file_contents": 1
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "03138e25-da09-4c63-a20a-a64ef8f192ad",
+      "project": "gobee",
+      "first_display": "但我无法调用superpowers",
+      "git_branch": "main",
+      "start_time": "2026-04-01T16:38:53.768000+08:00",
+      "end_time": "2026-04-01T23:28:20.334000+08:00",
+      "duration_minutes": 409.4,
+      "user_turns": 149,
+      "assistant_turns": 163,
+      "total_input_tokens": 404978,
+      "total_output_tokens": 49252,
+      "zero_usage_count": 88,
+      "tool_usage": {
+        "mcp__plugin_github_github__get_file_contents": 8,
+        "Agent": 3,
+        "Skill": 4,
+        "TaskCreate": 10,
+        "TaskUpdate": 21,
+        "AskUserQuestion": 6,
+        "Bash": 21,
+        "Write": 3,
+        "Read": 8,
+        "Edit": 1,
+        "mcp__thinking__sequentialthinking": 2,
+        "Grep": 4
+      },
+      "skill_calls": [
+        {
+          "skill": "superpowers:brainstorming",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:writing-plans",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:writing-plans",
+          "args": ""
+        },
+        {
+          "skill": "superpowers:requesting-code-review",
+          "args": ""
+        }
+      ],
+      "errors": [],
+      "models_used": [
+        "<synthetic>",
+        "glm-4.7",
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "18af16e6-0d3a-407c-878b-1d6b4894d2a4",
+      "project": "xcard-qa-tools",
+      "first_display": "/fro",
+      "git_branch": null,
+      "start_time": null,
+      "end_time": null,
+      "duration_minutes": 0,
+      "user_turns": 0,
+      "assistant_turns": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "zero_usage_count": 0,
+      "tool_usage": {},
+      "skill_calls": [],
+      "errors": [],
+      "models_used": []
+    },
+    {
+      "session_id": "912a4265-2a97-41cb-9d6b-6af459bf9736",
+      "project": "xcard-qa-tools",
+      "first_display": "[Pasted text #1 +17 lines]当前飞书消息格式如上，调整 1 \"主键值 xx {换行} 行号: 第 x 行\" 合并为 “第 x 行，{主键",
+      "git_branch": "main",
+      "start_time": "2026-04-01T20:54:46.277000+08:00",
+      "end_time": "2026-04-01T21:06:06.563000+08:00",
+      "duration_minutes": 11.3,
+      "user_turns": 15,
+      "assistant_turns": 21,
+      "total_input_tokens": 69235,
+      "total_output_tokens": 731,
+      "zero_usage_count": 13,
+      "tool_usage": {
+        "Grep": 3,
+        "Read": 2,
+        "Edit": 1,
+        "Bash": 7
+      },
+      "skill_calls": [],
+      "errors": [],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "b3fdcbf8-32ff-449d-94b2-f66860c87081",
+      "project": "xcard-qa-tools",
+      "first_display": "你能使用飞书吗",
+      "git_branch": "main",
+      "start_time": "2026-04-01T21:05:14.719000+08:00",
+      "end_time": "2026-04-01T22:11:02.182000+08:00",
+      "duration_minutes": 65.8,
+      "user_turns": 114,
+      "assistant_turns": 170,
+      "total_input_tokens": 283113,
+      "total_output_tokens": 18873,
+      "zero_usage_count": 85,
+      "tool_usage": {
+        "mcp__feishu-mcp__fetch-doc": 3,
+        "mcp__feishu-mcp__fetch-file": 4,
+        "Read": 12,
+        "analyze_image": 4,
+        "Agent": 1,
+        "mcp__feishu-mcp__update-doc": 2,
+        "Edit": 4,
+        "Bash": 47,
+        "Skill": 3,
+        "mcp__rain-qa-func__send_feishu_message": 1,
+        "TaskStop": 2,
+        "CronCreate": 1,
+        "CronDelete": 1,
+        "Grep": 2
+      },
+      "skill_calls": [
+        {
+          "skill": "lark-sheets",
+          "args": "如何获取飞书文档中嵌入的电子表格组件（sheet token）的内容"
+        },
+        {
+          "skill": "lark-im",
+          "args": "在会话 oc_75798bac88e523dc168844516ebc8f07 中发送一条测试消息\"lark-cli测试消息\"，然后读取该会话的最新消息"
+        },
+        {
+          "skill": "lark-event",
+          "args": "监听 im.message.receive_v1 事件，实时接收新消息"
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_e4f95c7fafb9497ea3000175",
+          "error": "EISDIR: illegal operation on a directory, read 'D:\\work\\xcard-qa-tools\\rain-excel-checker'"
+        },
+        {
+          "tool_use_id": "call_87815d5b962b4b929c853948",
+          "error": "{\"error\":\"[VALIDATION:1101] 未找到匹配的标题\\n💡 Suggestion: Please check if the input parameters meet the requirements\\n📍 Context: available_titles=## 检查规则 | ## 配置模版 | # 工具bug修复, suggestion=请检查标题是否正确，可以使用 fet..."
+        },
+        {
+          "tool_use_id": "call_56446c3128004f3984a2dafc",
+          "error": "Exit code 1\n/usr/bin/bash: line 1: cd: rain-excel-checker: No such file or directory"
+        },
+        {
+          "tool_use_id": "call_8c5db73458174a29ba9a201f",
+          "error": "Exit code 128\nfatal: pathspec 'xlsx/check_rules/general/table_check_new_row_notify.go' did not match any files"
+        },
+        {
+          "tool_use_id": "call_f2f0502312c04ae085f97173",
+          "error": "Exit code 128\nfatal: pathspec 'xlsx/check_rules/general/table_check_new_row_notify.go' did not match any files"
+        },
+        {
+          "tool_use_id": "call_ebbb00d4df744c0bba62d1da",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope wiki:node:read [99991672]\",\n    \"hi..."
+        },
+        {
+          "tool_use_id": "call_7e5c26de01b64ed1a235037a",
+          "error": "Exit code 3\n{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"auth\",\n    \"message\": \"not logged in\",\n    \"hint\": \"run `lark-cli auth login` in the background. It blocks and outputs a ve..."
+        },
+        {
+          "tool_use_id": "call_3ce43ebcf22d4fb9a84d8869",
+          "error": "Exit code 1\nUsage:\n  lark-cli sheets +info [flags]\n\nFlags:\n      --as string                  identity type: user | bot (default \"user\")\n      --dry-run                    print request without execut..."
+        },
+        {
+          "tool_use_id": "call_0145c6f2fe064d8f96d21517",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope sheets:spreadsheet.meta:read [99991..."
+        },
+        {
+          "tool_use_id": "call_daaee2e509af47b495d6c395",
+          "error": "Exit code 2\n请指定要授权的权限:\n\nCommon options:\n  --recommend                     授权推荐权限\n  --domain all                    授权所有已知域的权限\n  --domain calendar,task          授权日历和任务域的权限\n  --domain calendar --recomm..."
+        },
+        {
+          "tool_use_id": "call_6c8832636ab444dbb66f95e7",
+          "error": "Exit code 3\n在浏览器中打开以下链接进行认证:\n\n  https://accounts.feishu.cn/oauth/v1/device/verify?flow_id=ON3NWOp0eo9lOOOOOOOOOOOg-m0RbIFOyHkk_y3oaa6Z&user_code=D9M2-LTE4\n\n等待用户授权...\n{\n  \"ok\": false,\n  \"error\": {\n    ..."
+        },
+        {
+          "tool_use_id": "call_df89af78ea5a454d8775af15",
+          "error": "Exit code 1\nUsage:\n  lark-cli im +chat-messages-list [flags]\n\nFlags:\n      --as string           identity type: user | bot (default \"user\")\n      --chat-id string      (required, mutually exclusive wi..."
+        },
+        {
+          "tool_use_id": "call_44540fec785e4bb7a005e1a1",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"api_error\",\n    \"code\": 230002,\n    \"message\": \"HTTP 400: Bot/User can NOT be out of the chat.\"\n  }\n}"
+        },
+        {
+          "tool_use_id": "call_9617a430888a408b9774e8a9",
+          "error": "Exit code 3\n{\n  \"ok\": false,\n  \"identity\": \"user\",\n  \"error\": {\n    \"type\": \"auth\",\n    \"message\": \"not logged in\",\n    \"hint\": \"run `lark-cli auth login` in the background. It blocks and outputs a ve..."
+        },
+        {
+          "tool_use_id": "call_6071f28827f349b2bd57a1f7",
+          "error": "{\"error\":\"[NETWORK:5002] Failed to get child blocks\\n💡 Suggestion: Network temporarily unavailable, please try again later\\n📍 Context: api=/open-apis/docx/v1/documents/V1nBsHQnVhnYm8tP6LAcNRZTnBd/bloc..."
+        },
+        {
+          "tool_use_id": "call_57e13306096745bbb337c1ec",
+          "error": "Exit code 1\n{\n  \"ok\": false,\n  \"identity\": \"bot\",\n  \"error\": {\n    \"type\": \"permission\",\n    \"code\": 99991672,\n    \"message\": \"App scope not enabled: required scope wiki:node:read [99991672]\",\n    \"hi..."
+        },
+        {
+          "tool_use_id": "call_b490f89300db4143aefeed42",
+          "error": "Exit code 1\n** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded...."
+        },
+        {
+          "tool_use_id": "call_f06f2ba9cd04498a9f0168c1",
+          "error": "Exit code 128\nerror: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "cc32dd4d-292e-4643-a4b1-f223bc323384",
+      "project": "xcard-qa-tools",
+      "first_display": "调研一下 rain-qa-func启动的本地应用中其实是嵌套了一个前端页面，你有什么手段可以查看其内容，我能想到的 1 playwright插件 2 web-a",
+      "git_branch": "main",
+      "start_time": "2026-04-01T22:14:45.689000+08:00",
+      "end_time": "2026-04-02T10:34:22.599000+08:00",
+      "duration_minutes": 739.6,
+      "user_turns": 138,
+      "assistant_turns": 191,
+      "total_input_tokens": 286110,
+      "total_output_tokens": 16847,
+      "zero_usage_count": 97,
+      "tool_usage": {
+        "Agent": 7,
+        "Read": 13,
+        "Glob": 8,
+        "Write": 1,
+        "Edit": 7,
+        "Bash": 59,
+        "TaskCreate": 5,
+        "TaskUpdate": 10,
+        "mcp__plugin_playwright_playwright__browser_navigate": 1,
+        "mcp__plugin_playwright_playwright__browser_close": 1,
+        "mcp__ide__getDiagnostics": 1,
+        "mcp__feishu-mcp__fetch-doc": 3,
+        "webReader": 1,
+        "Skill": 1
+      },
+      "skill_calls": [
+        {
+          "skill": "lark-shared",
+          "args": ""
+        }
+      ],
+      "errors": [
+        {
+          "tool_use_id": "call_803290c89d744b638545b1bb",
+          "error": "<tool_use_error>String to replace not found in file.\nString: \t\tMac: application.MacOptions{\n\t\t\t\tApplicationShouldTerminateAfterLastWindowClosed: true,\n\t\t\t},\n\t\t\tLogLevel: slog.LevelWarn,</tool_use_erro..."
+        },
+        {
+          "tool_use_id": "call_3f84552af9834699a9ebcb76",
+          "error": "Exit code 128\nerror: corrupt patch at line 15"
+        },
+        {
+          "tool_use_id": "call_b3310e7149a1467f800e20b7",
+          "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'playwright'\r\nRequire stack:\r\n- D:\\work\\xcard-qa-tools\\rain-qa-func\\[eval]\r\n    at Module._resolveFile..."
+        },
+        {
+          "tool_use_id": "call_8c8ed90b4d9046b8bb4d6b38",
+          "error": "Exit code 1"
+        },
+        {
+          "tool_use_id": "call_3b6611466de24456a63626e1",
+          "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+        },
+        {
+          "tool_use_id": "call_534beac430c4474e959f6944",
+          "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+        },
+        {
+          "tool_use_id": "call_7bdaabe3a83c4a539ce2aadb",
+          "error": "HTTP 404: Invalid OAuth error response: SyntaxError: JSON Parse error: Unrecognized token '<'. Raw body: <html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></cent..."
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    },
+    {
+      "session_id": "5fe6ecbc-06e1-49ec-a15a-7788c42c29dd",
+      "project": "rain-qa-func",
+      "first_display": "/web-access",
+      "git_branch": "main",
+      "start_time": "2026-04-01T22:16:09.071000+08:00",
+      "end_time": "2026-04-01T22:24:11.962000+08:00",
+      "duration_minutes": 8.0,
+      "user_turns": 22,
+      "assistant_turns": 35,
+      "total_input_tokens": 61933,
+      "total_output_tokens": 2133,
+      "zero_usage_count": 20,
+      "tool_usage": {
+        "Bash": 16,
+        "mcp__feishu-mcp__fetch-doc": 1,
+        "mcp__plugin_playwright_playwright__browser_navigate": 1
+      },
+      "skill_calls": [],
+      "errors": [
+        {
+          "tool_use_id": "call_2a2eb0ae43434840b5625f83",
+          "error": "Exit code 1\nnode:internal/modules/cjs/loader:1459\r\n  throw err;\r\n  ^\r\n\r\nError: Cannot find module 'C:\\Users\\v-wangtengda\\AppData\\Local\\Programs\\Git\\scripts\\check-deps.mjs'\r\n    at Module._resolveFilen..."
+        },
+        {
+          "tool_use_id": "call_08f67e057a654bee90fe0244",
+          "error": "{\"error\":\"[NETWORK:5002] Failed to get child blocks\\n💡 Suggestion: Network temporarily unavailable, please try again later\\n📍 Context: api=/open-apis/docx/v1/documents/V1nBsHQnVhnYm8tP6LAcNRZTnBd/bloc..."
+        },
+        {
+          "tool_use_id": "call_59be0b563b5b431da03a3b42",
+          "error": "Exit code 28"
+        }
+      ],
+      "models_used": [
+        "glm-5.1"
+      ]
+    }
+  ]
+}

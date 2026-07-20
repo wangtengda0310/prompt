@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go 项目结构分析 - {PROJECT_NAME}</title>
+    <style>
+        :root {
+            --bg-primary: #0f0f1a;
+            --bg-secondary: #1a1a2e;
+            --bg-tertiary: #252540;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0b0;
+            --text-muted: #707080;
+            --accent-blue: #4a9eff;
+            --accent-purple: #b794f6;
+            --accent-green: #4ade80;
+            --accent-orange: #fb923c;
+            --accent-red: #f87171;
+            --border-color: #333350;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.4);
+            --shadow-lg: 0 8px 16px rgba(0,0,0,0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meta-label {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        .meta-value {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        /* 导航标签 */
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            padding: 12px 24px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .nav-tab:hover {
+            background: var(--bg-tertiary);
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }
+
+        .nav-tab.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: white;
+        }
+
+        /* 内容区域 */
+        .content-section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        /* 概览卡片 */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .stat-trend {
+            margin-top: 8px;
+            font-size: 0.85em;
+        }
+
+        .trend-up {
+            color: var(--accent-green);
+        }
+
+        .trend-down {
+            color: var(--accent-red);
+        }
+
+        /* 模块卡片 */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .module-card {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .module-card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .module-name {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .module-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+        }
+
+        .module-info {
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-label {
+            color: var(--text-muted);
+        }
+
+        .info-value {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .module-packages {
+            margin-top: 15px;
+        }
+
+        .package-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .package-tag {
+            padding: 4px 10px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        /* 类型表格 */
+        .type-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .type-table th {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--accent-blue);
+        }
+
+        .type-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .type-table tr:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .type-struct {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .type-interface {
+            background: rgba(183, 148, 246, 0.2);
+            color: var(--accent-purple);
+        }
+
+        .type-alias {
+            background: rgba(74, 222, 128, 0.2);
+            color: var(--accent-green);
+        }
+
+        /* 依赖图容器 */
+        .dependency-graph {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        .graph-node {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-blue);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .graph-node:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* 导出符号列表 */
+        .export-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .export-item {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .export-name {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 5px;
+        }
+
+        .export-package {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* 建议列表 */
+        .recommendation-item {
+            background: var(--bg-tertiary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .recommendation-title {
+            font-weight: 600;
+            color: var(--accent-orange);
+            margin-bottom: 8px;
+        }
+
+        .recommendation-desc {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .module-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .type-table {
+                font-size: 0.9em;
+            }
+        }
+
+        /* 动画效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-section {
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* 搜索框 */
+        .search-box {
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 1em;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        /* 进度条 */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-tertiary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息 -->
+        <div class="header">
+            <h1>{PROJECT_NAME}</h1>
+            <p style="color: var(--text-secondary); margin-bottom: 15px;">Go 项目结构分析报告</p>
+            <div class="header-meta">
+                <div class="meta-item">
+                    <span class="meta-label">模块数量:</span>
+                    <span class="meta-value">{MODULE_COUNT}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">总包数:</span>
+                    <span class="meta-value">{TOTAL_PACKAGES}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Go 版本:</span>
+                    <span class="meta-value">{GO_VERSION}</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">分析时间:</span>
+                    <span class="meta-value">{ANALYSIS_TIME}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 导航标签 -->
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-section="overview">概览</div>
+            <div class="nav-tab" data-section="modules">模块详情</div>
+            <div class="nav-tab" data-section="types">类型汇总</div>
+            <div class="nav-tab" data-section="exports">导出符号</div>
+            <div class="nav-tab" data-section="dependencies">依赖关系</div>
+            <div class="nav-tab" data-section="recommendations">建议</div>
+        </div>
+
+        <!-- 概览部分 -->
+        <div class="content-section active" id="overview">
+            <h2 class="section-title">项目概览</h2>
+            <div class="overview-grid">
+                <div class="stat-card">
+                    <div class="stat-label">模块数量</div>
+                    <div class="stat-value">{MODULE_COUNT}</div>
+                    <div class="stat-trend trend-up">个模块</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">总包数</div>
+                    <div class="stat-value">{TOTAL_PACKAGES}</div>
+                    <div class="stat-trend">个包</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">结构体数量</div>
+                    <div class="stat-value">{STRUCT_COUNT}</div>
+                    <div class="stat-trend trend-up">个结构体</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">接口数量</div>
+                    <div class="stat-value">{INTERFACE_COUNT}</div>
+                    <div class="stat-trend trend-up">个接口</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 模块详情部分 -->
+        <div class="content-section" id="modules">
+            <h2 class="section-title">模块详情</h2>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="搜索模块..." id="moduleSearch">
+            </div>
+            <div class="module-grid">
+                {MODULE_CARDS}
+            </div>
+        </div>
+
+        <!-- 类型汇总部分 -->
+        <div class="content-section" id="types">
+            <h2 class="section-title">类型汇总</h2>
+            <table class="type-table">
+                <thead>
+                    <tr>
+                        <th>类型名称</th>
+                        <th>类型</th>
+                        <th>所属包</th>
+                        <th>方法数</th>
+                        <th>字段数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {TYPE_TABLE_ROWS}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 导出符号部分 -->
+        <div class="content-section" id="exports">
+            <h2 class="section-title">导出符号</h2>
+            <div class="export-list">
+                {EXPORT_LIST_ITEMS}
+            </div>
+        </div>
+
+        <!-- 依赖关系部分 -->
+        <div class="content-section" id="dependencies">
+            <h2 class="section-title">依赖关系</h2>
+            <div class="dependency-graph">
+                {DEPENDENCY_GRAPH_HTML}
+            </div>
+        </div>
+
+        <!-- 建议部分 -->
+        <div class="content-section" id="recommendations">
+            <h2 class="section-title">优化建议</h2>
+            <div class="recommendations-list">
+                {RECOMMENDATIONS_LIST}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 标签切换功能
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有 active 类
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+
+                // 添加 active 类
+                tab.classList.add('active');
+                const sectionId = tab.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+
+        // 搜索功能
+        const searchInput = document.getElementById('moduleSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                document.querySelectorAll('.module-card').forEach(card => {
+                    const moduleName = card.querySelector('.module-name').textContent.toLowerCase();
+                    if (moduleName.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.stat-card, .module-card').forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.animation = `fadeIn 0.5s ease ${index * 0.05}s forwards`;
+                }, 0);
+            });
+        });
+    </script>
+</body>
+</html>

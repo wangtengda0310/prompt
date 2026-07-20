@@ -1,0 +1,26 @@
+{
+  "skill_name": "excel-parser",
+  "evals": [
+    {
+      "id": 1,
+      "name": "browse-and-filter-hero-data",
+      "prompt": "我需要查看 Hero 表中品质为 5 的所有英雄数据，包括他们的 ID、名称和品质字段。表在 D:/work/config/excel/Hero.xlsx，请帮我先查看表结构，然后筛选出符合条件的数据。",
+      "expected_output": "应该先调用 get_excel_column_info 查看列结构，然后使用 filter_excel_data 筛选出 Quality=5 的数据，返回包含表头和匹配行的结果。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "generate-test-hero-data",
+      "prompt": "帮我创建一个测试用的 Hero 表 Excel 文件，保存在 D:/work/test_output.xlsx。需要包含 5 个测试英雄，字段包括：英雄ID(int)、英雄名称(string)、品质(int)、战斗力(int)。表头要符合项目的 4 行规范。",
+      "expected_output": "应该使用 create_excel_file 工具，生成符合 4 行表头规范的 Excel 文件，包含 5 条测试数据行。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "paginated-query-large-table",
+      "prompt": "Hero 表数据很多，我需要分页查看数据。请帮我获取第 1 页（第 1-20 行）和第 2 页（第 21-40 行）的数据，每页都要包含列名表头，让我知道每页有多少条数据。",
+      "expected_output": "应该使用 query_excel_range 两次，startRow=1/endRow=20 和 startRow=21/endRow=40，每次都设置 includeHeader=true，返回数据行和统计信息。",
+      "files": []
+    }
+  ]
+}

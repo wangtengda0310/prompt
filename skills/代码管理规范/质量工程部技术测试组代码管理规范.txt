@@ -1,0 +1,232 @@
+一、规范更新日志
+更新日期
+更新人
+版本
+更新说明
+2026年03月10日
+龚亮
+V0.1
+创建
+
+
+
+
+
+
+
+
+
+
+
+
+二、前言
+为了保障项目代码的可维护性、一致性和可靠性，提高团队协作效率，降低沟通成本，特制定本代码管理规范。本规范涵盖代码仓库管理、版本控制、代码风格、分支策略、提交流程、代码审查及持续集成等方面，适用于所有参与本团队前后端项目开发的人员。
+
+三、版本控制与仓库管理
+1、版本控制系统
+- 统一使用 Git 作为版本控制系统。
+- 确保 Git 安装最新稳定版本，并配置好用户信息：
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+2、仓库托管
+- 使用巨人网络内部 GitLab平台托管代码。
+- 每个服务/模块拥有独立的代码仓库，遵循“单一职责”原则。
+- 仓库必须包含以下基本文件：
+  - README.md：项目简介、技术栈、快速开始、部署说明等。
+  - .gitignore：根据项目语言及框架配置，忽略编译产物、依赖包、IDE 配置等。
+  - LICENSE（可选）：项目许可证。
+  - CHANGELOG.md（可选）：记录版本变更。
+
+3、访问权限
+- 仓库管理员负责管理成员权限，遵循最小权限原则。
+  - 开发者：对开发分支有读写权限，对主分支通常为只读（通过 MR/PR 合并）。
+  - 技术负责人/核心维护者：拥有主分支合并权限，可管理分支保护规则。
+  - 外部贡献者：以 fork 方式贡献代码。
+
+4、分支管理策略
+推荐采用 Git Flow 或 GitHub Flow 等成熟模型，团队可根据项目迭代节奏选择。
+4.1 核心分支
+- main / master：主分支，始终反映可随时部署到生产环境的代码。禁止直接提交代码到该分支，只能通过合并请求（MR/PR）合并。
+- develop（若采用 Git Flow）：开发主干分支，集成所有开发完成的功能，用于测试环境部署。
+4.2 辅助分支
+- 功能分支（feature/\*）：从 develop 或 main 拉出，用于开发新功能。命名建议：feature/短描述，如 feature/user-login。完成后合并回源分支并删除。
+- 修复分支（bugfix/\*）：用于修复测试环境或开发过程中的 Bug，从 develop 或相应功能分支拉取。
+- 热修复分支（hotfix/\*）：用于紧急修复生产环境问题，从 main 拉取，修复后合并回 main 和 develop（若存在）。
+- 发布分支（release/\*）（若采用 Git Flow）：从 develop 拉出，用于准备发布版本，仅进行 bug 修复和文档更新，完成后合并回 main 和 develop。
+4.3 分支命名规范
+- 功能分支：feature/功能描述-日期或ID，如 feature/user-login-20250310。
+- 修复分支：bugfix/问题描述-日期 或 fix/问题描述。
+- 发布分支：release/v版本号，如 release/v1.2.0。
+- 热修复分支：hotfix/问题描述-日期。
+4.4 分支保护规则
+- main 和 develop 分支必须开启保护：
+  - 不允许直接推送（force push 禁止）。
+  - 合并前必须通过 CI 流水线检查。
+  - 至少需要 1 名其他开发者审查并批准合并请求。
+
+5、代码风格与质量
+5.1 语言/框架通用规范
+- 前端：JavaScript/TypeScript、HTML、CSS 等需遵循对应最佳实践。推荐使用 Airbnb、Standard 等流行风格指南。
+- 后端：根据语言（Java、Go、Python、Node.js 等）遵循社区公认规范（如 Google Java Style、PEP 8）。
+5.2 工具统一
+- 代码格式化：前端推荐 Prettier，后端可根据语言选择对应工具（如 Black for Python, gofmt for Go）。
+- 代码检查：
+  - 前端：ESLint（配合 TypeScript 插件）、Stylelint。
+  - 后端：对应语言的 lint 工具（Checkstyle for Java, pylint for Python, golint for Go）。
+- 配置文件和规则集应提交到仓库，确保团队一致。
+5.3 命名约定
+- 通用：使用有意义的英文名称，避免拼音或缩写（除非是行业通用缩写）。
+- 前端：
+  - 组件名：大驼峰（PascalCase）。
+  - 变量/函数：小驼峰（camelCase）。
+  - CSS 类名：中划线（kebab-case），如 user-profile。
+- 后端：
+  - 类/接口：大驼峰。
+  - 方法/变量：小驼峰。
+  - 常量：全大写下划线，如 MAX_RETRY_COUNT。
+  - 数据库表名：小写下划线，如 user_account。
+5.4 注释与文档
+- 遵循 JSDoc/JavaDoc 等规范为公共 API、复杂逻辑编写注释。
+- 禁止保留无用代码（被注释掉的代码段）。
+
+6. 代码提交规范
+6.1 提交粒度
+- 提交应具有原子性：每次提交只完成一个逻辑任务，方便回滚和追溯。
+- 避免提交大量无关文件，如 IDE 配置文件、依赖包等（通过 .gitignore 排除）。
+6.2 提交信息格式
+采用 Conventional Commits 规范，格式如下：
+<类型>(可选范围): <简短描述>
+ 
+<可选详细描述>
+ 
+<可选脚注>
+类型（Type） 包括：
+- feat：新增功能
+- fix：修复 Bug
+- docs：文档变更
+- style：代码格式调整（不影响代码含义）
+- refactor：重构（既不新增功能也不修复 Bug）
+- perf：性能优化
+- test：增加或修正测试
+- chore：构建过程或辅助工具的变动
+- revert：回滚提交
+示例：
+feat(auth): 增加用户注册接口
+ 
+- 新增注册 API /api/register
+- 验证输入参数
+- 返回 JWT token
+ 
+Closes #123
+ 
+6.3 提交前检查
+- 运行本地 lint 和测试，确保通过。
+- 检查是否有敏感信息（密码、密钥等）误提交，可使用 git-secrets 等工具。
+6.4 避免直接推送主分支
+任何对 main 或 develop 的变更必须通过 合并请求（Merge Request / Pull Request） 发起。
+
+
+7. 代码风格规范
+7.1 通用原则
+- 代码须清晰易读，遵循语言的通用最佳实践。
+- 使用 EditorConfig 统一编辑器基本设置（缩进、字符集等）。
+- 必要时使用 Prettier、ESLint、Stylelint 等工具进行自动化格式化与检查。
+7.2 前端规范
+- JavaScript/TypeScript：遵循 Airbnb JavaScript Style Guide 或团队定制的 ESLint 规则集。
+- CSS/SCSS：遵循 BEM 命名规范，使用 SCSS 预处理器，启用 Stylelint。
+- Vue/React 框架：遵循官方风格指南，组件文件命名采用 PascalCase，目录结构按功能或模块划分。
+- 提交前必须通过 Lint 检查，并将 Lint 集成到 Git 钩子（如 husky）或 CI 中。
+7.3 后端规范
+- Java：遵循 Google Java Style Guide 或阿里巴巴 Java 开发手册，使用 Checkstyle 或 Spotless 检查。
+- Python：遵循 PEP 8，使用 flake8 / black / isort。
+- Go：遵循 gofmt 官方格式，使用 golangci-lint。
+- API 设计：遵循 RESTful 原则，URL 命名使用小写、连字符，HTTP 方法语义正确。
+- 注释：关键逻辑、公共接口须有清晰注释；Java 使用 Javadoc，Python 使用 docstring。
+8. 目录结构规范
+8.1 前端项目（以 Vue/React 为例）
+project-root/
+├── public/                 # 静态资源（不经过构建）
+├── src/
+│   ├── api/                # API 请求模块
+│   ├── assets/             # 图片、字体等资源
+│   ├── components/         # 公共组件
+│   ├── composables/        # Vue 组合式函数 / React Hooks
+│   ├── layouts/            # 布局组件
+│   ├── pages/              # 页面级组件
+│   ├── router/             # 路由配置
+│   ├── store/              # 状态管理
+│   ├── styles/             # 全局样式
+│   ├── utils/              # 工具函数
+│   ├── App.vue / App.jsx
+│   └── main.js
+├── tests/                  # 单元测试、e2e 测试
+├── .eslintrc.js
+├── .prettierrc
+├── vite.config.js / vue.config.js
+└── package.json
+ 
+8.2 后端项目（以 Spring Boot 为例）
+project-root/
+├── src/
+│   ├── main/
+│   │   ├── java/com/company/project/
+│   │   │   ├── controller/    # 接口层
+│   │   │   ├── service/       # 业务逻辑层
+│   │   │   ├── repository/    # 数据访问层
+│   │   │   ├── model/         # 实体/DTO
+│   │   │   ├── config/        # 配置类
+│   │   │   ├── util/          # 工具类
+│   │   │   └── Application.java
+│   │   └── resources/
+│   │       ├── application.yml
+│   │       ├── db/migration/  # 数据库迁移脚本
+│   │       └── static/        # 静态资源（若有）
+│   └── test/                  # 单元测试、集成测试
+├── pom.xml / build.gradle
+└── README.md
+
+ 
+9. 代码审查流程
+9.1 审查时机
+- 所有合并到 main 或 develop 的代码必须经过代码审查。
+- 功能分支开发完成后，发起合并请求，指定审查者。
+9.2 审查者责任
+- 检查代码是否符合项目规范、业务逻辑正确性、潜在 Bug、性能问题、安全漏洞等。
+- 审查者应在 24 小时内响应，最多不超过 2 个工作日。
+- 对于较大变更，建议进行面对面讨论或添加详细评论。
+9.3 提交者责任
+- 确保 CI 流水线（Lint、测试、构建）全部通过。
+- 合并请求描述清晰，包含变更背景、改动点、影响范围、测试方法等。
+- 及时响应审查意见，必要时进行修改并重新推送。
+9.4 合并条件
+- 至少获得 1 名审查者的批准（可根据团队规模调整）。
+- 所有讨论已解决。
+- CI 检查通过。
+- 由审查者或提交者执行合并，并删除源分支。
+10. 持续集成与部署
+10.1 CI 配置
+- 每个项目需配置 CI 脚本（如 GitLab CI、GitHub Actions、Jenkinsfile）。
+- CI 至少包含以下阶段：
+  - lint：检查代码格式和潜在错误。
+  - test：运行单元测试、集成测试，并生成覆盖率报告。
+  - build：构建可部署的产物。
+  - （可选）deploy：自动部署到测试环境。
+10.2 质量门禁
+- 代码覆盖率不低于预设阈值（如 80%）。
+- Lint 零错误。
+- 测试全部通过。
+10.3 版本号管理
+- 遵循 语义化版本（SemVer）：主版本号.次版本号.修订号。
+  - 主版本号：不兼容的 API 变更。
+  - 次版本号：向下兼容的功能新增。
+  - 修订号：向下兼容的问题修复。
+- 通过 Git 标签（tag）标记版本，格式如 v1.2.3。
+
+ 
+11. 文档要求
+- API 文档：使用 Swagger/OpenAPI 自动生成，保持与实际接口同步。
+- 关键设计文档：架构图、数据库设计、接口协议等应存放在项目 docs/ 目录下或 Wiki。
+- README.md：必须包含项目简介、快速启动、测试运行、部署步骤等。
+
+
