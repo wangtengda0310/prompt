@@ -55,13 +55,13 @@ wails3 dev
 
 MCP 服务默认运行在 `http://127.0.0.1:8765`
 
-#### 方案二：Node.js + xlsx（独立运行，无依赖）
+#### 方案二：Node.js + xlsx（独立运行，无需 MCP 服务）
 
 适用于 Docker 容器或其他没有 Python/MCP 服务的环境：
 
 ```bash
-# 安装依赖（全局安装一次即可）
-npm install -g xlsx
+# 安装依赖（在 scripts 目录执行；xlsx 修复版仅在 SheetJS CDN 发布，npm registry 停更于含已知 CVE 的 0.18.5）
+cd scripts && npm install && cd ..
 
 # 使用 Node.js 脚本直接解析
 node scripts/excel_parser.js <action> [options]

@@ -4,7 +4,7 @@
  * Excel 配表解析脚本 (Node.js 版本) - 直接读取游戏配表 Excel 文件
  * 支持名将杀项目统一的 4 行表头结构
  *
- * 依赖: npm install -g xlsx
+ * 依赖: 在 scripts 目录执行 npm install（从 SheetJS CDN 安装 xlsx 0.20.3；npm registry 上的 xlsx 已停更于 0.18.5）
  * 使用: node excel_parser.js <action> [options]
  */
 
